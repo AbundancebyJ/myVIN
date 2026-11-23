@@ -1,0 +1,207 @@
+{
+ "make": "Jeep",
+ "model": "Grand Cherokee",
+ "year": 2018,
+ "nhtsaModel": "Grand Cherokee",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "24V838000",
+    "date": "2024-11-07",
+    "component": "SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION CONTROL/ELECTRONIC LIMITED SLIP:CONTROL UNIT/MODULE",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2018-2019 Jeep Grand Cherokee and Dodge Durango vehicles. A malfunction in the antilock-brake system (ABS) module may incorrectly illuminate the brake lights and disable the ABS and electronic stability control (ESC). In addition, the vehicle operator may be able to start and shift out of Park without the brake pedal being applied.",
+    "consequence": "A vehicle that can be started and shifted out of Park without applying the brake pedal can result in a vehicle rollaway. Disabled ABS and ESC systems can reduce vehicle handling and control in certain driving situations. Brake lights that incorrectly illuminate can fail to properly indicate the driver's intention to following traffic. Any of these scenarios can increase the risk of a crash.",
+    "remedy": "Dealers will replace the integrated pressure transducer and update the ABS module software, as necessary free of charge. Owner notification letters were mailed December 16, 2025. Owners may contact FCA customer service at 1-800-853-1403. FCA's number for this recall is 94B. This recall replaces previous recall number 22V-426. Vehicles previously remedied under 22V-426 will need to have the new remedy completed.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "23V411000",
+    "date": "2023-06-08",
+    "component": "ENGINE AND ENGINE COOLING",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2014-2019 Ram 1500 and 2014-2020 Jeep Grand Cherokee vehicles equipped with 3.0L Diesel engines. The crankshaft position sensor tone wheel may delaminate, causing the engine to lose its ability to synchronize the fuel injector pulses and cam shaft timing, possibly resulting in an engine stall.",
+    "consequence": "An engine stall can increase the risk of a crash.",
+    "remedy": "Dealers will update the powertrain control module software to maintain vehicle propulsion, free of charge. Interim notification letters, notifying owners of the safety risk, were mailed August 3, 2023. Some owner notification letters were mailed October 31, 2023. The remaining owner notification letters will be mailed at a future date, anticipated July 2024. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLC's number for this recall is 66A. This recall is an expansion of recall 20V-475.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "22V406000",
+    "date": "2022-06-09",
+    "component": "FUEL SYSTEM, DIESEL:DELIVERY:FUEL PUMP",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2014-2020 Jeep Grand Cherokee, and 2014-2019 Ram 1500 vehicles equipped with 3.0L diesel engines. A high pressure fuel pump (HPFP) failure may introduce internal debris into the fuel system, potentially resulting in fuel starvation.",
+    "consequence": "Fuel starvation may result in an unexpected loss of drive power, increasing the risk of a crash.",
+    "remedy": "Dealers will replace the HPFP, and inspect and replace, if necessary, additional fuel system components, free of charge. Interim notification letters informing owners of the safety risk were mailed July 21, 2022. Owner notification letters for were mailed for Jeep Grand Cherokee owners starting January 11, 2024. Owner notification letters for Ram 1500 owners were mailed March 7, 2024. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLS's number for this recall is Z46.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "22V426000",
+    "date": "2022-06-09",
+    "component": "SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION CONTROL/ELECTRONIC LIMITED SLIP:CONTROL UNIT/MODULE",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2018-2019 Jeep Grand Cherokee and Dodge Durango vehicles. A malfunction in the antilock-brake system (ABS) module may illuminate the brake lights, and allow the vehicle to start and shift out of Park without the brake pedal being applied.",
+    "consequence": "A vehicle that starts and shifts out of Park without applying the brake pedal can result in vehicle rollaway, increasing the risk of a crash without prior warning and/or injury to others outside of the vehicle.",
+    "remedy": "This recall is replaced by NHTSA recall number 24V838. Vehicles already repaired under this recall will need to have the new remedy completed. The remedy includes updated HCU/ABS module software that prevents the HCU/ABS module from falsely reading pressure in the primary circuit. FCA has decided to do a two-Phase Campaign remedy schedule. Phase 1 began November 17, 2022. Phase 2 begin date has not been determined yet. Interim owner notification letters explaining the safety risk were mailed July 28, 2020. Owner notification letters were mailed on November 29, 2022. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLC's number for this recall is Z48.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V699000",
+    "date": "2020-11-12",
+    "component": "ENGINE AND ENGINE COOLING:EXHAUST SYSTEM:EMISSION CONTROL:GAS RECIRCULATION VALVE (EGR VALVE)",
+    "summary": "Chrysler (FCA US LLC) is recalling certain 2014-2019 Jeep Grand Cherokee vehicles equipped with the 3.0L EcoDiesel engines. The Exhaust Gas Recirculation (EGR) cooler may crack and allow pre-heated vaporized coolant to enter the EGR system. This mixture may combust inside the intake manifold.",
+    "consequence": "Combustion in the intake manifold can increase the risk of a fire.",
+    "remedy": "FCA US LLC will notify owners, and dealers will replace the EGR cooler, free of charge. Dealers will also inspect and, as necessary, replace the intake manifold. Parts are not currently available. Owners were mailed an interim notification on December 21, 2021. A second notification will be mailed when parts are available, currently expected to be around March 11, 2021. The recall began March 11, 2021. Owners may contact FCA US LLC customer service at 1-800-853-1403. FCA US LLC's number for this recall is W79.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "18V759000",
+    "date": "2018-10-29",
+    "component": "EQUIPMENT:ACCESSORY:FLOOR MAT",
+    "summary": "Chrysler (FCA US LLC) is recalling certain 2018 Jeep Grand Cherokee Street and Racing Technology (SRT) and Trackhawk vehicles. The driver's floor mat may have insufficient clearance between the mat and the accelerator pedal, possibly preventing the pedal from returning to the idle position.",
+    "consequence": "If the floor mat prevents the accelerator pedal from returning to idle, there would be an increased risk of a crash.",
+    "remedy": "Chrysler will notify owners, and dealers will replace any of the affected floor mats, free of charge. The recall began November 15, 2018. Owners may contact Chrysler customer service at 1-800-853-1403. Chrysler's number for this recall is UB3.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "18E097000",
+    "date": "2018-10-29",
+    "component": "EQUIPMENT:ACCESSORY:FLOOR MAT",
+    "summary": "Chrysler (FCA US LLC) is recalling certain Mopar Floor Mats, part numbers 6ML07TRMAA and 6GA92TRMAA, sold as accessory equipment for 2018 Jeep Grand Cherokee Street and Racing Technology (\"SRT\") and Trackhawk vehicles. These floor mats may have insufficient clearance between the mat and the accelerator pedal, possibly inhibiting the pedal from returning to an idle position.",
+    "consequence": "If the floor mat prevents the accelerator pedal from returning to idle, there would be an increased risk of a crash.",
+    "remedy": "Chrysler will notify owners, and dealers will replace any of the affected floor mats, free of charge. The recall began November 15, 2018. Owners may contact Chrysler customer service at 1-800-853-1403. Chrysler's number for this recall is UB5.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "18V524000",
+    "date": "2018-08-09",
+    "component": "ELECTRICAL SYSTEM:WIRING:FRONT UNDERHOOD",
+    "summary": "Chrysler (FCA US LLC) is recalling certain 2018 Jeep Renegade, Compass and Grand Cherokee, RAM 1500 and Promaster, Fiat 500x, Dodge Journey, Challenger, Charger and Durango and Chrysler 300x vehicles, 2017-2018 Jeep Wrangler, Dodge Grand Caravan and Chrysler Town and Country vehicles and 2018-2019 Jeep Cherokee and 2018 Chrysler Pacifica and Pacifica Hybrid vehicles. The powertrain control module may be equipped with a voltage regulator chip in the circuit board that may fail, causing a stall or a no start condition.",
+    "consequence": "A vehicle stall can increase the risk of a crash.",
+    "remedy": "Chrysler will notify owners, and dealers will replace the powertrain control module, free of charge. The recall began October 2, 2018. Owners may contact Chrysler customer service at 1-800-853-1403. Chrysler's number for this recall is U87.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "18V332000",
+    "date": "2018-05-17",
+    "component": "ELECTRICAL SYSTEM:WIRING",
+    "summary": "Chrysler (FCA US LLC) is recalling certain 2014-2018 Dodge Journey, Charger and Durango, RAM 2500, 3500, 3500 Cab Chassis (more than 10,000lb), 4500 Cab Chassis and 5500 Cab Chassis, Jeep Cherokee and Grand Cherokee and Chrysler 300, 2014-2019 RAM 1500, 2015-2018 Dodge Challenger, 2015-2017 Chrysler 200, 2016-2018 RAM 3500 Cab Chassis (less than 10,000 lb), 2017-2018 Chrysler Pacifica and 2018 Jeep Wrangler vehicles. These vehicles are being recalled to address a defect that could prevent the cruise control system from disengaging. If, when using cruise control, there is a short circuit within the vehicle's wiring, the driver may not be able to shut off the cruise control either by depressing the brake pedal or manually turning the system off once it has been engaged, resulting in either the vehicle maintaining its current speed or possibly accelerating.",
+    "consequence": "If the vehicle maintains its speed or accelerates despite attempts to deactivate the cruise control, there would be an increased risk of a crash.",
+    "remedy": "Chrysler will notify owners, and dealers will inspect the software, and perform a software flash on the engine or powertrain control module, free of charge. The recall began June 4, 2018. Owners may contact Chrysler customer service at 1-800-853-1403. Note: Owners are advised to stop using cruise control until the software update has been performed. In the event that cruise control cannot be disengaged while driving, owners should firmly and steadily apply the brakes and shift the transmission to neutral, placing the vehicle in park once it has stopped.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "18V280000",
+    "date": "2018-05-01",
+    "component": "POWER TRAIN:AUTOMATIC TRANSMISSION",
+    "summary": "Chrysler (FCA US LLC) is recalling certain 2018 Dodge Charger, Durango and Challenger, Jeep Grand Cherokee and Wrangler, Chrysler 300, and RAM 1500 vehicles. An incorrect transmission park lock rod may have been installed in the transmission.",
+    "consequence": "If the incorrect park lock rod is installed, the transmission may not shift into 'PARK' and keep the vehicle from moving, increasing the risk of unintended vehicle movement and the risk of a crash.",
+    "remedy": "Chrysler will notify owners, and dealers will install the correct park lock rod, free of charge. The recall began June 28, 2018. Owners may contact Chrysler customer service at 1-800-853-1403. Chrysler's number for this recall is U43.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "18V048000",
+    "date": "2018-01-11",
+    "component": "FUEL SYSTEM, GASOLINE:DELIVERY:HOSES, LINES/PIPING, AND FITTINGS",
+    "summary": "Chrysler (FCA US LLC) is recalling certain 2018 Jeep Grand Cherokee Trackhawk vehicles equipped with a 6.2L Supercharged Engine. The fuel line may separate.",
+    "consequence": "If the fuel line separates, the engine may stall, increasing the risk of a crash. In addition, a fuel line separation increases the risk of an engine compartment fire and injury.",
+    "remedy": "Chrysler will notify owners, and dealers will inspect and, as necessary, replace the fuel line, free of charge. The recall began February 23, 2018. Owners may contact Chrysler customer service at 1-800-853-1403. Chrysler's number for this recall is U02.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 858,
+  "crashes": 42,
+  "fires": 10,
+  "injuries": 33,
+  "deaths": 0,
+  "latestFiled": "2026-11-18",
+  "top": [
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 339,
+    "crashes": 5,
+    "fires": 6,
+    "injuries": 3,
+    "deaths": 0
+   },
+   {
+    "component": "ENGINE",
+    "count": 125,
+    "crashes": 6,
+    "fires": 3,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "POWER TRAIN",
+    "count": 75,
+    "crashes": 7,
+    "fires": 1,
+    "injuries": 2,
+    "deaths": 0
+   },
+   {
+    "component": "FUEL/PROPULSION SYSTEM",
+    "count": 44,
+    "crashes": 4,
+    "fires": 1,
+    "injuries": 2,
+    "deaths": 0
+   },
+   {
+    "component": "SEATS",
+    "count": 44,
+    "crashes": 0,
+    "fires": 1,
+    "injuries": 2,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 12449,
+    "description": "2018 Jeep Grand Cherokee SUV 2WD",
+    "overall": 4,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 3,
+    "rolloverRiskPct": 20.4
+   },
+   {
+    "vehicleId": 12448,
+    "description": "2018 Jeep Grand Cherokee SUV 4WD",
+    "overall": 4,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 16.9
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-23T13:50:28.854Z"
+}

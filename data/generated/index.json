@@ -1,0 +1,112 @@
+[
+ {
+  "year": 2019,
+  "make": "Honda",
+  "model": "CR-V",
+  "file": "2019-honda-cr-v.json",
+  "recalls": 8,
+  "complaints": 1113,
+  "overall": 5,
+  "indexable": true,
+  "fetchedAt": "2026-11-23T13:50:02.338Z"
+ },
+ {
+  "year": 2019,
+  "make": "Toyota",
+  "model": "RAV4",
+  "file": "2019-toyota-rav4.json",
+  "recalls": 7,
+  "complaints": 891,
+  "overall": 5,
+  "indexable": true,
+  "fetchedAt": "2026-11-23T13:50:06.604Z"
+ },
+ {
+  "year": 2018,
+  "make": "Ford",
+  "model": "F-150",
+  "file": "2018-ford-f-150.json",
+  "recalls": 19,
+  "complaints": 110,
+  "overall": 5,
+  "indexable": true,
+  "fetchedAt": "2026-11-23T13:50:10.504Z"
+ },
+ {
+  "year": 2019,
+  "make": "Chevrolet",
+  "model": "Silverado 1500",
+  "file": "2019-chevrolet-silverado-1500.json",
+  "recalls": 10,
+  "complaints": 1115,
+  "overall": 5,
+  "indexable": true,
+  "fetchedAt": "2026-11-23T13:50:14.222Z"
+ },
+ {
+  "year": 2018,
+  "make": "Toyota",
+  "model": "Camry",
+  "file": "2018-toyota-camry.json",
+  "recalls": 8,
+  "complaints": 761,
+  "overall": 5,
+  "indexable": true,
+  "fetchedAt": "2026-11-23T13:50:18.185Z"
+ },
+ {
+  "year": 2019,
+  "make": "Honda",
+  "model": "Civic",
+  "file": "2019-honda-civic.json",
+  "recalls": 4,
+  "complaints": 345,
+  "overall": 5,
+  "indexable": true,
+  "fetchedAt": "2026-11-23T13:50:20.880Z"
+ },
+ {
+  "year": 2018,
+  "make": "Nissan",
+  "model": "Rogue",
+  "file": "2018-nissan-rogue.json",
+  "recalls": 3,
+  "complaints": 609,
+  "overall": 4,
+  "indexable": true,
+  "fetchedAt": "2026-11-23T13:50:24.913Z"
+ },
+ {
+  "year": 2018,
+  "make": "Jeep",
+  "model": "Grand Cherokee",
+  "file": "2018-jeep-grand-cherokee.json",
+  "recalls": 11,
+  "complaints": 858,
+  "overall": 4,
+  "indexable": true,
+  "fetchedAt": "2026-11-23T13:50:28.854Z"
+ },
+ {
+  "year": 2021,
+  "make": "Tesla",
+  "model": "Model 3",
+  "file": "2021-tesla-model-3.json",
+  "recalls": 22,
+  "complaints": 680,
+  "overall": 5,
+  "indexable": true,
+  "fetchedAt": "2026-11-23T13:50:32.066Z"
+ },
+ {
+  "year": 2020,
+  "make": "Ford",
+  "model": "Explorer",
+  "file": "2020-ford-explorer.json",
+  "recalls": 33,
+  "complaints": 1260,
+  "overall": 5,
+  "indexable": true,
+  "fetchedAt": "2026-11-23T13:50:36.305Z"
+ }
+]
