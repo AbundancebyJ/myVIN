@@ -20,33 +20,25 @@ export function RecallTable({ status, items, name }: { status: DataStatus; items
     return <p className="notice notice-ok">NHTSA lists no recall campaigns for the {name}.</p>;
   }
   return (
-    <table className="recall-table">
-      <caption className="sr-only">Recall campaigns for the {name}, newest first</caption>
-      <thead>
-        <tr>
-          <th scope="col">Date</th>
-          <th scope="col">Component</th>
-          <th scope="col">What&rsquo;s wrong</th>
-          <th scope="col">Risk &amp; fix</th>
-        </tr>
-      </thead>
-      <tbody>
-        {items.map((r) => (
-          <tr key={r.campaign}>
-            <td data-label="Date">
-              <span className="nowrap">{formatDate(r.date)}</span>
-              <span className="campaign">#{r.campaign}</span>
-              {(r.parkIt || r.parkOutside) && (
-                <span className="badge badge-danger">{r.parkIt ? "Do not drive" : "Park outside"}</span>
-              )}
-              {r.overTheAir && <span className="badge">Over-the-air fix</span>}
-            </td>
-            <td data-label="Component" className="component">
-              {prettyComponent(r.component)}
-            </td>
-            <td data-label="What's wrong">{r.summary}</td>
-            <td className="recall-more">
-              <details>
+    <ol className="recall-list" aria-label={`Recall campaigns for the ${name}, newest first`}>
+      {items.map((r) => (
+        <li key={r.campaign} className="recall">
+          <div className="recall-meta">
+            <span className="recall-date">{formatDate(r.date)}</span>
+            <span className="recall-id mono">
+              <span className="sr-only">Campaign </span>
+              {r.campaign}
+            </span>
+            {(r.parkIt || r.parkOutside) && (
+              <span className="badge badge-danger">{r.parkIt ? "Do not drive" : "Park outside"}</span>
+            )}
+            {r.overTheAir && <span className="badge">Over-the-air fix</span>}
+          </div>
+          <div className="recall-body">
+            <p className="recall-component">{prettyComponent(r.component)}</p>
+            <p className="recall-summary">{r.summary}</p>
+            {(r.consequence || r.remedy) && (
+              <details className="recall-more">
                 <summary>Risk &amp; fix</summary>
                 {r.consequence && (
                   <p>
@@ -59,10 +51,10 @@ export function RecallTable({ status, items, name }: { status: DataStatus; items
                   </p>
                 )}
               </details>
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+            )}
+          </div>
+        </li>
+      ))}
+    </ol>
   );
 }

@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { ThemeToggle, THEME_INIT_SCRIPT } from "@/components/ThemeToggle";
+import { plexMono, plexSans } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,15 +19,20 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  viewportFit: "cover",
+  // Matches the navy header band so the browser chrome blends into it.
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0f1419" },
+    { media: "(prefers-color-scheme: light)", color: "#10213a" },
+    { media: "(prefers-color-scheme: dark)", color: "#070c13" },
   ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${plexSans.variable} ${plexMono.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body>
         <a href="#main" className="skip-link">
           Skip to content
@@ -33,15 +40,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="site-header no-print">
           <div className="wrap header-inner">
             <Link href="/" className="logo">
-              <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z" />
-                <path d="m9 12 2 2 4-4" />
+              <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2.5 4.5 5.4v5.8c0 4.7 3.2 8.8 7.5 10.3 4.3-1.5 7.5-5.6 7.5-10.3V5.4z" />
+                <path d="m8.8 12 2.2 2.2 4.2-4.4" />
               </svg>
-              {SITE_NAME}
+              <span>{SITE_NAME}</span>
             </Link>
-            <nav aria-label="Main">
-              <Link href="/recalls/">Recalls by model</Link>
+            <nav aria-label="Main" className="header-nav">
+              <Link href="/recalls/">Recalls</Link>
               <Link href="/about/">About</Link>
+              <ThemeToggle />
             </nav>
           </div>
         </header>
@@ -49,14 +57,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         <footer className="site-footer">
-          <div className="wrap">
+          <div className="wrap footer-inner">
             <nav aria-label="Footer" className="footer-links no-print">
+              <Link href="/recalls/">Recalls by model</Link>
               <Link href="/about/">About</Link>
               <Link href="/contact/">Contact</Link>
               <Link href="/privacy/">Privacy</Link>
               <Link href="/terms/">Terms</Link>
             </nav>
-            <p className="small muted">
+            <p className="small muted footer-note">
               Data from NHTSA public APIs. Not affiliated with NHTSA or any vehicle manufacturer. Always confirm recall
               repair status with your VIN at nhtsa.gov/recalls.
             </p>
