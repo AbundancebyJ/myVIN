@@ -62,6 +62,15 @@ Use NHTSA's recall name in `model`. If vPIC spells it differently, add `"vpicMod
 - Make and model hub pages are `noindex` until they link to at least 2 children. With the seed list, each model has only one year, so model hubs are noindex for now.
 - Each vehicle page carries a unique title, description and canonical URL, plus `BreadcrumbList` and `FAQPage` JSON-LD. The FAQ is also visible on the page.
 
+## Design
+
+- **Themes:** all colors are tokens at the top of `app/globals.css`. Light lives on `:root` and dark on `:root[data-theme="dark"]`; a copy under `prefers-color-scheme` covers visitors without JS. When you add a color, define it in both blocks.
+- **Theme toggle:** `components/ThemeToggle.tsx`. An inline script in `<head>` sets `data-theme` before first paint, so the page never flashes the wrong theme. The site follows the OS until the visitor picks a theme; picking the one that matches the OS clears the saved choice.
+- **Fonts:** IBM Plex Sans for all UI text and Plex Mono for data only (VINs, campaign numbers). Both are self-hosted from npm packages via `app/fonts.ts`, so there are no third-party font requests.
+- **Breakpoints:** mobile-first at 640 / 768 / 1024px. At 1024px and up, report pages switch to a sticky sidebar beside the main column.
+- **VIN readout:** `components/VinReadout.tsx` shows the VIN as 17 cells grouped into maker / vehicle / check digit / year-plant-serial, and flags bad characters and a failed check digit while the visitor types.
+- **Print:** `@media print` in `globals.css` hides navigation and ads, expands every "Risk & fix" section, and switches to black and white.
+
 ## Ads
 
 `components/AdSlot.tsx` renders empty, zero-height slots. When AdSense is approved, give `.ad-slot` a fixed `min-height` per unit so layout doesn't shift, add the AdSense script, and update the Advertising section of the privacy policy (a consent banner is needed for EEA/UK visitors).
