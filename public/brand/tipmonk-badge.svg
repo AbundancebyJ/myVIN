@@ -75,12 +75,6 @@
     <path d="M402 199 L400 208" stroke="#5E4838" stroke-width="3" stroke-linecap="round"/>
     <path d="M380 212 L382 220 L392 220 L392 211 Z" fill="#fff" stroke="#5E4838" stroke-width="2.5" stroke-linejoin="round"/>
     <path d="M362 210 Q382 216 400 208 Q406 204 408 198" fill="none" stroke="#5E4838" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- round glasses -->
-    <circle cx="306" cy="166" r="30" fill="#fff" fill-opacity=".14" stroke="#5E4838" stroke-width="6"/>
-    <ellipse cx="374" cy="164" rx="21" ry="28" fill="#fff" fill-opacity=".14" stroke="#5E4838" stroke-width="6"/>
-    <path d="M336 162 Q344 156 353 160" fill="none" stroke="#5E4838" stroke-width="5" stroke-linecap="round"/>
-    <path d="M276 160 L256 150" stroke="#5E4838" stroke-width="5" stroke-linecap="round"/>
-    <path d="M292 150 L314 176 M366 146 L380 166" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".7"/>
   </g>
   <g transform="rotate(-8 330 312)">
     <rect x="292" y="268" width="76" height="88" rx="7" fill="#A8DCCB" stroke="#5E4838" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>

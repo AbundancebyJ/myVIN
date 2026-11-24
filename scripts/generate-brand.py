@@ -23,7 +23,7 @@ o = f'stroke="{C["line"]}" stroke-width="{SW}" stroke-linejoin="round" stroke-li
 thin = f'stroke="{C["line"]}" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"'
 
 def head():
-    """3/4 view (~45 deg to the right), half-lidded side glance, round glasses, smirk."""
+    """3/4 view (~45 deg to the right), half-lidded side glance, raised brow, smirk."""
     sil = [
         '<ellipse cx="312" cy="168" rx="92" ry="80"/>',
         '<ellipse cx="370" cy="198" rx="46" ry="36"/>',   # muzzle pushes out on the facing side
@@ -68,12 +68,6 @@ def head():
     <path d="M402 199 L400 208" stroke="{C["line"]}" stroke-width="3" stroke-linecap="round"/>
     <path d="M380 212 L382 220 L392 220 L392 211 Z" fill="#fff" stroke="{C["line"]}" stroke-width="2.5" stroke-linejoin="round"/>
     <path d="M362 210 Q382 216 400 208 Q406 204 408 198" fill="none" stroke="{C["line"]}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- round glasses -->
-    <circle cx="306" cy="166" r="30" fill="#fff" fill-opacity=".14" stroke="{C["line"]}" stroke-width="6"/>
-    <ellipse cx="374" cy="164" rx="21" ry="28" fill="#fff" fill-opacity=".14" stroke="{C["line"]}" stroke-width="6"/>
-    <path d="M336 162 Q344 156 353 160" fill="none" stroke="{C["line"]}" stroke-width="5" stroke-linecap="round"/>
-    <path d="M276 160 L256 150" stroke="{C["line"]}" stroke-width="5" stroke-linecap="round"/>
-    <path d="M292 150 L314 176 M366 146 L380 166" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".7"/>
   </g>"""
 
 def wrench():
