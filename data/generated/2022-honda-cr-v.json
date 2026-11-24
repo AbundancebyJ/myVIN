@@ -1,0 +1,119 @@
+{
+ "make": "Honda",
+ "model": "CR-V",
+ "year": 2022,
+ "nhtsaModel": "CR-V",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "26V332000",
+    "date": "2026-05-22",
+    "component": "AIR BAGS:SENSOR:OCCUPANT CLASSIFICATION:FRONT PASSENGER",
+    "summary": "Honda (American Honda Motor Co.) is recalling certain 2018-2021, 2023 Acura TLX, 2019-2024 RDX, 2017-2020, 2022-2026 MDX, 2017-2021, 2023, 2025 Honda Ridgeline, 2017-2022 Pilot, 2019-2021 Passport, 2018-2026 Odyssey, 2019-2022 Insight, 2019-2021 HR-V, 2018-2020 Fit, 2020-2022 CR-V Hybrid, 2017-2022 CR-V, 2017-2018, 2021 Civic Type R, 2017-2021 Civic hatchback, 2016-2020 Civic coupe, 2016-2022 Civic, 2017-2022 Accord Hybrid, and 2016-2022 Accord vehicles. The front passenger seat weight sensor may crack and short circuit, which can cause the air bags to deploy unintentionally during a crash.",
+    "consequence": "Air bags that deploy unintentionally during a crash increase the risk of injury.",
+    "remedy": "Dealers will replace the seat weight sensors, free of charge. Owner notification letters were mailed July 7, 2026. Owners may contact Honda's customer service at 1-888-234-2138. Honda's numbers for this recall are BOL, WO9, OOA, WOM, XOH, NOC, POD, BOE, UOF, POB, EOG, AOI, QO8, TOJ, DO7, and SOK. This recall expands previous NHTSA recall number 24V064. Vehicle Identification Numbers (VINs) involved in this recall will be searchable on NHTSA.gov beginning May 29, 2026.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "23V858000",
+    "date": "2023-12-19",
+    "component": "FUEL SYSTEM, GASOLINE:DELIVERY:FUEL PUMP",
+    "summary": "Honda (American Honda Motor Co.) is recalling certain 2013-2023 Honda Accord, Civic Coupe, Civic Sedan, Civic Hatchback, Civic Type R, CR-V, HR-V, Ridgeline, Odyssey, Acura ILX, MDX, MDX Hybrid, RDX, RLX, TLX, 2019-2022 Honda Insight, Passport, 2020 Honda CR-V Hybrid, 2018-2019 Honda Clarity PHEV, Fit, and 2015-2020 Honda Accord Hybrid, Pilot, Acura NSX vehicles. The fuel pump inside the fuel tank may fail.",
+    "consequence": "Fuel pump failure can cause an engine stall while driving, increasing the risk of a crash.",
+    "remedy": "Dealers will replace the fuel pump module, free of charge. Owner letters were mailed September 6, 2024. Owners may contact Honda customer service at 1-888-234-2138. Honda's numbers for this recall are KGC and KGD. This recall is an expansion of NHTSA recall numbers 21V-215 and 20V-314.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "23V524000",
+    "date": "2023-07-27",
+    "component": "EQUIPMENT:OTHER:LABELS",
+    "summary": "Honda (American Honda Motor Co.) is recalling certain 2017, 2020, and 2022 CR-V vehicles. The certification label on the driver's side door states incorrect Gross Vehicle Weight Rating (GVWR), Gross Axle Weight Rating (GAWR), and tire size information. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 110, \"Tire Selection and Rims.\"",
+    "consequence": "An incorrectly sized tire may cause premature tread wear, or a tire blow out, increasing the risk of a crash.",
+    "remedy": "Dealers will install a new corrected label, free of charge. Owner notification letters were mailed September 18, 2023. Owners may contact Honda customer service at 1-888-234-2138. Honda's number for this recall is CF7.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 273,
+  "crashes": 5,
+  "fires": 1,
+  "injuries": 7,
+  "deaths": 0,
+  "latestFiled": "2026-11-18",
+  "top": [
+   {
+    "component": "STEERING",
+    "count": 145,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "FORWARD COLLISION AVOIDANCE",
+    "count": 45,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 3,
+    "deaths": 0
+   },
+   {
+    "component": "ENGINE",
+    "count": 20,
+    "crashes": 1,
+    "fires": 1,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 16,
+    "crashes": 0,
+    "fires": 1,
+    "injuries": 1,
+    "deaths": 0
+   },
+   {
+    "component": "SERVICE BRAKES",
+    "count": 15,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 16485,
+    "description": "2022 Honda CR-V SUV AWD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 16.4
+   },
+   {
+    "vehicleId": 16479,
+    "description": "2022 Honda CR-V SUV FWD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 16.4
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:54:53.779Z"
+}

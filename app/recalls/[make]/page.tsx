@@ -47,7 +47,10 @@ export default async function MakeHub({ params }: { params: Promise<Params> }) {
               <strong>
                 {name} {m.name}
               </strong>
-              <span>{m.years.map((y) => y.year).join(", ")}</span>
+              <span>
+                {Math.min(...m.years.map((y) => y.year))}–{Math.max(...m.years.map((y) => y.year))} ·{" "}
+                {m.years.length} model years
+              </span>
             </Link>
           </li>
         ))}

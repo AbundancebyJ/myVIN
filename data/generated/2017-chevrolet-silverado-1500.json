@@ -1,0 +1,199 @@
+{
+ "make": "Chevrolet",
+ "model": "Silverado 1500",
+ "year": 2017,
+ "nhtsaModel": "Silverado 1500",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "26V611000",
+    "date": "2026-09-24",
+    "component": "AIR BAGS:SIDE/WINDOW:CURTAIN:INFLATOR",
+    "summary": "General Motors, LLC (GM) is recalling certain 2016 Chevrolet Silverado 2500/3500, GMC Sierra 2500/3500 vehicles, and 2016-2017 Chevrolet Silverado 1500 and GMC Sierra 1500 vehicles. The left-side or right-side roof rail air bag (RRAB) inflator end cap may detach from the inflator or the inflator sidewall may rupture.",
+    "consequence": "A detached end cap or inflator rupture can allow compressed gas to escape and project the end cap or fragments of the inflator into the vehicle, increasing the risk of injury.",
+    "remedy": "Dealers will replace both RRAB modules, free of charge. Owner notification letters were mailed October 21, 2026. Owners may contact GMC customer service at 1-888-988-7267 or Chevrolet customer service at 1-800-222-1020. GM's number for this recall is N262569920. Vehicle Identification Numbers (VINs) involved in this recall became searchable on NHTSA.gov on September 24, 2026.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V761000",
+    "date": "2019-10-24",
+    "component": "SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION CONTROL/ELECTRONIC LIMITED SLIP:WHEEL SPEED SENSOR/TONE RING",
+    "summary": "General Motors LLC (GM) is recalling certain 2015-2020 Chevrolet Suburban, Tahoe, and GMC Yukon, and 2014-2018 Chevrolet Silverado 1500 and GMC Sierra 1500 vehicles equipped with a 5.3-liter engine, a 3.08-ratio rear axle and four-wheel drive. If a wheel-speed sensor fails, while the vehicle is traveling between 41 and 60 mph in four-wheel or automatic mode, the Electronic-Brake Control Module (EBCM) software may activate the driveline-protection system.",
+    "consequence": "Unintended activation of the driveline-protection system will cause unintended braking on the wheel on the opposite side of the failed sensor, causing the vehicle to pull to one side unexpectedly, increasing the risk of a crash.",
+    "remedy": "GM will notify owners, and dealers will reprogram the EBCM, free of charge. The recall began December 11, 2019. Owners may contact Chevrolet customer service at 1-800-630-2438 or GMC customer service at 1-800-462-8782. GM's number for this recall is N192261050.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V645000",
+    "date": "2019-09-06",
+    "component": "SERVICE BRAKES, HYDRAULIC:POWER ASSIST:VACUUM",
+    "summary": "General Motors LLC (GM) is recalling certain 2015-2017 Cadillac Escalade, 2014-2018 Chevrolet Silverado, GMC Sierra, 2015-2018 Chevrolet Suburban, Tahoe, GMC Yukon vehicles. The amount of vacuum created by the vacuum pump may decrease over time.",
+    "consequence": "As the vacuum level drops, the brake assist decreases, increasing braking effort, extending the distance required to stop the vehicle, thereby increasing the risk of a crash.",
+    "remedy": "GM will notify owners, and dealers will reprogram the Electronic Brake Control Module, free of charge. The recall began October 8, 2019. Owners may contact Chevrolet customer service at 1-800-630-2438, Cadillac customer service at 1-800-458-8006 or GMC customer service at 1-800-462-8782. GM's number for this recall is N192268490.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "17V487000",
+    "date": "2017-08-03",
+    "component": "CHILD SEAT:TETHER: CONNECTOR/CLIP",
+    "summary": "General Motors LLC (GM) is recalling certain 2017 Chevrolet Silverado 1500, and GMC Sierra 1500 trucks. The owner's manual for the affected vehicles may be missing instructions on how to use the tether anchorage and child restraint anchorage systems. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 225, \"Child Restraint Anchorage Systems.\"",
+    "consequence": "If the instructions are missing from the owner's manual, the child seat may be installed incorrectly and not be properly secured, increasing the risk of injury in a crash.",
+    "remedy": "GM will notify owners, and dealers will provide a corrected insert for the owners manual, free of charge. The recall began on September 25, 2017. Owners may contact GM customer service at 1-800-222-1020 (Chevrolet), or 1-800-462-8782 (GMC). GM's number for this recall is 17307.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "17V437000",
+    "date": "2017-07-10",
+    "component": "AIR BAGS:FRONTAL",
+    "summary": "General Motors LLC (GM) is recalling certain model year 2014-2016 Buick Lacrosse and Chevrolet Spark EV, Caprice PPV and SS vehicles, 2014-2017 Buick Encore and Chevrolet Corvette, Silverado 1500 and GMC Sierra 1500 vehicles, 2015-2016 Cadillac Escalade and Escalade ESV, Chevrolet Tahoe, Trax, Suburban and Silverado 2500 and 3500 and GMC Yukon and Yukon XL vehicles, and 2015-2017 GMC Sierra HD 2500 and 3500 vehicles. While being previously remedied for recall 16V-651, the affected vehicles may not have received the complete software update necessary to remedy the recall condition. Without the update, certain driving conditions may cause the air bag sensing and diagnostic module (SDM) software to activate a diagnostic test. During this test, deployment of the frontal air bags and the seat belt pretensioners would not occur in the event of a crash.",
+    "consequence": "A failure of the front air bags or seat belt pretensioners to deploy in the event of a crash necessitating deployment increases the risk of injury to the driver and front passenger.",
+    "remedy": "GM will notify owners, and dealers will reflash the SDM software. Vehicles that have had a previous air bag deployment will have the SDM replaced. These repairs will be performed free of charge. The recall began on August 4, 2017. Owners may contact Buick customer service at 1-800-521-7300, Cadillac customer service at 1-800-458-8006, Chevrolet customer service at 1-800-222-1020, or GMC customer service at 1-800-462-8782. GM's number for this recall is 17287.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "16V651000",
+    "date": "2016-09-08",
+    "component": "AIR BAGS:FRONTAL",
+    "summary": "General Motors LLC (GM) is recalling certain model year 2015-2017 Chevrolet Silverado 2500 HD, 3500 HD, Tahoe, Suburban, GMC Sierra 2500 HD and 3500 HD, GMC Yukon, GMC Yukon XL, Cadillac Escalade and Cadillac Escalade ESV vehicles and 2014-2017 Chevrolet Corvette, Silverado 1500, Trax, Caprice Police Pursuit Vehicle, GMC Sierra 1500, Buick Encore, and 2014-2016 Buick Lacrosse, Chevrolet Spark EV and SS vehicles. In the affected vehicles, certain driving conditions may cause the air bag sensing and diagnostic module (SDM) software to activate a diagnostic test. During this test, deployment of the frontal air bags and the seat belt pretensioners would not occur in the event of a crash.",
+    "consequence": "A failure of the front air bags or seat belt pretensioners to deploy in the event of a crash necessitating deployment increases the risk of injury to the driver and front passenger.",
+    "remedy": "GM will notify owners, and dealers will reflash the SDM software. Vehicles that have had a previous air bag deployment will have the SDM replaced. These repairs will be performed free of charge. The recall began on October 13, 2016. Owners may contact Buick customer service at 1-800-521-7300, Cadillac customer service at 1-800-458-8006, Chevrolet customer service at 1-800-222-1020, or GMC customer service at 1-800-462-8782. GM's number for this recall is 16007.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "16V256000",
+    "date": "2016-04-28",
+    "component": "SUSPENSION:FRONT:CONTROL ARM",
+    "summary": "General Motors LLC (GM) is recalling certain model year 2016-2017 Chevrolet Silverado 1500 and 2016 Cadillac Escalade, Cadillac Escalade ESV, Chevrolet Suburban, Chevrolet Tahoe, GMC Sierra, GMC Yukon and GMC Yukon XL vehicles. The front upper control arms may have inadequate welds near the control arm bushing.",
+    "consequence": "Inadequate welds may allow the control arm to separate from the bushing, compromising steering and increasing the risk of a crash.",
+    "remedy": "GM will notify owners, and dealers will replace the left and right front upper control arms and realign the vehicle, free of charge. The recall began on May 18, 2016. Until the repairs have been made, owners are advised not to drive their vehicles. Owners may contact Chevrolet customer service at 1-800-222-1020, Cadillac customer service at 1-800-458-8006, or GMC customer service at 1-800-462-8782. GM's number for this recall is 42190.",
+    "parkIt": true,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 842,
+  "crashes": 49,
+  "fires": 15,
+  "injuries": 21,
+  "deaths": 0,
+  "latestFiled": "2026-11-17",
+  "top": [
+   {
+    "component": "POWER TRAIN",
+    "count": 224,
+    "crashes": 1,
+    "fires": 2,
+    "injuries": 1,
+    "deaths": 0
+   },
+   {
+    "component": "SERVICE BRAKES",
+    "count": 206,
+    "crashes": 21,
+    "fires": 0,
+    "injuries": 5,
+    "deaths": 0
+   },
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 133,
+    "crashes": 1,
+    "fires": 12,
+    "injuries": 2,
+    "deaths": 0
+   },
+   {
+    "component": "ENGINE",
+    "count": 131,
+    "crashes": 0,
+    "fires": 2,
+    "injuries": 2,
+    "deaths": 0
+   },
+   {
+    "component": "STEERING",
+    "count": 66,
+    "crashes": 5,
+    "fires": 0,
+    "injuries": 3,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 11269,
+    "description": "2017 Chevrolet Silverado 1500 PU/CC RWD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 17.9
+   },
+   {
+    "vehicleId": 11268,
+    "description": "2017 Chevrolet Silverado 1500 PU/EC RWD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 17.4
+   },
+   {
+    "vehicleId": 11267,
+    "description": "2017 Chevrolet Silverado 1500 Hybrid PU/CC RWD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 17.9
+   },
+   {
+    "vehicleId": 11266,
+    "description": "2017 Chevrolet Silverado 1500 PU/RC 4WD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 17.4
+   },
+   {
+    "vehicleId": 11265,
+    "description": "2017 Chevrolet Silverado 1500 PU/RC RWD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 17.9
+   },
+   {
+    "vehicleId": 11264,
+    "description": "2017 Chevrolet Silverado 1500 PU/CC 4WD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 17.4
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:55:07.889Z"
+}

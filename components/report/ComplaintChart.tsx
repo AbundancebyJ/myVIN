@@ -19,7 +19,16 @@ export function ComplaintChart({ data, name }: { data: ComplaintSummary; name: s
     return <p className="notice">NHTSA has no complaint records filed under the {name}.</p>;
   }
   if (data.total === 0) {
-    return <p className="notice notice-ok">NHTSA has no owner complaints on file for the {name}.</p>;
+    return (
+      <p className="notice">
+        NHTSA&rsquo;s complaint search returns no owner complaints for the {name}. For a widely sold model this usually
+        means complaints were filed under a different model name, not that there are none. Search{" "}
+        <a href="https://www.nhtsa.gov/recalls" rel="noopener" target="_blank">
+          nhtsa.gov
+        </a>{" "}
+        to be sure.
+      </p>
+    );
   }
   const max = Math.max(1, ...data.top.map((t) => t.count));
   return (

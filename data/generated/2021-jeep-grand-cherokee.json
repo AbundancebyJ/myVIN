@@ -1,0 +1,218 @@
+{
+ "make": "Jeep",
+ "model": "Grand Cherokee",
+ "year": 2021,
+ "nhtsaModel": "Grand Cherokee",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "24V436000",
+    "date": "2024-06-13",
+    "component": "BACK OVER PREVENTION: SENSING SYSTEM: CAMERA",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2021-2022 Dodge Durango, 2021-2023 Chrysler Pacifica, Jeep Grand Cherokee L, 2022 Ram 1500, 2500, 3500, Chrysler Voyager, 2022-2023 Jeep Compass, Grand Cherokee, Wagoneer, Grand Wagoneer, and Ram Promaster vehicles. The radio software may prevent the rearview image from displaying. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 111, \"Rear Visibility.\"",
+    "consequence": "A rearview camera image that does not display decreases the driver's visibility, increasing the risk of a crash.",
+    "remedy": "Dealers will update the radio software or the software will be OTA, \"Over-The-Air,\" free of charge. Owner notification letters were mailed beginning July 9, 2024. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLC's numbers for this recall are 66B and 79B.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": true
+   },
+   {
+    "campaign": "24V132000",
+    "date": "2024-02-22",
+    "component": "SUSPENSION:FRONT:CONTROL ARM:UPPER BALL JOINT",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2021-2023 Jeep Grand Cherokee L and 2022-2023 Jeep Grand Cherokee vehicles. The upper control arm ball joint and steering knuckle may separate and cause the wheel to fall outward, resulting in a loss of vehicle control.",
+    "consequence": "A loss of vehicle control increases the risk of a crash.",
+    "remedy": "Dealers will replace the upper control arm pinch bolts, free of charge. Owner notification letters were mailed April 2, 2024. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA's number for this recall is 10B.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "23V577000",
+    "date": "2023-08-14",
+    "component": "BACK OVER PREVENTION:DISPLAY FUNCTION",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2022-2023 Jeep Grand Cherokee, 2021-2023 Jeep Grand Cherokee L, and 2022-2024 Jeep Wagoneer and Grand Wagoneer vehicles. The Central Vision Park Assist module (CVPAM) software may prevent the rearview image from displaying when the vehicle is placed in reverse. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 111, \"Rear Visibility.\"",
+    "consequence": "A rearview image that does not display while in reverse decreases the driver's visibility of the rear view, increasing the risk of injury or crash.",
+    "remedy": "Dealers will update the Central Vision Park Assist Module software, free of charge. Owner notification letters were mailed August 31, 2023. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLC's number for this recall is 56A.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "23V413000",
+    "date": "2023-06-08",
+    "component": "SUSPENSION:REAR:SPRINGS:COIL SPRINGS",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2022-2023 Jeep Grand Cherokee and 2021-2023 Jeep Grand Cherokee L vehicles. The rear coil springs may have been incorrectly installed and detach from the vehicle while driving.",
+    "consequence": "Rear coil springs that detach from the vehicle while driving increases the risk of a crash.",
+    "remedy": "Dealers will inspect and if necessary, repair the rear coil spring assemblies, free of charge. Owner notification letters were mailed June 29, 2023. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLC's number for this recall is 64A. This recall is replaced by NHTSA recall 26V051. All vehicles will need to have the new recall remedy performed.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "23V352000",
+    "date": "2023-05-18",
+    "component": "STEERING:COLUMN",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2022-2023 Jeep Grand Cherokee and 2021-2023 Jeep Grand Cherokee L vehicles. An incorrectly assembled steering column intermediate shaft may disconnect from the u-joint, and result in a loss of steering control.",
+    "consequence": "A loss of steering control increases the risk of a crash.",
+    "remedy": "Dealers will inspect and, if necessary, replace the intermediate shaft and assembly parts, free of charge. Owner notification letters were mailed June 6, 2023. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLC's number for this recall is 58A.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "22V544000",
+    "date": "2022-07-28",
+    "component": "EXTERIOR LIGHTING:TAIL LIGHTS",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2022 Jeep Grand Cherokee and 2021-2022 Jeep Grand Cherokee L vehicles. The tail light side marker assemblies may be damaged and not illuminate. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 108, \"Lamp, Reflective Devices, and Associated Equipment.\"",
+    "consequence": "A tail light side marker that does not illuminate can reduce vehicle visibility to other drivers, increasing the risk of a crash.",
+    "remedy": "Dealers will inspect and replace both body-mounted tail light assemblies, as necessary, free of charge. Owner notification letters were mailed June 8, 2023. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLC's number for this recall is Z50.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "22V284000",
+    "date": "2022-04-28",
+    "component": "ENGINE AND ENGINE COOLING:EXHAUST SYSTEM:EMISSION CONTROL:GAS RECIRCULATION VALVE (EGR VALVE)",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2021 Dodge Durango, Jeep Grand Cherokee WK, 2022 Jeep Grand Cherokee, and 2021-2022 Jeep Grand Cherokee L vehicles equipped with 3.6L engines. The exhaust gas recirculation (EGR) valve may stick open, resulting in an unexpected loss of drive power.",
+    "consequence": "An unexpected loss of drive power increases the risk of a crash.",
+    "remedy": "Dealers will replace the EGR valve assembly, free of charge. Owner notification letters were mailed June 23, 2022. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLC's number for this recall is Z31.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "22V180000",
+    "date": "2022-03-24",
+    "component": "CHILD SEAT:VEHICLE TETHER ANCHOR",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2021-2022 Jeep Grand Cherokee L vehicles. These vehicles may have been built with a missing weld from the seat back frame to the child seat tether anchorage. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 225, \"Child Restraint Anchorage Systems.\"",
+    "consequence": "A missing weld may allow the child seat tether to separate from the seat frame during a crash, increasing the risk of injury.",
+    "remedy": "Dealers will inspect and, if necessary, replace the second-row seat back frame, free of charge. Owner notification letters were mailed April 7, 2022. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US LLC's number for this recall is Z24.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "21V950000",
+    "date": "2021-12-09",
+    "component": "EXTERIOR LIGHTING:LIGHTING CONTROL MODULE:SOFTWARE",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2021 Jeep Grand Cherokee L vehicles equipped with smart lighting modules (SLM). An incomplete SLM software update may cause one or both headlights to become inoperable. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 108, \"Lamps, Reflective Devices, and Associated Equipment.\"",
+    "consequence": "Inoperable headlights can reduce visibility for the driver and oncoming traffic, increasing the risk of a crash.",
+    "remedy": "Dealers will reprogram the SLM software, free of charge. Owner notification letters were mailed December 23, 2021. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLC's number for this recall is Y72.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "21V873000",
+    "date": "2021-11-10",
+    "component": "AIR BAGS: AIR BAG/RESTRAINT CONTROL MODULE:SOFTWARE",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2021 Jeep Grand Cherokee L, 2022 Jeep Wagoneer, and Grand Wagoneer vehicles. The Occupant Restraint Controller (ORC) may have incorrect software which can disable the driver, passenger, and knee air bags without warning.",
+    "consequence": "Disabled air bags can increase the risk of injury to occupants in a crash.",
+    "remedy": "Dealers will reprogram the ORC, free of charge. Owner notification letters were mailed December 2, 2021. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLC's number for this recall is Y79.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "21V797000",
+    "date": "2021-10-14",
+    "component": "EXTERIOR LIGHTING:HEADLIGHTS",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2021 Jeep Grand Cherokee L vehicles not equipped with automatic high beams. When the master lighting switch is set to the auto position, the high beam headlights will not activate unless the master lighting switch is first changed to the 'on\" position. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 108, \"Lamps, Reflective Devices, and Associated Equipment.\"",
+    "consequence": "Difficulty activating the headlight high beams may result in reduced visibility, increasing the risk of a crash.",
+    "remedy": "Dealers will reprogram the vehicles, free of charge. Owner notification letters were mailed October 28, 2021. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLC's number for this recall is Y66.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "21V729000",
+    "date": "2021-09-21",
+    "component": "VISIBILITY:REARVIEW MIRRORS/DEVICES",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2021 Jeep Grand Cherokee L vehicles. A radio software error may prevent the rearview image from displaying. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 111, \"Rear Visibility.\"",
+    "consequence": "A rearview camera that does not display an image reduces the driver's rear view, increasing the risk of a crash.",
+    "remedy": "FCA US LLC will update the radio software, free of charge. Owner notification letters were mailed on December 28, 2021. Owners may contact FCA US LLC customer service at 1-800-853-1403. FCA US LLC's number for this recall is Y67.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 416,
+  "crashes": 20,
+  "fires": 8,
+  "injuries": 13,
+  "deaths": 0,
+  "latestFiled": "2026-11-18",
+  "top": [
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 115,
+    "crashes": 1,
+    "fires": 4,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "STEERING",
+    "count": 102,
+    "crashes": 6,
+    "fires": 0,
+    "injuries": 3,
+    "deaths": 0
+   },
+   {
+    "component": "ENGINE",
+    "count": 62,
+    "crashes": 2,
+    "fires": 1,
+    "injuries": 2,
+    "deaths": 0
+   },
+   {
+    "component": "POWER TRAIN",
+    "count": 61,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "EXTERIOR LIGHTING",
+    "count": 43,
+    "crashes": 0,
+    "fires": 1,
+    "injuries": 0,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 15501,
+    "description": "2021 Jeep Grand Cherokee SUV 4WD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 16.9
+   },
+   {
+    "vehicleId": 15472,
+    "description": "2021 Jeep Grand Cherokee SUV 2WD",
+    "overall": 4,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 3,
+    "rolloverRiskPct": 20.4
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:55:30.680Z"
+}

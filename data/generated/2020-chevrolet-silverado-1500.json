@@ -1,0 +1,254 @@
+{
+ "make": "Chevrolet",
+ "model": "Silverado 1500",
+ "year": 2020,
+ "nhtsaModel": "Silverado 1500",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "26V083000",
+    "date": "2026-02-13",
+    "component": "POWER TRAIN:AUTOMATIC TRANSMISSION:CONTROL MODULE:SOFTWARE",
+    "summary": "General Motors, LLC is recalling certain 2020 Chevrolet Silverado 2500, 3500, GMC Sierra 2500, 3500, and 2020-2022 Chevrolet Silverado 1500 and GMC Sierra 1500 vehicles that may have been repaired incorrectly under recall 24V797. The transmission control valve may fail and cause the rear wheels to lock up.",
+    "consequence": "Rear wheel lock up increases the risk of a crash.",
+    "remedy": "Dealers will inspect the vehicles and update the transmission control software, free of charge. Owner notification letters were mailed March 6, 2026. Owners may contact GMC customer service at 1-800-462-8782 or Chevrolet customer service at 1-800-222-1020. GM's number for this recall is N252516560. Vehicle Identification Numbers (VINs) involved in this recall became searchable on NHTSA.gov on February 12, 2026.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "24V797000",
+    "date": "2024-10-24",
+    "component": "POWER TRAIN:AUTOMATIC TRANSMISSION:CONTROL MODULE:SOFTWARE",
+    "summary": "General Motors, LLC (GM) is recalling certain 2020-2022 Chevrolet Silverado 1500, 2500, 3500, GMC Sierra 1500, 2500, 3500, 2021 Cadillac Escalade, Escalade ESV, Chevrolet Tahoe, Suburban, GMC Yukon, and Yukon XL vehicles equipped with diesel engines. The transmission control valve may fail and cause the rear wheels to lock-up.",
+    "consequence": "Rear wheel lock-up can increase the risk of a crash.",
+    "remedy": "Dealers will install new transmission control module software, free of charge. GM will provide a special coverage program to cover the repair of transmissions that are identified by the remedy software as containing a defective control valve. Owner notification letters were mailed December 12, 2024. Owners may contact GM customer service at 1-888-988-7267, Cadillac customer service at 1-800-458-8006, GMC customer service at GMC 1-800-462-8782 or Chevrolet customer service at 1-800-222-1020. GM's number for this recall is N242454440.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "21V985000",
+    "date": "2021-12-16",
+    "component": "TIRES:TEMPORARY/EMERGENCY SPARE TIRE",
+    "summary": "General Motors (GM) is recalling certain 2019-2021 GMC Sierra 1500 and Silverado 1500 vehicles equipped with certain accessory road tires and a 17\" spare tire. The 17\" spare tire provided with the vehicle is not compatible for use with the accessory wheels, which can cause the anti-lock brake system (ABS) to not function properly under certain conditions.",
+    "consequence": "An ABS system that does not function properly can increase the risk of a crash.",
+    "remedy": "Dealers will provide a new 17\" spare tire and wheel assembly that is compatible with the accessory wheels, free of charge. Dealers will also apply a new spare tire information label, and provide owners with an owner's manual insert clarifying which spare tire to use with the accessory road tires and with the 17\" original tires. Owner notification letters were mailed February 7, 2022. Owners may contact GM customer service at 1-800-462-8782 or GMC customer service at 1-800-462-8782. GM's number for this recall is N212346510.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "21V115000",
+    "date": "2021-02-25",
+    "component": "TIRES",
+    "summary": "General Motors LLC (GM) is recalling certain 2020 Buick Enclave, Cadillac XT4, XT5, Escalade, Escalade ESV, Chevrolet Suburban, Tahoe, Traverse, GMC Yukon, Yukon XL, 2018-2021 Chevrolet Express, GMC Savana, 2019-2020 Chevrolet Blazer, Silverado 1500, GMC Acadia, Sierra 1500, and certain Continental tires sold to the aftermarket for various model year 2018-2021 vehicles. The affected tires were cured for too long during production.",
+    "consequence": "Over cured tires may develop a break in the sidewall resulting in sudden air loss or a belt edge separation which could lead to a tread/belt loss. Either condition can cause a loss of vehicle control, increasing the risk of a crash.",
+    "remedy": "GM will notify owners, and dealers will inspect the tires, replacing them as necessary, free of charge. The recall began March 22, 2021. Owners may contact GMC customer service at 1-888-988-7267, Buick customer service at 1-866-608-8080, Chevrolet customer service at 1-800-222-1020 or Cadillac customer service at 1-800-458-8006. GM's number for this recall is N212329050.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V792000",
+    "date": "2020-12-17",
+    "component": "SEAT BELTS",
+    "summary": "General Motors, LLC (GM) is recalling certain 2019-2021 Chevrolet Silverado 1500 and GMC Sierra 1500, 2021 Chevrolet Suburban and Tahoe and GMC Yukon XL and 2020-2021 Chevrolet Silverado 2500 and 3500 and GMC Sierra 2500 and 3500 vehicles. The seat belt brackets may not be secured to the seat frame in the front-row center seating position.",
+    "consequence": "If a seat-belt bracket is not secured, the seat belt may not properly restrain an occupant in the front-row center seat position, increasing the risk of injury in a crash.",
+    "remedy": "GM will notify owners, and dealers will inspect left-side and right-side front-row center seat-belt bracket attachments and reassemble it correctly as necessary, free of charge. The recall began January 26, 2021. Owners may contact GMC customer service at 1-800-462-8782, Chevrolet customer service at 1-800-222-1020. GM's number for this recall is N202314670.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V684000",
+    "date": "2020-11-05",
+    "component": "TIRES",
+    "summary": "General Motors LLC (GM) is recalling certain 2020 Buick Enclave, Cadillac XT5, GMC Acadia and Chevrolet Traverse vehicles and 2020-2021 Chevrolet Silverado 1500, GMC Sierra 1500 vehicles. The vehicles may have been manufactured with Continental tires that were overcured.",
+    "consequence": "Overcured tires may experience a carcass break in the sidewall resulting in a sudden air loss or could develop a belt edge separation which could lead to partial or full tread/belt loss. Either condition increases the risk of a crash.",
+    "remedy": "GM will notify owners, and dealers will inspect vehicles and replace tires that have DOT number and production mold number combinations identified by Continental, free of charge. The recall began December 17, 2020. Owners may contact GMC customer service at 1-888-988-7267, Buick customer service at 1-866-608-8080, Chevrolet customer service at 1-800-222-1020 or Cadillac customer service at 1-800-458-8006. GM's number for this recall is N202319030.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V650000",
+    "date": "2020-10-22",
+    "component": "POWER TRAIN:DRIVELINE:DRIVESHAFT",
+    "summary": "General Motors LLC (GM) is recalling certain 2019-2020 Chevrolet Silverado 1500 and GMC Sierra 1500 and 2020 Chevrolet Silverado 2500 trucks. One of the driveshaft joints may not have been properly welded, causing the driveshaft to separate while the vehicle is moving.",
+    "consequence": "If the driveshaft separates, there may be a loss of propulsion, increasing the risk of crash.",
+    "remedy": "GM will notify owners, and dealers will replace the driveshaft, free of charge. The recall is expected to begin December 2020. Owners may contact Chevrolet customer service at 1-800-222-1020 or GMC customer service at 1-888-988-7267. GM's number for this recall is N202314870.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V446000",
+    "date": "2020-07-30",
+    "component": "AIR BAGS:SIDE/WINDOW:CURTAIN:INFLATOR",
+    "summary": "General Motors, LLC. (GM) is recalling certain 2020 Buick Enclave, Cadillac XT5 and XT6, Chevrolet Blazer, Silverado 1500, 2500 and 3500 and Traverse and GMC Acadia and Sierra 1500, 2500 and 3500 vehicles. The diffuser component of the Roof-Rail Air Bag (RRAB) inflator may not have been properly crimped to the inflator and could separate from the inflator during air bag deployment.",
+    "consequence": "If the diffuser separates from the inflator during deployment, RRAB performance may be degraded, increasing the risk of injury in a crash.",
+    "remedy": "GM will notify owners, and dealers will replace the suspect RRAB modules, free of charge. The recall began September 3, 2020. Owners may contact Chevrolet customer service at 1-800-630-2438, Cadillac customer service at 1-800-333-4223, or Buick customer service at 1-800-521-7300. GM's number for this recall is N202305380.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V116000",
+    "date": "2020-02-27",
+    "component": "SERVICE BRAKES, HYDRAULIC:FOUNDATION COMPONENTS:DISC:CALIPER",
+    "summary": "General Motors LLC (GM) is recalling certain 2020 Chevrolet Silverado 1500 and GMC Sierra 1500 vehicles. The bolts used to attach the front and/or rear brake calipers may have not been heat treated and may break under load.",
+    "consequence": "Broken caliper bolts can reduce brake performance or interfere with wheel rotation and increase the risk of a crash.",
+    "remedy": "GM will notify owners, and dealers will replace the brake caliper bolts, free of charge. The recall began March 23, 2020. Owners may contact Chevrolet customer service at 1-800-222-1020 or GMC customer service at 1-866-522-9559. GM's number for this recall is N202294420.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V888000",
+    "date": "2019-12-12",
+    "component": "ELECTRICAL SYSTEM:12V/24V/48V BATTERY:CABLES",
+    "summary": "General Motors LLC (GM) is recalling certain 2019-2020 Chevrolet Silverado 1500 and GMC Sierra 1500 trucks. The battery positive (B+) cable rings may have been manufactured with excessive glue, potentially causing an intermittent electrical connection between the B+ cable and alternator.",
+    "consequence": "An intermittent electrical connection between the B+ battery cable and the alternator could cause the vehicle to stall, increasing the risk of a crash. The intermittent connection could also lead to electrical arcing, which could generate sufficient heat to damage surrounding material, increasing the risk of a fire.",
+    "remedy": "GM will notify owners, and dealers will inspect for the presence of glue or other contamination at the B+ cable attachment to the alternator and clean the connection and reattach the B+ cable connection, as necessary. If arcing has damaged the cable, nut, or alternator, the dealer will replace the damaged components. All services will be performed free of charge. GM issued owners an interim notification on February 4, 2020. GM issued second notice and the recall began March 9, 2019. Owners may contact Chevrolet customer service at 1-800-222-1020 or GMC customer service at 1-888-988-7267. GM's number for this recall is N192273510.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V837000",
+    "date": "2019-11-21",
+    "component": "FUEL SYSTEM, GASOLINE:DELIVERY:FUEL PUMP",
+    "summary": "General Motors LLC (GM) is recalling certain 2020 Cadillac Escalade, Escalade ESV, Chevrolet Camaro, Silverado 1500, Suburban, Tahoe, GMC Sierra 1500, Yukon, and Yukon XL vehicles. The fuel pump may be missing a pressure regulator, allowing for over-pressurization of the fuel system.",
+    "consequence": "Over-pressurization can crack the fuel pump and cause leaks, increasing the risk of a fire in the presence of an ignition source.",
+    "remedy": "GM will notify owners, and dealers will replace the fuel pump, free of charge. The recall began December 18, 2019. Owners may contact Cadillac customer service at 1-800-333-4223, Chevrolet customer service at 1-800-222-1020, or GMC customer service at 1-888-988-7267. GM's number for this recall is N192283991.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V814000",
+    "date": "2019-11-14",
+    "component": "SEAT BELTS:PRETENSIONER",
+    "summary": "General Motors LLC (GM) is recalling certain 2019-2020 Chevrolet Silverado 1500 and GMC Sierra 1500, and 2020 Silverado 2500, Silverado 3500, Sierra 2500, and Sierra 3500 vehicles equipped with carpet floor covering. When the front seat belt pretensioners deploy, hot gas may vent through an opening in the pretensioner bracket, possibly igniting the carpet.",
+    "consequence": "A vehicle fire could result if materials ignite inside the vehicle.",
+    "remedy": "GM will notify owners, and dealers will close off the opening in the pretensioner bracket, free of charge. The recall began December 13, 2019. Owners may contact Chevrolet customer service at 1-800-222-1020 or GMC customer service at 1-888-988-7267. GM's number for this recall is N192270600.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 759,
+  "crashes": 13,
+  "fires": 10,
+  "injuries": 12,
+  "deaths": 0,
+  "latestFiled": "2026-11-17",
+  "top": [
+   {
+    "component": "ENGINE",
+    "count": 253,
+    "crashes": 0,
+    "fires": 2,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "POWER TRAIN",
+    "count": 241,
+    "crashes": 0,
+    "fires": 2,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 120,
+    "crashes": 2,
+    "fires": 8,
+    "injuries": 4,
+    "deaths": 0
+   },
+   {
+    "component": "SERVICE BRAKES",
+    "count": 106,
+    "crashes": 2,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "STEERING",
+    "count": 74,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 14385,
+    "description": "2020 Chevrolet Silverado 1500 PU/CC 4WD",
+    "overall": 4,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.8
+   },
+   {
+    "vehicleId": 14383,
+    "description": "2020 Chevrolet Silverado 1500 PU/EC 4WD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.8
+   },
+   {
+    "vehicleId": 14381,
+    "description": "2020 Chevrolet Silverado 1500 PU/RC 4WD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.8
+   },
+   {
+    "vehicleId": 14361,
+    "description": "2020 Chevrolet Silverado 1500 PU/CC 2WD",
+    "overall": 4,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 14359,
+    "description": "2020 Chevrolet Silverado 1500 PU/EC 2WD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 14357,
+    "description": "2020 Chevrolet Silverado 1500 PU/RC 2WD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:55:10.920Z"
+}

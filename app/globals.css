@@ -419,6 +419,65 @@ main.wrap { padding-top: 24px; padding-bottom: 56px; }
   .ratings-table td .risk { display: block; }
 }
 
+/* year comparison: stacked rows on phones, table from 768px */
+.compare-table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; margin-top: 8px; }
+.compare-table thead { display: none; }
+.compare-table tr { display: block; padding: 14px 0; border-top: 1px solid var(--line); }
+.compare-table tbody tr:first-child { border-top: 0; }
+.compare-table tbody th { display: block; text-align: left; font-size: 1.0625rem; font-weight: 650; margin-bottom: 6px; }
+.compare-table tbody th a { display: inline-block; padding: 4px 0; }
+.compare-table td { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 12px; padding: 4px 0; font-variant-numeric: tabular-nums; }
+.compare-table td::before { content: attr(data-label); color: var(--ink-2); font-size: 0.875rem; margin-right: auto; }
+.compare-table td .cmp-bar { flex: 0 1 60%; }
+.compare-table tr.is-current { background: var(--accent-soft); border-radius: var(--radius-sm); padding-left: 12px; padding-right: 12px; }
+.compare-table tr.is-current + tr { border-top-color: transparent; }
+.compare-table [aria-current] { color: var(--ink); }
+.cmp-bar { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.cmp-bar .bar-track { flex: 1; min-width: 40px; height: 10px; }
+.cmp-bar .bar-value { min-width: 5ch; }
+.flag { display: inline-block; font-size: 0.75rem; font-weight: 650; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.flag-high { background: var(--danger-soft); color: var(--danger); }
+.flag-low { background: var(--ok-soft); color: var(--ok); }
+@media (min-width: 768px) {
+  .compare-table thead { display: table-header-group; }
+  .compare-table tr { display: table-row; }
+  .compare-table tr.is-current { background: none; }
+  .compare-table th, .compare-table td { display: table-cell; padding: 14px 14px 14px 0; border-top: 1px solid var(--line); vertical-align: top; text-align: left; }
+  .compare-table tbody th { display: table-cell; width: 84px; }
+  .compare-table tbody th a { padding: 0; }
+  .compare-table .cmp-bar { min-height: 1.5em; }
+  .compare-table thead th { border-top: 0; font-size: 0.8125rem; font-weight: 600; color: var(--ink-2); white-space: nowrap; padding-top: 0; }
+  .compare-table tbody th { margin: 0; font-size: 1rem; }
+  .compare-table td::before { display: none; }
+  .compare-table .num { text-align: right; }
+  .compare-table thead .num { text-align: right; }
+  .compare-table td .flag { display: block; width: fit-content; margin-top: 4px; }
+  .compare-table td.num .flag { margin-left: auto; }
+  .compare-table td:nth-child(3) { width: 38%; }
+  .compare-table tr.is-current > * { background: var(--accent-soft); }
+  .compare-table tr.is-current > th { border-radius: 8px 0 0 8px; padding-left: 12px; }
+  .compare-table tr.is-current > td:last-child { border-radius: 0 8px 8px 0; }
+}
+
+/* recalls index: one row per model, year chips */
+.heading-link { color: inherit; text-decoration: none; }
+@media (hover: hover) { .heading-link:hover { color: var(--accent); text-decoration: underline; } }
+.model-rows { list-style: none; margin: 0; padding: 0; }
+.model-rows > li { padding: 12px 0; border-top: 1px solid var(--line); display: grid; gap: 8px; }
+.model-rows > li:first-child { border-top: 0; padding-top: 0; }
+@media (min-width: 768px) { .model-rows > li { grid-template-columns: 260px 1fr; align-items: center; } }
+.model-name { font-weight: 650; text-decoration: none; color: var(--ink); padding: 6px 0; }
+@media (hover: hover) { .model-name:hover { color: var(--accent); } }
+.year-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.year-chips a {
+  display: inline-grid; place-items: center; min-width: 64px; min-height: 40px; padding: 0 12px;
+  border: 1px solid var(--line-strong); border-radius: 999px; background: var(--surface);
+  color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; font-weight: 500;
+  transition: border-color 150ms, color 150ms;
+}
+@media (hover: hover) { .year-chips a:hover { border-color: var(--accent); color: var(--accent); } }
+.page-section.first { margin-top: 24px; padding-top: 0; border-top: 0; }
+
 /* seller checklist */
 .checklist { list-style: none; padding: 0; margin: 8px 0 0; }
 .checklist li { border-top: 1px solid var(--line); }
@@ -494,7 +553,7 @@ main.wrap { padding-top: 24px; padding-bottom: 56px; }
   .recall-more summary { display: none; }
   .recall { display: block; }
   .recall-meta { flex-direction: row; margin-bottom: 4px; }
-  .recall-meta, .ratings-table tr, .checklist li, .bar-chart tr { break-inside: avoid; }
+  .recall-meta, .ratings-table tr, .checklist li, .bar-chart tr, .compare-table tr { break-inside: avoid; }
   .section-title { break-after: avoid; }
   .bar { -webkit-print-color-adjust: exact; print-color-adjust: exact; background: #555; }
   a { color: #000; text-decoration: none; }

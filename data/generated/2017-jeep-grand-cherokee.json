@@ -1,0 +1,152 @@
+{
+ "make": "Jeep",
+ "model": "Grand Cherokee",
+ "year": 2017,
+ "nhtsaModel": "Grand Cherokee",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "23V411000",
+    "date": "2023-06-08",
+    "component": "ENGINE AND ENGINE COOLING",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2014-2019 Ram 1500 and 2014-2020 Jeep Grand Cherokee vehicles equipped with 3.0L Diesel engines. The crankshaft position sensor tone wheel may delaminate, causing the engine to lose its ability to synchronize the fuel injector pulses and cam shaft timing, possibly resulting in an engine stall.",
+    "consequence": "An engine stall can increase the risk of a crash.",
+    "remedy": "Dealers will update the powertrain control module software to maintain vehicle propulsion, free of charge. Interim notification letters, notifying owners of the safety risk, were mailed August 3, 2023. Some owner notification letters were mailed October 31, 2023. The remaining owner notification letters will be mailed at a future date, anticipated July 2024. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLC's number for this recall is 66A. This recall is an expansion of recall 20V-475.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "22V406000",
+    "date": "2022-06-09",
+    "component": "FUEL SYSTEM, DIESEL:DELIVERY:FUEL PUMP",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2014-2020 Jeep Grand Cherokee, and 2014-2019 Ram 1500 vehicles equipped with 3.0L diesel engines. A high pressure fuel pump (HPFP) failure may introduce internal debris into the fuel system, potentially resulting in fuel starvation.",
+    "consequence": "Fuel starvation may result in an unexpected loss of drive power, increasing the risk of a crash.",
+    "remedy": "Dealers will replace the HPFP, and inspect and replace, if necessary, additional fuel system components, free of charge. Interim notification letters informing owners of the safety risk were mailed July 21, 2022. Owner notification letters for were mailed for Jeep Grand Cherokee owners starting January 11, 2024. Owner notification letters for Ram 1500 owners were mailed March 7, 2024. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLS's number for this recall is Z46.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V699000",
+    "date": "2020-11-12",
+    "component": "ENGINE AND ENGINE COOLING:EXHAUST SYSTEM:EMISSION CONTROL:GAS RECIRCULATION VALVE (EGR VALVE)",
+    "summary": "Chrysler (FCA US LLC) is recalling certain 2014-2019 Jeep Grand Cherokee vehicles equipped with the 3.0L EcoDiesel engines. The Exhaust Gas Recirculation (EGR) cooler may crack and allow pre-heated vaporized coolant to enter the EGR system. This mixture may combust inside the intake manifold.",
+    "consequence": "Combustion in the intake manifold can increase the risk of a fire.",
+    "remedy": "FCA US LLC will notify owners, and dealers will replace the EGR cooler, free of charge. Dealers will also inspect and, as necessary, replace the intake manifold. Parts are not currently available. Owners were mailed an interim notification on December 21, 2021. A second notification will be mailed when parts are available, currently expected to be around March 11, 2021. The recall began March 11, 2021. Owners may contact FCA US LLC customer service at 1-800-853-1403. FCA US LLC's number for this recall is W79.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "18V332000",
+    "date": "2018-05-17",
+    "component": "ELECTRICAL SYSTEM:WIRING",
+    "summary": "Chrysler (FCA US LLC) is recalling certain 2014-2018 Dodge Journey, Charger and Durango, RAM 2500, 3500, 3500 Cab Chassis (more than 10,000lb), 4500 Cab Chassis and 5500 Cab Chassis, Jeep Cherokee and Grand Cherokee and Chrysler 300, 2014-2019 RAM 1500, 2015-2018 Dodge Challenger, 2015-2017 Chrysler 200, 2016-2018 RAM 3500 Cab Chassis (less than 10,000 lb), 2017-2018 Chrysler Pacifica and 2018 Jeep Wrangler vehicles. These vehicles are being recalled to address a defect that could prevent the cruise control system from disengaging. If, when using cruise control, there is a short circuit within the vehicle's wiring, the driver may not be able to shut off the cruise control either by depressing the brake pedal or manually turning the system off once it has been engaged, resulting in either the vehicle maintaining its current speed or possibly accelerating.",
+    "consequence": "If the vehicle maintains its speed or accelerates despite attempts to deactivate the cruise control, there would be an increased risk of a crash.",
+    "remedy": "Chrysler will notify owners, and dealers will inspect the software, and perform a software flash on the engine or powertrain control module, free of charge. The recall began June 4, 2018. Owners may contact Chrysler customer service at 1-800-853-1403. Note: Owners are advised to stop using cruise control until the software update has been performed. In the event that cruise control cannot be disengaged while driving, owners should firmly and steadily apply the brakes and shift the transmission to neutral, placing the vehicle in park once it has stopped.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "17E061000",
+    "date": "2017-10-19",
+    "component": "ENGINE AND ENGINE COOLING:ENGINE:GASOLINE:TURBO/SUPERCHARGER",
+    "summary": "Accessible Technologies, Inc. (ATI) is recalling certain ProCharger Superchargers, model numbers AB037A-100, AB037A-100P, and A037A-100B, sold for installation on 2012-2017 Jeep Grand Cherokee SRT8 and SRT vehicles. The supercharger mounting bracket may contact and damage the ABS line, possibly resulting in a brake fluid leak.",
+    "consequence": "A brake fluid leak may lengthen the distance needed to stop the vehicle, increasing the risk of a crash.",
+    "remedy": "ATI will notify owners and will replace the supercharger brackets, free of charge. The recall began on December 12, 2017. Owners may contact ATI customer service at 1-913-338-2886.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "16V686000",
+    "date": "2016-09-23",
+    "component": "EQUIPMENT",
+    "summary": "Chrysler (FCA US LLC) is recalling certain model year 2017 Jeep Grand Cherokee manufactured August 8, 2016 through August 16, 2016. In the affected vehicles, the rear tow hook bracket or tow eye bracket may be loose.",
+    "consequence": "If the tow bracket is loose, the bracket may detach from the vehicle while being it is being driven, possibly becoming a road hazard. If the bracket detaches during a vehicle recovery, there may be a loss of control of the towed vehicle. Either scenario increases the risk of a crash.",
+    "remedy": "Chrysler will notify owners, and dealers will confirm both tow hook bracket bolts are properly tightened, free of charge. The recall began on October 31, 2016. Owners may contact Chrysler customer service at 1-800-853-1403. Chrysler's number for this recall is S73.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 364,
+  "crashes": 26,
+  "fires": 3,
+  "injuries": 19,
+  "deaths": 0,
+  "latestFiled": "2026-08-19",
+  "top": [
+   {
+    "component": "ENGINE",
+    "count": 102,
+    "crashes": 0,
+    "fires": 1,
+    "injuries": 1,
+    "deaths": 0
+   },
+   {
+    "component": "POWER TRAIN",
+    "count": 88,
+    "crashes": 3,
+    "fires": 0,
+    "injuries": 1,
+    "deaths": 0
+   },
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 87,
+    "crashes": 2,
+    "fires": 3,
+    "injuries": 1,
+    "deaths": 0
+   },
+   {
+    "component": "FUEL/PROPULSION SYSTEM",
+    "count": 31,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "SERVICE BRAKES",
+    "count": 29,
+    "crashes": 5,
+    "fires": 0,
+    "injuries": 4,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 11350,
+    "description": "2017 Jeep Grand Cherokee SUV 2WD",
+    "overall": 4,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 3,
+    "rolloverRiskPct": 20.4
+   },
+   {
+    "vehicleId": 11349,
+    "description": "2017 Jeep Grand Cherokee SUV 4WD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 16.9
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:55:27.626Z"
+}

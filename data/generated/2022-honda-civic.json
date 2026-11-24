@@ -1,0 +1,121 @@
+{
+ "make": "Honda",
+ "model": "Civic",
+ "year": 2022,
+ "nhtsaModel": "Civic",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "26V332000",
+    "date": "2026-05-22",
+    "component": "AIR BAGS:SENSOR:OCCUPANT CLASSIFICATION:FRONT PASSENGER",
+    "summary": "Honda (American Honda Motor Co.) is recalling certain 2018-2021, 2023 Acura TLX, 2019-2024 RDX, 2017-2020, 2022-2026 MDX, 2017-2021, 2023, 2025 Honda Ridgeline, 2017-2022 Pilot, 2019-2021 Passport, 2018-2026 Odyssey, 2019-2022 Insight, 2019-2021 HR-V, 2018-2020 Fit, 2020-2022 CR-V Hybrid, 2017-2022 CR-V, 2017-2018, 2021 Civic Type R, 2017-2021 Civic hatchback, 2016-2020 Civic coupe, 2016-2022 Civic, 2017-2022 Accord Hybrid, and 2016-2022 Accord vehicles. The front passenger seat weight sensor may crack and short circuit, which can cause the air bags to deploy unintentionally during a crash.",
+    "consequence": "Air bags that deploy unintentionally during a crash increase the risk of injury.",
+    "remedy": "Dealers will replace the seat weight sensors, free of charge. Owner notification letters were mailed July 7, 2026. Owners may contact Honda's customer service at 1-888-234-2138. Honda's numbers for this recall are BOL, WO9, OOA, WOM, XOH, NOC, POD, BOE, UOF, POB, EOG, AOI, QO8, TOJ, DO7, and SOK. This recall expands previous NHTSA recall number 24V064. Vehicle Identification Numbers (VINs) involved in this recall will be searchable on NHTSA.gov beginning May 29, 2026.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "24V744000",
+    "date": "2024-10-04",
+    "component": "STEERING",
+    "summary": "Honda (American Honda Motor Co.) is recalling certain 2023-2025 Acura Integra, Civic Type R, CR-V Hybrid, CR-V, HR-V, 2022-2025 Civic, Civic Hatchback, 2024-2025 Acura Integra Type S, 2025 CR-V Fuel Cell EV, Civic Hybrid, and Civic Hatchback Hybrid vehicles. The steering gearbox assembly may have been manufactured incorrectly, which can cause excessive internal friction and lead to difficulty steering the vehicle.",
+    "consequence": "Difficulty steering can increase the risk of a crash.",
+    "remedy": "Dealers will replace the worm gear spring and redistribute or add grease as necessary, free of charge. Owner notification letters were mailed November 18, 2024. Owners may contact Honda Customer Service at 1-888-234-2138. Honda's numbers for this recall are SJS, MJU, QJT and VJV.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "24V064000",
+    "date": "2024-02-01",
+    "component": "AIR BAGS:SENSOR:OCCUPANT CLASSIFICATION:FRONT PASSENGER",
+    "summary": "Honda (American Honda Motor Co.) is recalling certain 2020-2022 Pilot, Accord, Civic sedan, HR-V, Odyssey, 2020 Civic coupe, Fit, 2021-2022 Civic hatchback, 2021 Civic Type R, Insight, 2020-2021 CR-V, CR-V Hybrid, Passport, Ridgeline, Accord Hybrid, 2020 Acura MDX, 2022 Acura MDX, 2020-2022 Acura RDX, and 2020-2021 Acura TLX vehicles. The front passenger seat weight sensor may crack and short circuit, failing to suppress the air bag as intended.",
+    "consequence": "An air bag that deploys unintentionally during a crash can increase the risk of injury.",
+    "remedy": "Dealers will replace the seat weight sensors, free of charge. Owner notification letters were mailed March 28, 2024. This is a phased recall. Owners may contact Honda customer service at 1-888-234-2138. Honda's numbers for these recalls are XHP and VHQ.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "23V704000",
+    "date": "2023-10-19",
+    "component": "STEERING:RACK AND PINION",
+    "summary": "Honda (American Honda Motor Co.) is recalling certain 2022-2024 Civic 4-door and Civic 5-door vehicles that received a replacement power steering rack as part of a service repair. The steering rack may have been incorrectly assembled, which can allow the tire to chafe against the lower suspension or tie rod end, possibly resulting in tire damage.",
+    "consequence": "A damaged tire can fail and increase the risk of a crash or injury.",
+    "remedy": "Dealers will inspect and replace the electric power steering rack, as necessary, free of charge. Owner letters were mailed January 16, 2024. Owners may contact Honda customer service at 1-888-234-2138. Honda's number for this recall is YFW.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 886,
+  "crashes": 34,
+  "fires": 3,
+  "injuries": 19,
+  "deaths": 0,
+  "latestFiled": "2026-10-27",
+  "top": [
+   {
+    "component": "STEERING",
+    "count": 734,
+    "crashes": 27,
+    "fires": 0,
+    "injuries": 9,
+    "deaths": 0
+   },
+   {
+    "component": "FORWARD COLLISION AVOIDANCE",
+    "count": 71,
+    "crashes": 4,
+    "fires": 0,
+    "injuries": 5,
+    "deaths": 0
+   },
+   {
+    "component": "LANE DEPARTURE",
+    "count": 66,
+    "crashes": 6,
+    "fires": 0,
+    "injuries": 2,
+    "deaths": 0
+   },
+   {
+    "component": "VEHICLE SPEED CONTROL",
+    "count": 42,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 1,
+    "deaths": 0
+   },
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 38,
+    "crashes": 3,
+    "fires": 0,
+    "injuries": 1,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 16478,
+    "description": "2022 Honda CIVIC 4 DR FWD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 5,
+    "rolloverRiskPct": 9.5
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:55:21.837Z"
+}

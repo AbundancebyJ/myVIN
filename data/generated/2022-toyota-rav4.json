@@ -1,0 +1,97 @@
+{
+ "make": "Toyota",
+ "model": "RAV4",
+ "year": 2022,
+ "nhtsaModel": "RAV4",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "22V519000",
+    "date": "2022-07-21",
+    "component": "AIR BAGS:SENSOR:OCCUPANT CLASSIFICATION:FRONT PASSENGER",
+    "summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2022 Rav4, Rav4 Hybrid, and Rav4 Prime vehicles. The front passenger seat may have been assembled with interference between internal parts that may cause the Occupant Classification System (OCS) sensor to incorrectly detect the occupant. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 208, \"Occupant Crash Protection.\"",
+    "consequence": "Incorrect detection of an occupant may result in improper air bag deployment during a crash, increasing the risk of injury.",
+    "remedy": "Dealers will inspect and repair the front passenger seat, as necessary, free of charge. Owner notification letters were mailed September 2, 2022. Owners may contact Toyota's customer service at 1-800-331-4331. Toyota's number for this recall is 22TA08.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 152,
+  "crashes": 14,
+  "fires": 0,
+  "injuries": 12,
+  "deaths": 2,
+  "latestFiled": "2026-11-16",
+  "top": [
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 41,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 2,
+    "deaths": 2
+   },
+   {
+    "component": "ENGINE",
+    "count": 28,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "STEERING",
+    "count": 20,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 2,
+    "deaths": 0
+   },
+   {
+    "component": "STRUCTURE",
+    "count": 19,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 2,
+    "deaths": 0
+   },
+   {
+    "component": "AIR BAGS",
+    "count": 11,
+    "crashes": 8,
+    "fires": 0,
+    "injuries": 7,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 16665,
+    "description": "2022 Toyota RAV4 SUV AWD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 15.5
+   },
+   {
+    "vehicleId": 16640,
+    "description": "2022 Toyota RAV4 SUV FWD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 15.9
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:54:59.901Z"
+}

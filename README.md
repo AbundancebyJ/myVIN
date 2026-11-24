@@ -44,7 +44,7 @@ npm run typecheck
 4. Environment variables:
    - `NEXT_PUBLIC_SITE_URL`: your domain, e.g. `https://example.com`. It drives canonical URLs, the sitemap and robots.txt. **Set it before submitting to Search Console.**
    - `NEXT_PUBLIC_CONTACT_EMAIL`: the address shown on Contact, Privacy and Terms (default: `hello@<domain>`).
-5. To keep the static pages fresh, add a Cloudflare deploy hook and call it weekly (cron, GitHub Action, etc.).
+5. Weekly data refresh: `.github/workflows/weekly-refresh.yml` calls a Cloudflare deploy hook every Monday. Create the hook (Settings > Builds > Deploy hooks, branch `main`) and save its URL as the GitHub Actions secret `CF_DEPLOY_HOOK`. The workflow file has the exact steps.
 
 ## Adding vehicles
 
@@ -54,7 +54,7 @@ Add entries to `data/vehicles.json`:
 { "year": 2020, "make": "Honda", "model": "CR-V" }
 ```
 
-Use NHTSA's recall name in `model`. If vPIC spells it differently, add `"vpicModel"`, as the Silverado entry does. Then run `npm run data` and commit `data/generated/`. Adjacent-year links and hub pages appear automatically.
+The seed list covers 2017–2022 for 10 models (60 pages). Use NHTSA's recall name in `model`. If vPIC spells it differently, add `"vpicModel"`, as the Silverado entry does. Then run `npm run data` and commit `data/generated/`. Adjacent-year links and hub pages appear automatically.
 
 ### SEO rules
 

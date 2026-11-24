@@ -1,0 +1,97 @@
+{
+ "make": "Toyota",
+ "model": "Camry",
+ "year": 2021,
+ "nhtsaModel": "Camry",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "23V865000",
+    "date": "2023-12-20",
+    "component": "AIR BAGS:SENSOR:OCCUPANT CLASSIFICATION",
+    "summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2020-2021 Avalon, Avalon Hybrid, Corolla, Highlander, Highlander Hybrid, RAV4, RAV4 Hybrid, Lexus ES350, Lexus RX350, Lexus RX450H, 2021 Sienna Hybrid, Lexus ES250, 2020-2022 Camry, Camry Hybrid, and ES300H vehicles. A short circuit may develop in the Occupant Classification System (OCS) sensor, preventing the front passenger air bag from deploying.",
+    "consequence": "An air bag that does not deploy during a crash increases the risk of injury.",
+    "remedy": "Dealers will inspect and replace the sensor as necessary, free of charge. Interim letters notifying owners of the safety risk were mailed in February 2024. Some final remedy owner letters were mailed October 31, 2024. Letters will continue to be mailed in phases through January 2026. Owners may contact Toyota customer service at 1-800-331-4331. Toyota's number for this recall is 23TB15/23TA15 Lexus 23LB03/23LA03.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 158,
+  "crashes": 21,
+  "fires": 2,
+  "injuries": 16,
+  "deaths": 1,
+  "latestFiled": "2026-10-26",
+  "top": [
+   {
+    "component": "AIR BAGS",
+    "count": 78,
+    "crashes": 11,
+    "fires": 0,
+    "injuries": 13,
+    "deaths": 0
+   },
+   {
+    "component": "SERVICE BRAKES",
+    "count": 13,
+    "crashes": 4,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "POWER TRAIN",
+    "count": 12,
+    "crashes": 2,
+    "fires": 0,
+    "injuries": 1,
+    "deaths": 0
+   },
+   {
+    "component": "FORWARD COLLISION AVOIDANCE",
+    "count": 10,
+    "crashes": 6,
+    "fires": 0,
+    "injuries": 3,
+    "deaths": 0
+   },
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 8,
+    "crashes": 2,
+    "fires": 0,
+    "injuries": 1,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 15846,
+    "description": "2021 Toyota CAMRY 4 DR AWD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 5,
+    "rolloverRiskPct": 9.9
+   },
+   {
+    "vehicleId": 15820,
+    "description": "2021 Toyota CAMRY 4 DR FWD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 5,
+    "rolloverRiskPct": 9.9
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:55:15.763Z"
+}

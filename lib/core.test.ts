@@ -93,3 +93,24 @@ test("falls back to Model + Series when the plain model has no data", async () =
   assert.equal(d.recalls.items.length, 1);
   assert.equal(d.recalls.status, "ok");
 });
+
+import { compareYears, yearRankSentence } from "./compare";
+
+function entry(year: number, recalls: number, complaints: number): any {
+  return {
+    year, make: "Ford", model: "F-150", file: "", recalls, urgentRecalls: 0, latestRecall: null,
+    complaints, crashes: 0, fires: 0, injuries: 0, deaths: 0, topComponent: null, overall: null,
+    recallStatus: "ok", indexable: true, fetchedAt: "",
+  };
+}
+
+test("year comparison flags extremes and ignores missing complaint data", () => {
+  const c = compareYears([entry(2019, 9, 78), entry(2020, 11, 63), entry(2021, 29, 0)])!;
+  const flags = Object.fromEntries(c.rows.map((r) => [r.year, r.flags]));
+  assert.deepEqual(flags[2021], ["mostRecalls"]); // 0 complaints with recalls = missing, not "fewest"
+  assert.ok(flags[2020].includes("fewestComplaints"));
+  assert.ok(flags[2019].includes("mostComplaints") && flags[2019].includes("fewestRecalls"));
+  assert.equal(c.rows.find((r) => r.year === 2021)!.complaintsMissing, true);
+  assert.match(yearRankSentence(c, 2020)!, /2nd-most recalls \(11\) and the 2nd-most owner complaints \(63\)/);
+  assert.equal(compareYears([entry(2019, 1, 1)]), null);
+});

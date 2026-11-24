@@ -7,6 +7,8 @@ import { VehicleReport } from "@/components/report/VehicleReport";
 import { VinTool } from "@/components/VinTool";
 import { PrintButton } from "@/components/PrintButton";
 import { AdSlot } from "@/components/AdSlot";
+import { YearComparison } from "@/components/YearComparison";
+import { compareYears, yearRankSentence } from "@/lib/compare";
 import { Stars } from "@/components/report/Ratings";
 import { clientCatalog, findEntry, getIndex, getVehicle } from "@/lib/data";
 import { prettyComponent } from "@/lib/nhtsa";
@@ -58,9 +60,8 @@ export default async function VehiclePage({ params }: { params: Promise<Params> 
   const { data } = found;
   const name = vehicleName(data);
   const faqs = vehicleFaq(data);
-  const siblings = findEntry(p.make, p.model).sort((a, b) => a.year - b.year);
-  const prev = siblings.find((e) => e.year === data.year - 1);
-  const next = siblings.find((e) => e.year === data.year + 1);
+  const comparison = compareYears(findEntry(p.make, p.model));
+  const rank = comparison ? yearRankSentence(comparison, data.year) : null;
 
   const stars = bestOverallRating(data);
   const recallCount = data.recalls.status === "ok" ? fmt(data.recalls.items.length) : "No data";
@@ -116,6 +117,7 @@ export default async function VehiclePage({ params }: { params: Promise<Params> 
             <a href="#ratings-h">Crash-test ratings</a>
             <a href="#questions-h">Questions for the seller</a>
             <a href="#faq-h">Common questions</a>
+            <a href="#compare-h">Other model years</a>
           </nav>
         </aside>
 
@@ -148,26 +150,22 @@ export default async function VehiclePage({ params }: { params: Promise<Params> 
             </dl>
           </section>
 
-          <nav className="report-section related" aria-label={`Other ${data.make} ${data.model} years`}>
-            <h2 className="section-title">
-              More {data.make} {data.model} reports
+          <section className="report-section related" aria-labelledby="compare-h">
+            <h2 id="compare-h" className="section-title">
+              How the {data.year} compares
             </h2>
+            {comparison ? (
+              <>
+                {rank && <p className="lede">{rank}</p>}
+                <YearComparison c={comparison} current={data.year} />
+              </>
+            ) : null}
             <div className="actions">
-              {prev && (
-                <Link className="btn btn-secondary" href={vehiclePath(prev.make, prev.model, prev.year)}>
-                  {prev.year} {prev.model}
-                </Link>
-              )}
               <Link className="btn btn-secondary" href={modelPath(data.make, data.model)}>
-                All {data.model} years
+                All {data.model} years compared
               </Link>
-              {next && (
-                <Link className="btn btn-secondary" href={vehiclePath(next.make, next.model, next.year)}>
-                  {next.year} {next.model}
-                </Link>
-              )}
             </div>
-          </nav>
+          </section>
         </div>
       </div>
 
