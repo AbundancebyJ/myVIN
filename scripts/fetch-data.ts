@@ -4,7 +4,10 @@
  * data/generated/*.json so the /recalls pages are fully static.
  *
  * If NHTSA is unreachable for a vehicle, the previously generated JSON is kept so a
- * deploy never fails (or loses pages) because of an upstream outage.
+ * deploy never fails (or loses pages) because of an upstream outage. NHTSA's outages
+ * are often slow (requests hang, then 504), so the fetch also fails fast: a health
+ * probe before starting, a breaker after 3 vehicles fail in a row, and an overall time
+ * budget (FETCH_BUDGET_MS, default 4 min) keep the build well inside Cloudflare's limit.
  *
  *   npm run data              # fetch everything
  *   npm run data -- --strict  # exit 1 on any verification/fetch failure
@@ -29,19 +32,26 @@ interface Seed {
 const ROOT = path.resolve(__dirname, "..");
 const OUT = path.join(ROOT, "data", "generated");
 const CONCURRENCY = 3;
+const REQUEST_TIMEOUT_MS = 20_000;
+const BUDGET_MS = Number(process.env.FETCH_BUDGET_MS) || 240_000;
+const BREAKER_AFTER = 3; // consecutive failed vehicles
+const deadline = Date.now() + BUDGET_MS;
+let upstreamDown: string | null = null;
+let consecutiveFailures = 0;
 const strict = process.argv.includes("--strict");
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 const fetcher: Fetcher = async (url) => {
   for (let attempt = 0; ; attempt++) {
+    if (upstreamDown) throw new Error(`skipped: ${upstreamDown}`);
     try {
-      const res = await fetch(url, { headers: { Accept: "application/json" }, signal: AbortSignal.timeout(30_000) });
+      const res = await fetch(url, { headers: { Accept: "application/json" }, signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS) });
       if (res.status >= 500 || res.status === 429) throw new Error(`HTTP ${res.status}`);
       await sleep(100); // be polite to NHTSA
       return res;
     } catch (e) {
-      if (attempt >= 3) throw e;
-      await sleep(1000 * 2 ** attempt);
+      if (attempt >= 1 || Date.now() > deadline) throw e; // one retry only
+      await sleep(1500);
     }
   }
 };
@@ -79,6 +89,8 @@ async function processSeed(seed: Seed, problems: string[]): Promise<IndexEntry |
   const target = path.join(OUT, file);
   let data: VehicleData | null = null;
   try {
+    if (upstreamDown) throw new Error(`skipped: ${upstreamDown}`);
+    if (Date.now() > deadline) throw new Error(`skipped: time budget of ${BUDGET_MS / 1000}s used up`);
     const verifyError = await verifyModel(seed);
     if (verifyError) throw new Error(verifyError);
     data = await fetchVehicleData(fetcher, {
@@ -89,6 +101,7 @@ async function processSeed(seed: Seed, problems: string[]): Promise<IndexEntry |
       displayModel: seed.model,
     });
     await writeFile(target, JSON.stringify(data, null, 1) + "\n");
+    consecutiveFailures = 0;
     const s = indexStats(data);
     console.log(
       `✓ ${label}: ${s.recalls} recalls (${data.recalls.status}), ${s.complaints} complaints, ${data.ratings.variants.length} rated variants${
@@ -98,6 +111,10 @@ async function processSeed(seed: Seed, problems: string[]): Promise<IndexEntry |
   } catch (e) {
     const msg = `${label}: ${(e as Error).message}`;
     problems.push(msg);
+    if (!upstreamDown && ++consecutiveFailures >= BREAKER_AFTER) {
+      upstreamDown = `NHTSA failed for ${BREAKER_AFTER} vehicles in a row`;
+      console.warn(`! ${upstreamDown}; keeping previous data for the rest`);
+    }
     if (existsSync(target)) {
       data = JSON.parse(await readFile(target, "utf8"));
       console.warn(`! ${msg} — keeping previous data from ${data!.fetchedAt}`);
@@ -112,6 +129,15 @@ async function main() {
   const seeds: Seed[] = JSON.parse(await readFile(path.join(ROOT, "data", "vehicles.json"), "utf8"));
   await mkdir(OUT, { recursive: true });
   const problems: string[] = [];
+
+  // Probe the recalls API once (no retries). If it's down, don't spend the build waiting on it.
+  try {
+    const res = await fetch(urls.recalls("honda", "CR-V", 2019), { signal: AbortSignal.timeout(15_000) });
+    if (res.status >= 500) upstreamDown = `NHTSA recalls API returned HTTP ${res.status}`;
+  } catch (e) {
+    upstreamDown = `NHTSA recalls API unreachable (${(e as Error).message})`;
+  }
+  if (upstreamDown) console.warn(`! ${upstreamDown}; building with the previously fetched data`);
   const results: (IndexEntry | null)[] = new Array(seeds.length).fill(null);
 
   let next = 0;
