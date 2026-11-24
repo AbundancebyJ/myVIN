@@ -160,8 +160,11 @@ main.wrap { padding-top: 24px; padding-bottom: 56px; }
 /* ---------- header / footer (navy shell band in both themes) ---------- */
 .site-header { background: var(--shell); color: var(--shell-ink); padding-top: env(safe-area-inset-top); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; }
-.logo { display: inline-flex; align-items: center; gap: 8px; color: var(--shell-ink); text-decoration: none; font-weight: 650; letter-spacing: -0.01em; min-height: 44px; white-space: nowrap; }
-.logo svg { color: #8fb4ff; flex: none; }
+.logo { display: inline-flex; align-items: center; gap: 10px; color: var(--shell-ink); text-decoration: none; min-height: 44px; white-space: nowrap; }
+.logo-badge { width: 40px; height: 40px; flex: none; display: block; }
+.logo-word { height: 24px; width: auto; flex: none; display: block; margin-top: 2px; }
+.logo-tagline { display: none; font-size: 0.8125rem; color: var(--shell-ink-2); padding-left: 12px; margin-left: 2px; border-left: 1px solid rgb(255 255 255 / 18%); }
+@media (min-width: 768px) { .logo-tagline { display: inline; } }
 @media (hover: hover) { .logo:hover { color: #fff; text-decoration: none; } }
 .header-nav { display: flex; align-items: center; gap: 0; }
 @media (min-width: 640px) { .header-nav { gap: 4px; } }

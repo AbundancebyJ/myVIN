@@ -1,4 +1,4 @@
-# VIN Safety Report
+# tipmonk: Free VIN Safety Reports
 
 A free, mobile-first site for US used-car buyers. Enter a VIN and get one page with specs, recalls, top owner complaints, NHTSA crash-test ratings and a printable "questions to ask the seller" checklist. It's a Next.js static export with two Cloudflare Pages Functions, and every piece of data comes from NHTSA's free public APIs.
 
@@ -63,6 +63,8 @@ The seed list covers 2017–2022 for 10 models (60 pages). Use NHTSA's recall na
 - Each vehicle page carries a unique title, description and canonical URL, plus `BreadcrumbList` and `FAQPage` JSON-LD. The FAQ is also visible on the page.
 
 ## Design
+
+- **Brand:** the site is called **tipmonk** ("Free VIN Safety Reports"); the name and tagline live in `lib/site.ts`. The mascot, Tip, is a chipmunk monk with a wrench and a notebook. `python3 scripts/generate-brand.py public/brand node_modules/@fontsource/fredoka/files` regenerates the badge, logo, favicon art and header wordmark; `node scripts/render-icons.cjs` then refreshes `app/icon.svg`, `app/favicon.ico` and `app/apple-icon.png`.
 
 - **Themes:** all colors are tokens at the top of `app/globals.css`. Light lives on `:root` and dark on `:root[data-theme="dark"]`; a copy under `prefers-color-scheme` covers visitors without JS. When you add a color, define it in both blocks.
 - **Theme toggle:** `components/ThemeToggle.tsx`. An inline script in `<head>` sets `data-theme` before first paint, so the page never flashes the wrong theme. The site follows the OS until the visitor picks a theme; picking the one that matches the OS clears the saved choice.
