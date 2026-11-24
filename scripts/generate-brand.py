@@ -7,143 +7,145 @@
 #
 # The wordmark is Fredoka (SIL Open Font License) converted to paths, so the SVG
 # renders identically everywhere. Edit colours (C), shapes or the slogan and re-run.
-import sys
+import sys, os
 OUT = sys.argv[1]
-import os
 os.makedirs(OUT, exist_ok=True)
-C = dict(line="#4A2C1A", fur="#DA7A3A", furShade="#B95F27", cream="#FCEBD3", creamShade="#F1D5B1",
-         stripe="#5A3520", robe="#A23E2D", robeDark="#7C2C20", robeLight="#C0563F",
-         cushion="#2457C5", cushionDark="#1B4297", cushionLight="#3C70DC",
-         bulb="#FFCB3D", bulbShade="#F2A62A", metal="#9AA3AF", blush="#F29A86",
-         bead="#7A4B27", acorn="#B9773A", cap="#5A3A22", paper="#FFF8EA", badge="#FFF4E3")
+
+# Pastel palette
+C = dict(line="#5E4838", fur="#F4B78E", furShade="#E49C70", cream="#FFF2E2", creamShade="#F3DFC6",
+         stripe="#B98463", robe="#C996A3", robeDark="#AA7886", robeLight="#E0BAC3",
+         cushion="#A9C4F0", cushionDark="#88A7DE", cushionLight="#C9DAF7",
+         blush="#F6A9A0", iris="#6B4A36", pupil="#2E2019",
+         book="#A8DCCB", bookDark="#86C6B2", page="#FFFDF7",
+         steel="#D3DCE7", steelDark="#A7B4C6", steelLight="#F1F5FA", badge="#FFF7EE")
 SW = 7
 o = f'stroke="{C["line"]}" stroke-width="{SW}" stroke-linejoin="round" stroke-linecap="round"'
 thin = f'stroke="{C["line"]}" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"'
 
+def head():
+    """3/4 view (~45 deg to the right), half-lidded side glance, round glasses, smirk."""
+    sil = [
+        '<ellipse cx="312" cy="168" rx="92" ry="80"/>',
+        '<ellipse cx="370" cy="198" rx="46" ry="36"/>',   # muzzle pushes out on the facing side
+        '<ellipse cx="264" cy="206" rx="46" ry="38"/>',   # near cheek
+        '<path d="M290 98 L292 70 L304 90 L308 62 L318 90 L330 74 L334 100 Z"/>',  # hair tuft
+    ]
+    def eye(cx, cy, rx, ry, lid):
+        # white, iris pushed toward the viewer (side glance), heavy upper lid (chic)
+        return f"""
+    <clipPath id="e{cx}"><ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}"/></clipPath>
+    <ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="#fff"/>
+    <g clip-path="url(#e{cx})">
+      <circle cx="{cx-rx*0.42:.1f}" cy="{cy+3}" r="{ry*0.62:.1f}" fill="{C["iris"]}"/>
+      <circle cx="{cx-rx*0.46:.1f}" cy="{cy+3}" r="{ry*0.32:.1f}" fill="{C["pupil"]}"/>
+      <circle cx="{cx-rx*0.22:.1f}" cy="{cy-1}" r="{ry*0.16:.1f}" fill="#fff"/>
+      <rect x="{cx-rx-2}" y="{cy-ry-2}" width="{2*rx+4}" height="{ry*lid+2:.1f}" fill="{C["fur"]}"/>
+    </g>
+    <path d="M{cx-rx-3} {cy-ry+ry*lid:.1f} Q{cx} {cy-ry+ry*lid-5:.1f} {cx+rx+3} {cy-ry+ry*lid:.1f}" fill="none" stroke="{C["line"]}" stroke-width="5" stroke-linecap="round"/>"""
+    return f"""<g>
+    <!-- ears behind the head: near ear forward, far ear tucked behind -->
+    <circle cx="352" cy="94" r="21" fill="{C["fur"]}" {o}/>
+    <circle cx="352" cy="96" r="10" fill="{C["blush"]}"/>
+    <circle cx="262" cy="102" r="27" fill="{C["fur"]}" {o}/>
+    <circle cx="262" cy="104" r="14" fill="{C["blush"]}"/>
+    <g fill="{C["line"]}" stroke="{C["line"]}" stroke-width="{SW*2}" stroke-linejoin="round">{"".join(sil)}</g>
+    <g fill="{C["fur"]}">{"".join(sil)}</g>
+    <!-- cream muzzle and near cheek -->
+    <path d="M236 206 C238 178 268 168 300 178 C326 168 372 166 402 182 C420 194 418 224 390 234 C360 248 300 252 270 244 C246 236 234 224 236 206 Z" fill="{C["cream"]}"/>
+    <!-- forehead stripe (follows the turn) -->
+    <path d="M318 96 Q326 92 334 96 L331 118 Q327 123 323 118 Z" fill="{C["stripe"]}"/>
+    {eye(306, 164, 22, 22, 0.36)}
+    {eye(374, 162, 15, 21, 0.36)}
+    <!-- brows: near one level, far one raised (clever) -->
+    <path d="M280 134 Q304 126 328 134" fill="none" stroke="{C["stripe"]}" stroke-width="8" stroke-linecap="round"/>
+    <path d="M358 124 Q374 112 392 122" fill="none" stroke="{C["stripe"]}" stroke-width="7" stroke-linecap="round"/>
+    <!-- blush -->
+    <ellipse cx="262" cy="214" rx="16" ry="8" fill="{C["blush"]}" opacity=".85"/>
+    <ellipse cx="398" cy="206" rx="10" ry="6" fill="{C["blush"]}" opacity=".85"/>
+    <!-- nose -->
+    <path d="M396 186 Q406 182 414 188 Q410 198 402 199 Q396 196 396 186 Z" fill="#C98376" {thin}/>
+    <!-- smirk with a peek of buck teeth -->
+    <path d="M402 199 L400 208" stroke="{C["line"]}" stroke-width="3" stroke-linecap="round"/>
+    <path d="M380 212 L382 220 L392 220 L392 211 Z" fill="#fff" stroke="{C["line"]}" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M362 210 Q382 216 400 208 Q406 204 408 198" fill="none" stroke="{C["line"]}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- round glasses -->
+    <circle cx="306" cy="166" r="30" fill="#fff" fill-opacity=".14" stroke="{C["line"]}" stroke-width="6"/>
+    <ellipse cx="374" cy="164" rx="21" ry="28" fill="#fff" fill-opacity=".14" stroke="{C["line"]}" stroke-width="6"/>
+    <path d="M336 162 Q344 156 353 160" fill="none" stroke="{C["line"]}" stroke-width="5" stroke-linecap="round"/>
+    <path d="M276 160 L256 150" stroke="{C["line"]}" stroke-width="5" stroke-linecap="round"/>
+    <path d="M292 150 L314 176 M366 146 L380 166" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+  </g>"""
+
+def wrench():
+    """Adjustable ("monkey") wrench, handle down, jaw up."""
+    return f"""<g transform="translate(442 196) rotate(15)">
+    <rect x="-10" y="0" width="20" height="142" rx="10" fill="{C["steel"]}" {thin}/>
+    <path d="M-4 14 V128" stroke="{C["steelLight"]}" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-12 8 C-32 2 -38 -24 -24 -42 L-14 -50 L-7 -30 Q0 -22 7 -30 L14 -50 L24 -42 C38 -24 32 2 12 8 Z" fill="{C["steel"]}" {thin}/>
+    <path d="M-20 -8 C-24 -18 -22 -30 -16 -38" fill="none" stroke="{C["steelLight"]}" stroke-width="4" stroke-linecap="round"/>
+    <rect x="-11" y="-12" width="22" height="9" rx="4.5" fill="{C["steelDark"]}" stroke="{C["line"]}" stroke-width="3"/>
+    <path d="M-5 -12 V-3 M0 -12 V-3 M5 -12 V-3" stroke="{C["line"]}" stroke-width="1.8" opacity=".55"/>
+    <circle cx="0" cy="128" r="4" fill="{C["steelDark"]}"/>
+  </g>"""
+
+def notebook():
+    return f"""<g transform="rotate(-8 330 312)">
+    <rect x="292" y="268" width="76" height="88" rx="7" fill="{C["book"]}" {thin}/>
+    <rect x="292" y="268" width="14" height="88" rx="6" fill="{C["bookDark"]}" {thin}/>
+    <rect x="318" y="286" width="38" height="24" rx="4" fill="{C["page"]}" stroke="{C["line"]}" stroke-width="3"/>
+    <path d="M324 295 H350 M324 302 H344" stroke="{C["stripe"]}" stroke-width="3" stroke-linecap="round"/>
+    <path d="M358 268 V356" stroke="{C["cream"]}" stroke-width="5"/>
+    <path d="M358 268 V356" stroke="{C["line"]}" stroke-width="1.5" opacity=".4"/>
+  </g>"""
+
 def chipmunk():
-    return f'''
+    return f"""
   <!-- cushion (zafu) -->
   <path d="M164 404 C164 384 220 374 286 374 C352 374 408 384 408 404 L408 418 C408 440 352 450 286 450 C220 450 164 440 164 418 Z" fill="{C["cushion"]}" {o}/>
   <path d="M164 404 C164 424 220 434 286 434 C352 434 408 424 408 404" fill="none" stroke="{C["cushionDark"]}" stroke-width="6"/>
-  <path d="M196 392 C230 384 330 382 372 390" fill="none" stroke="{C["cushionLight"]}" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+  <path d="M196 392 C230 384 330 382 372 390" fill="none" stroke="{C["cushionLight"]}" stroke-width="6" stroke-linecap="round" opacity=".9"/>
   <!-- tail -->
   <path d="M236 384 C154 394 104 334 112 262 C120 194 178 148 236 164 C282 176 288 234 250 250 C226 260 204 246 208 226 C188 236 180 266 188 296 C198 330 226 348 254 350 Z" fill="{C["fur"]}" {o}/>
-  <path d="M150 330 C128 296 130 240 160 204 C182 180 214 176 236 186" fill="none" stroke="{C["creamShade"]}" stroke-width="9" stroke-linecap="round" opacity=".9"/>
-  <path d="M232 204 C248 208 254 226 242 234" fill="none" stroke="{C["furShade"]}" stroke-width="6" stroke-linecap="round"/>
+  <path d="M150 330 C128 296 130 240 160 204 C182 180 214 176 236 186" fill="none" stroke="{C["cream"]}" stroke-width="10" stroke-linecap="round" opacity=".95"/>
+  <path d="M170 336 C150 300 150 252 176 222" fill="none" stroke="{C["furShade"]}" stroke-width="7" stroke-linecap="round" opacity=".7"/>
   <!-- monk's cowl, lowered behind the head (peeks out on the left) -->
   <g transform="translate(-34 26)">
   <path d="M288 196 C258 180 220 190 212 220 C208 244 224 262 250 258 C272 254 286 236 290 216 Z" fill="{C["robe"]}" {o}/>
   <path d="M282 198 C258 188 230 194 222 214 C242 222 268 216 282 198 Z" fill="{C["robeDark"]}"/>
   </g>
-  <!-- long robe covering the body, hem spreading over the cushion -->
+  <!-- long robe, hem spreading over the cushion -->
   <path d="M264 214 C216 240 198 300 204 352 C206 382 214 400 226 408 C270 416 340 414 384 404 C390 380 386 350 378 316 C370 280 354 248 330 232 Z" fill="{C["robe"]}" {o}/>
-  <path d="M240 262 C226 306 226 356 240 402 M286 352 C286 372 290 390 296 410" fill="none" stroke="{C["robeDark"]}" stroke-width="6" stroke-linecap="round"/>
-  <path d="M252 246 C244 270 240 292 240 312" fill="none" stroke="{C["robeLight"]}" stroke-width="6" stroke-linecap="round" opacity=".8"/>
-  <!-- fur at the neckline -->
-  <path d="M316 236 C330 248 342 262 348 278 C334 272 322 258 312 244 Z" fill="{C["cream"]}"/>
-  <!-- rope belt with a knot and hanging cords -->
+  <path d="M240 262 C226 306 226 356 240 402 M286 360 C286 376 290 392 296 410" fill="none" stroke="{C["robeDark"]}" stroke-width="6" stroke-linecap="round"/>
+  <path d="M252 246 C244 270 240 292 240 312" fill="none" stroke="{C["robeLight"]}" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+  <!-- rope belt, knot and cords -->
   <path d="M208 330 C256 346 332 348 378 332" fill="none" stroke="{C["line"]}" stroke-width="15" stroke-linecap="round"/>
   <path d="M208 330 C256 346 332 348 378 332" fill="none" stroke="{C["cream"]}" stroke-width="8" stroke-linecap="round"/>
-  <path d="M352 344 C350 358 352 370 346 384 M362 344 C364 358 364 370 370 382" fill="none" stroke="{C["line"]}" stroke-width="11" stroke-linecap="round"/>
-  <path d="M352 344 C350 358 352 370 346 384 M362 344 C364 358 364 370 370 382" fill="none" stroke="{C["cream"]}" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="357" cy="340" r="9" fill="{C["cream"]}" {thin}/>
-  <!-- hind foot peeking from under the hem -->
+  <path d="M262 348 C260 362 262 374 256 388 M272 348 C274 362 274 374 280 386" fill="none" stroke="{C["line"]}" stroke-width="11" stroke-linecap="round"/>
+  <path d="M262 348 C260 362 262 374 256 388 M272 348 C274 362 274 374 280 386" fill="none" stroke="{C["cream"]}" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="267" cy="343" r="9" fill="{C["cream"]}" {thin}/>
+  <!-- hind foot -->
   <path d="M330 404 C332 392 352 388 370 392 C386 396 392 406 384 412 C370 418 340 418 330 412 Z" fill="{C["fur"]}" {o}/>
   <path d="M370 400 L370 410 M379 400 L379 410" stroke="{C["line"]}" stroke-width="3.5" stroke-linecap="round"/>
-  <!-- wide sleeve -->
-  <path d="M292 246 C318 258 338 286 356 318 L338 340 C316 326 294 302 278 280 C272 266 278 250 292 246 Z" fill="{C["robe"]}" {o}/>
-  <path d="M338 340 L356 318" stroke="{C["robeDark"]}" stroke-width="8" stroke-linecap="round"/>
-  <!-- paws holding a scroll of tips -->
-  <g transform="rotate(-14 372 292)">
-    <rect x="336" y="262" width="62" height="58" rx="4" fill="{C["paper"]}" {thin}/>
-    <path d="M346 278 l4 4 l8 -9 M346 292 l4 4 l8 -9 M346 306 l4 4 l8 -9" fill="none" stroke="#1F7A47" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M364 279 H388 M364 293 H384 M364 307 H388" stroke="#C7AE87" stroke-width="3.5" stroke-linecap="round"/>
-    <rect x="330" y="254" width="74" height="13" rx="6.5" fill="{C["creamShade"]}" {thin}/>
-    <rect x="330" y="316" width="74" height="13" rx="6.5" fill="{C["creamShade"]}" {thin}/>
-  </g>
-  <ellipse cx="346" cy="328" rx="14" ry="11" fill="{C["fur"]}" {thin}/>
-  <ellipse cx="398" cy="316" rx="13" ry="11" fill="{C["fur"]}" {thin}/>
-  <!-- acorn prayer beads hanging from the paw -->
-  {beads()}
-  <!-- head: big, round, turned toward the viewer -->
+  <!-- near sleeve holding the notebook -->
+  <path d="M292 246 C314 258 328 286 330 318 L310 336 C296 320 286 300 278 280 C272 266 278 250 292 246 Z" fill="{C["robe"]}" {o}/>
   {head()}
-  <!-- the tip: a lightbulb idea -->
-  <g transform="translate(222 70) scale(.78)">
-    <path d="M-18 2 A20 20 0 1 1 18 2 C14 9 9 13 9 20 L-9 20 C-9 13 -14 9 -18 2 Z" fill="{C["bulb"]}" {thin}/>
-    <path d="M-6 -8 A9 9 0 0 1 4 -12" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".8"/>
-    <rect x="-10" y="20" width="20" height="12" rx="3" fill="{C["metal"]}" {thin}/>
-    <path d="M-26 -24 L-33 -31 M26 -24 L33 -31 M-34 2 H-44 M34 2 H44" stroke="{C["bulbShade"]}" stroke-width="5" stroke-linecap="round"/>
-  </g>'''
-
-def head():
-    sil = [  # chubby silhouette: head, puffed cheeks, hair tuft
-        '<ellipse cx="316" cy="170" rx="94" ry="80"/>',
-        '<ellipse cx="262" cy="206" rx="50" ry="40"/>',
-        '<ellipse cx="370" cy="204" rx="46" ry="38"/>',
-        '<path d="M296 98 L300 70 L312 92 L318 64 L326 92 L338 74 L340 100 Z"/>',
-    ]
-    eye = lambda cx, cy, rx, ry: f'''
-    <ellipse cx="{cx}" cy="{cy}" rx="{rx+9}" ry="{ry+8}" fill="{C["cream"]}"/>
-    <ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="#2B1A10"/>
-    <ellipse cx="{cx}" cy="{cy+8}" rx="{rx-7}" ry="{ry-12}" fill="#8A4A1A"/>
-    <circle cx="{cx}" cy="{cy+1}" r="{rx*0.45:.1f}" fill="#120B07"/>
-    <circle cx="{cx+rx*0.38:.1f}" cy="{cy-ry*0.4:.1f}" r="{rx*0.36:.1f}" fill="#fff"/>
-    <circle cx="{cx-rx*0.35:.1f}" cy="{cy+ry*0.45:.1f}" r="{rx*0.16:.1f}" fill="#fff" opacity=".9"/>'''
-    return f'''<g>
-    <!-- ears sit behind the head -->
-    <circle cx="380" cy="100" r="24" fill="{C["fur"]}" {o}/>
-    <circle cx="380" cy="102" r="12" fill="{C["blush"]}"/>
-    <circle cx="254" cy="104" r="28" fill="{C["fur"]}" {o}/>
-    <circle cx="254" cy="106" r="15" fill="{C["blush"]}"/>
-    <!-- outline layer then fill layer: one outline around the whole chubby shape -->
-    <g fill="{C["line"]}" stroke="{C["line"]}" stroke-width="{SW*2}" stroke-linejoin="round">{"".join(sil)}</g>
-    <g fill="{C["fur"]}">{"".join(sil)}</g>
-    <!-- cream muzzle and cheeks -->
-    <path d="M232 200 C236 170 278 160 316 174 C354 160 398 166 404 198 C410 234 372 252 316 250 C260 252 228 234 232 200 Z" fill="{C["cream"]}"/>
-    <!-- forehead stripe and brows -->
-    <path d="M309 96 Q316 92 323 96 L320 138 Q316 143 312 138 Z" fill="{C["stripe"]}"/>
-    <path d="M254 130 Q282 110 312 124 Q284 120 258 138 Z" fill="{C["stripe"]}"/>
-    <path d="M328 122 Q356 106 384 120 Q356 116 332 130 Z" fill="{C["stripe"]}"/>
-    {eye(286, 160, 22, 25)}
-    {eye(354, 158, 20, 23)}
-    <!-- blush -->
-    <ellipse cx="258" cy="214" rx="17" ry="9" fill="{C["blush"]}" opacity=".9"/>
-    <ellipse cx="380" cy="210" rx="15" ry="8" fill="{C["blush"]}" opacity=".9"/>
-    <!-- nose -->
-    <path d="M308 186 Q320 179 332 186 Q328 198 320 200 Q312 198 308 186 Z" fill="#B0604C" {thin}/>
-    <ellipse cx="316" cy="186" rx="4" ry="2.5" fill="#fff" opacity=".6"/>
-    <!-- big open smile with buck teeth -->
-    <path d="M320 200 L320 208" stroke="{C["line"]}" stroke-width="3.5" stroke-linecap="round"/>
-    <clipPath id="mouth"><path d="M290 205 Q320 254 352 203 Q320 214 290 205 Z"/></clipPath>
-    <path d="M290 205 Q320 254 352 203 Q320 214 290 205 Z" fill="#5A2418"/>
-    <ellipse cx="322" cy="233" rx="15" ry="8" fill="#E8807A" clip-path="url(#mouth)"/>
-    <path d="M290 205 Q320 254 352 203 Q320 214 290 205 Z" fill="none" {thin}/>
-    <path d="M310 210 L310 221 Q312 223 320 223 L320 211 Z M320 211 L320 223 Q328 223 330 221 L330 209 Z" fill="#fff" stroke="{C["line"]}" stroke-width="3" stroke-linejoin="round"/>
-  </g>'''
-
-def beads():
-    """A loop of beads hanging from the front paw, ending in an acorn."""
-    out = []
-    for p0, p1, p2 in (((392, 328), (386, 362), (404, 372)), ((408, 324), (422, 360), (404, 372))):
-        for i in range(1, 7):
-            t = i / 7
-            x = (1-t)**2*p0[0] + 2*(1-t)*t*p1[0] + t**2*p2[0]
-            y = (1-t)**2*p0[1] + 2*(1-t)*t*p1[1] + t**2*p2[1]
-            out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5.5" fill="{C["bead"]}" stroke="{C["line"]}" stroke-width="2.5"/>')
-    out.append(f'''<ellipse cx="404" cy="390" rx="10" ry="12" fill="{C["acorn"]}" stroke="{C["line"]}" stroke-width="3"/>
-  <path d="M392 383 Q392 372 404 372 Q416 372 416 383 Z" fill="{C["cap"]}" stroke="{C["line"]}" stroke-width="3" stroke-linejoin="round"/>''')
-    return "\n  ".join(out)
+  {notebook()}
+  <ellipse cx="312" cy="338" rx="14" ry="11" fill="{C["fur"]}" {thin}/>
+  <!-- far arm holding the monkey wrench -->
+  <path d="M362 282 C380 288 396 300 408 312 L396 332 C382 322 370 312 360 302 Z" fill="{C["robe"]}" {o}/>
+  {wrench()}
+  <ellipse cx="404" cy="322" rx="14" ry="12" fill="{C["fur"]}" {thin}/>"""
 
 def badge():
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="t">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="t">
   <title id="t">tipmonk</title>
   <defs><clipPath id="c"><circle cx="256" cy="256" r="232"/></clipPath></defs>
   <circle cx="256" cy="256" r="232" fill="{C["badge"]}"/>
-  <g clip-path="url(#c)"><g transform="translate(-24 0)">{chipmunk()}
+  <g clip-path="url(#c)"><g transform="translate(-30 4)">{chipmunk()}
   </g></g>
   <circle cx="256" cy="256" r="232" fill="none" stroke="{C["line"]}" stroke-width="14"/>
 </svg>
-'''
+"""
 open(f"{OUT}/tipmonk-badge.svg", "w").write(badge())
 print("ok")
 
@@ -180,7 +182,7 @@ def logo(slogan="FREE VIN SAFETY REPORTS"):
   <title id="t">tipmonk: {slogan.title()}</title>
   <svg x="150" y="6" width="300" height="300" viewBox="0 0 512 512">{inner}</svg>
   <path d="{word}" fill="{C["line"]}"/>
-  <path d="{tag}" fill="#8A5A36"/>
+  <path d="{tag}" fill="#9A7560"/>
 </svg>
 '''
 open(f"{OUT}/tipmonk-logo.svg", "w").write(logo())
