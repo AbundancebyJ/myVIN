@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="t">
+  <title id="t">tipmonk</title>
+  <defs><clipPath id="disc"><circle cx="256" cy="256" r="244"/></clipPath></defs>
+  <circle cx="256" cy="256" r="244" fill="#FFF3DC"/>
+  <g clip-path="url(#disc)">
+    <g transform="translate(256 286) scale(1.18) translate(-256 -200)">
+      <path d="M128 250 C112 320 100 380 96 460 L416 460 C412 380 400 320 384 250 Z" fill="#2457C5" stroke="#3B2618" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M226 300 L256 352 L286 300 Z" fill="#F8E7C9" stroke="#3B2618" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <g id="head">
+    <!-- hood -->
+    <circle cx="256" cy="188" r="148" fill="#2457C5" stroke="#3B2618" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M150 110 C175 75 215 58 256 58 C297 58 337 75 362 110" fill="none" stroke="#3C70DC" stroke-width="10" stroke-linecap="round" opacity=".55"/>
+    <!-- ear holes in the hood, then ears poking through -->
+    <ellipse cx="170" cy="76" rx="33" ry="30" fill="#15306A"/>
+    <ellipse cx="342" cy="76" rx="33" ry="30" fill="#15306A"/>
+    <circle cx="170" cy="70" r="27" fill="#C8782F" stroke="#3B2618" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="342" cy="70" r="27" fill="#C8782F" stroke="#3B2618" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="170" cy="72" r="13" fill="#F19A86"/>
+    <circle cx="342" cy="72" r="13" fill="#F19A86"/>
+    <!-- hood opening -->
+    <ellipse cx="256" cy="204" rx="131" ry="121" fill="none" stroke="#3C70DC" stroke-width="9" opacity=".8"/>
+    <ellipse cx="256" cy="204" rx="124" ry="114" fill="#15306A"/>
+    <!-- face -->
+    <ellipse cx="256" cy="212" rx="110" ry="100" fill="#C8782F" stroke="#3B2618" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- forehead stripe, flanked by cream -->
+    <path d="M228 118 Q256 110 284 118 L270 176 Q256 186 242 176 Z" fill="#F8E7C9" opacity=".9"/>
+    <path d="M247 114 Q256 111 265 114 L261 172 Q256 178 251 172 Z" fill="#3B2618"/>
+    <!-- eye stripes: cream brow band above, dark band through the eye -->
+    <path d="M238 182 C214 166 186 160 156 168 C160 158 182 146 212 150 C228 153 240 166 238 182 Z" fill="#F8E7C9"/>
+    <path d="M274 182 C298 166 326 160 356 168 C352 158 330 146 300 150 C284 153 272 166 274 182 Z" fill="#F8E7C9"/>
+    <path d="M236 200 C212 186 180 180 150 190 C152 200 176 212 236 214 Z" fill="#A45F22" opacity=".7"/>
+    <path d="M276 200 C300 186 332 180 362 190 C360 200 336 212 276 214 Z" fill="#A45F22" opacity=".7"/>
+    <!-- stuffed cheeks (chipmunk!) -->
+    <circle cx="186" cy="252" r="44" fill="#F8E7C9" stroke="#3B2618" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="326" cy="252" r="44" fill="#F8E7C9" stroke="#3B2618" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <ellipse cx="256" cy="256" rx="54" ry="40" fill="#F8E7C9"/>
+    <ellipse cx="178" cy="262" rx="19" ry="11" fill="#F19A86" opacity=".85"/>
+    <ellipse cx="334" cy="262" rx="19" ry="11" fill="#F19A86" opacity=".85"/>
+    <!-- eyes -->
+    <ellipse cx="216" cy="204" rx="16" ry="20" fill="#1D1612"/>
+    <ellipse cx="296" cy="204" rx="16" ry="20" fill="#1D1612"/>
+    <circle cx="222" cy="196" r="6.5" fill="#fff"/>
+    <circle cx="302" cy="196" r="6.5" fill="#fff"/>
+    <circle cx="211" cy="213" r="3" fill="#fff" opacity=".85"/>
+    <circle cx="291" cy="213" r="3" fill="#fff" opacity=".85"/>
+    <!-- nose, smile, little buck teeth -->
+    <path d="M245 236 Q256 229 267 236 Q263 248 256 250 Q249 248 245 236 Z" fill="#3B2618"/>
+    <path d="M240 258 Q248 268 256 258 Q264 268 272 258" fill="none" stroke="#3B2618" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M250 262 L250 271 Q256 274 262 271 L262 262" fill="#fff" stroke="#3B2618" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M256 263 L256 272" stroke="#3B2618" stroke-width="2.5"/>
+  </g>
+    </g>
+  </g>
+  <circle cx="256" cy="256" r="244" fill="none" stroke="#3B2618" stroke-width="14"/>
+</svg>
