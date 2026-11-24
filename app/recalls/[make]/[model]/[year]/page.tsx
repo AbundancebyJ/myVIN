@@ -7,6 +7,7 @@ import { VehicleReport } from "@/components/report/VehicleReport";
 import { VinTool } from "@/components/VinTool";
 import { PrintButton } from "@/components/PrintButton";
 import { AdSlot } from "@/components/AdSlot";
+import { Stars } from "@/components/report/Ratings";
 import { clientCatalog, findEntry, getIndex, getVehicle } from "@/lib/data";
 import { prettyComponent } from "@/lib/nhtsa";
 import { bestOverallRating, fmt, isIndexable, plainSummary, vehicleFaq, vehicleName } from "@/lib/report";
@@ -61,6 +62,9 @@ export default async function VehiclePage({ params }: { params: Promise<Params> 
   const prev = siblings.find((e) => e.year === data.year - 1);
   const next = siblings.find((e) => e.year === data.year + 1);
 
+  const stars = bestOverallRating(data);
+  const recallCount = data.recalls.status === "ok" ? fmt(data.recalls.items.length) : "No data";
+
   return (
     <article>
       <Breadcrumbs
@@ -72,12 +76,12 @@ export default async function VehiclePage({ params }: { params: Promise<Params> 
           { name: String(data.year), path: vehiclePath(data.make, data.model, data.year) },
         ]}
       />
-      <header>
+      <header className="page-head">
         <h1>
           {data.year} {data.make} {data.model} Recalls &amp; Safety Report
         </h1>
         <p className="lede">{plainSummary(data)}</p>
-        <div className="report-actions no-print">
+        <div className="actions no-print">
           <PrintButton />
           <a className="btn btn-secondary" href="#check-vin">
             Check a specific VIN
@@ -85,48 +89,87 @@ export default async function VehiclePage({ params }: { params: Promise<Params> 
         </div>
       </header>
 
-      <VehicleReport data={data} />
+      <div className="report-layout">
+        <aside className="report-aside">
+          <section className="aside-panel" aria-labelledby="glance-h">
+            <h2 id="glance-h" className="panel-title">
+              At a glance
+            </h2>
+            <dl className="glance">
+              <div>
+                <dt>Recall campaigns</dt>
+                <dd>{recallCount}</dd>
+              </div>
+              <div>
+                <dt>Owner complaints</dt>
+                <dd>{fmt(data.complaints.total)}</dd>
+              </div>
+              <div>
+                <dt>Best overall rating</dt>
+                <dd>{stars ? <Stars value={stars} /> : "Not rated"}</dd>
+              </div>
+            </dl>
+          </section>
+          <nav className="aside-panel jump no-print" aria-label="On this page">
+            <a href="#recalls-h">Recalls</a>
+            <a href="#complaints-h">Owner complaints</a>
+            <a href="#ratings-h">Crash-test ratings</a>
+            <a href="#questions-h">Questions for the seller</a>
+            <a href="#faq-h">Common questions</a>
+          </nav>
+        </aside>
 
-      <AdSlot id="vehicle-2" />
+        <div className="report-main">
+          <VehicleReport data={data} />
 
-      <section className="card no-print" id="check-vin" aria-labelledby="vin-h">
-        <h2 id="vin-h">Looking at a specific {data.model}?</h2>
-        <p className="muted">
-          Enter its VIN for a report on that exact vehicle, including trim, engine and where it was built.
-        </p>
-        <VinTool catalog={clientCatalog()} compact />
-      </section>
+          <AdSlot id="vehicle-2" />
 
-      <section className="card" aria-labelledby="faq-h">
-        <h2 id="faq-h">{name}: common questions</h2>
-        <dl className="faq">
-          {faqs.map((f) => (
-            <div key={f.q}>
-              <dt>{f.q}</dt>
-              <dd>{f.a}</dd>
+          <section className="report-section no-print" id="check-vin" aria-labelledby="vin-h">
+            <h2 id="vin-h" className="section-title">
+              Looking at a specific {data.model}?
+            </h2>
+            <p className="muted">
+              Enter its VIN for a report on that exact vehicle, including trim, engine and where it was built.
+            </p>
+            <VinTool catalog={clientCatalog()} compact />
+          </section>
+
+          <section className="report-section" aria-labelledby="faq-h">
+            <h2 id="faq-h" className="section-title">
+              {name}: common questions
+            </h2>
+            <dl className="faq">
+              {faqs.map((f) => (
+                <div key={f.q}>
+                  <dt>{f.q}</dt>
+                  <dd>{f.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+
+          <nav className="report-section related" aria-label={`Other ${data.make} ${data.model} years`}>
+            <h2 className="section-title">
+              More {data.make} {data.model} reports
+            </h2>
+            <div className="actions">
+              {prev && (
+                <Link className="btn btn-secondary" href={vehiclePath(prev.make, prev.model, prev.year)}>
+                  {prev.year} {prev.model}
+                </Link>
+              )}
+              <Link className="btn btn-secondary" href={modelPath(data.make, data.model)}>
+                All {data.model} years
+              </Link>
+              {next && (
+                <Link className="btn btn-secondary" href={vehiclePath(next.make, next.model, next.year)}>
+                  {next.year} {next.model}
+                </Link>
+              )}
             </div>
-          ))}
-        </dl>
-      </section>
-
-      <nav className="card related" aria-label={`Other ${data.make} ${data.model} years`}>
-        <h2>More {data.make} {data.model} reports</h2>
-        <div className="pager">
-          {prev && (
-            <Link className="btn btn-secondary" href={vehiclePath(prev.make, prev.model, prev.year)}>
-              ← {prev.year} {prev.model}
-            </Link>
-          )}
-          <Link className="btn btn-secondary" href={modelPath(data.make, data.model)}>
-            All {data.model} years
-          </Link>
-          {next && (
-            <Link className="btn btn-secondary" href={vehiclePath(next.make, next.model, next.year)}>
-              {next.year} {next.model} →
-            </Link>
-          )}
+          </nav>
         </div>
-      </nav>
+      </div>
 
       <JsonLd
         data={{

@@ -26,7 +26,7 @@ export default function RecallsIndex() {
         <Link href="/">enter its VIN</Link>.
       </p>
       {makesIn().map((mk) => (
-        <section className="card" key={mk.slug}>
+        <section className="page-section" key={mk.slug}>
           <h2>{mk.name}</h2>
           <ul className="link-grid">
             {modelsIn(mk.slug).flatMap((m) =>

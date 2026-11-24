@@ -20,7 +20,8 @@ const plural = (n: number, one: string, many = one + "s") => `${fmt(n)} ${n === 
 export function shortComponent(c: string): string {
   const parts = c.split(":").map((p) => p.trim()).filter(Boolean);
   const last = parts[parts.length - 1] ?? c;
-  return last.toLowerCase();
+  // Keep acronyms in parentheses readable: "control module (TCM/PCM/TECM)".
+  return last.toLowerCase().replace(/\(([^)]*)\)/g, (m) => m.toUpperCase());
 }
 
 export function vehicleName(d: Pick<VehicleData, "year" | "make" | "model">): string {

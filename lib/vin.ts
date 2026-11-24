@@ -62,3 +62,12 @@ export function validateVin(input: string): VinCheck {
   }
   return { ok: true, vin };
 }
+
+/** Per-position problems, for highlighting cells in the VIN readout as the visitor types. */
+export function vinIssues(input: string): { bad: number[]; check: "ok" | "fail" | null } {
+  const vin = normalizeVin(input).slice(0, 17);
+  const bad: number[] = [];
+  for (let i = 0; i < vin.length; i++) if (!/[A-HJ-NPR-Z0-9]/.test(vin[i])) bad.push(i);
+  if (vin.length !== 17 || bad.length) return { bad, check: null };
+  return { bad, check: vin[8] === computeCheckDigit(vin) ? "ok" : "fail" };
+}

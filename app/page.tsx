@@ -39,23 +39,30 @@ export default function Home() {
   const popular = getIndex().filter((e) => e.indexable);
   return (
     <>
-      <section className="hero">
-        <p className="eyebrow">Free · No sign-up · US vehicles</p>
-        <h1>Free VIN Safety Report</h1>
-        <p className="lede">
-          Buying a used car? Enter the VIN to see its specs, every recall campaign for that model, the most common owner
-          complaints, NHTSA crash-test ratings and a checklist of questions to ask the seller, all on one page you can
-          print.
-        </p>
-      </section>
-
-      <VinTool catalog={clientCatalog()} />
+      <VinTool
+        catalog={clientCatalog()}
+        intro={
+          <>
+            <h1>Free VIN Safety Report</h1>
+            <p className="lede">
+              Buying a used car? Enter the VIN to see its specs, every recall campaign for that model, the most common
+              owner complaints, NHTSA crash-test ratings and a checklist of questions to ask the seller, all on one page
+              you can print.
+            </p>
+            <ul className="tool-facts">
+              <li>Free, no sign-up</li>
+              <li>US vehicles</li>
+              <li>Official NHTSA data</li>
+            </ul>
+          </>
+        }
+      />
 
       <AdSlot id="home-1" />
 
-      <section className="card">
+      <section className="page-section">
         <h2>What&rsquo;s in the report</h2>
-        <ul>
+        <ul className="feature-list">
           <li><strong>Specs</strong>: year, trim, engine, drivetrain and assembly plant, decoded from the VIN.</li>
           <li><strong>Recalls</strong>: each campaign&rsquo;s date, affected component, risk and free fix.</li>
           <li><strong>Owner complaints</strong>: the five most-reported problem areas, with crash, fire and injury counts.</li>
@@ -65,7 +72,7 @@ export default function Home() {
       </section>
 
       {popular.length > 0 && (
-        <section className="card related">
+        <section className="page-section related">
           <h2>Recall reports for popular used cars</h2>
           <ul className="link-grid">
             {popular.map((e) => (
@@ -84,7 +91,7 @@ export default function Home() {
         </section>
       )}
 
-      <section className="card">
+      <section className="page-section">
         <h2>Frequently asked questions</h2>
         <dl className="faq">
           {FAQ.map((f) => (

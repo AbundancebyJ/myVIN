@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent, type ReactNode } from "react";
 import type { DecodeResult, DecodedVehicle, VehicleData } from "@/lib/nhtsa";
 import { normalizeVin, validateVin } from "@/lib/vin";
 import { slugify, vehiclePath } from "@/lib/slug";
@@ -8,6 +8,7 @@ import { plainSummary } from "@/lib/report";
 import { SpecsCard } from "./report/SpecsCard";
 import { VehicleReport } from "./report/VehicleReport";
 import { PrintButton } from "./PrintButton";
+import { VinReadout } from "./VinReadout";
 
 type CatalogEntry = { year: number; make: string; model: string };
 
@@ -39,11 +40,35 @@ async function getVehicle(v: DecodedVehicle): Promise<VehicleData> {
   return body as VehicleData;
 }
 
-export function VinTool({ catalog = [], compact = false }: { catalog?: CatalogEntry[]; compact?: boolean }) {
+function Skeleton() {
+  return (
+    <div className="skeleton" aria-hidden="true">
+      <span className="sk sk-title" />
+      <span className="sk sk-line" />
+      <span className="sk sk-line short" />
+      <div className="sk-grid">
+        <span className="sk sk-block" />
+        <span className="sk sk-block tall" />
+      </div>
+    </div>
+  );
+}
+
+export function VinTool({
+  catalog = [],
+  compact = false,
+  intro,
+}: {
+  catalog?: CatalogEntry[];
+  compact?: boolean;
+  /** Shown beside the form on wide screens (home page hero). */
+  intro?: ReactNode;
+}) {
   const [value, setValue] = useState("");
   const [state, setState] = useState<State>({ kind: "idle" });
   const resultRef = useRef<HTMLHeadingElement>(null);
   const len = normalizeVin(value).length;
+  const inputId = compact ? "vin-compact" : "vin";
 
   useEffect(() => {
     if (state.kind === "done") resultRef.current?.focus();
@@ -68,7 +93,10 @@ export function VinTool({ catalog = [], compact = false }: { catalog?: CatalogEn
       return;
     }
     const vehicle = decoded.vehicle;
-    setState({ kind: "loading", step: `Fetching recalls, complaints and ratings for the ${vehicle.year} ${vehicle.make} ${vehicle.model}…` });
+    setState({
+      kind: "loading",
+      step: `Fetching recalls, complaints and ratings for the ${vehicle.year} ${vehicle.make} ${vehicle.model}…`,
+    });
     try {
       const data = await getVehicle(vehicle);
       setState({ kind: "done", vin: check.vin, vehicle, data, dataError: null });
@@ -87,64 +115,89 @@ export function VinTool({ catalog = [], compact = false }: { catalog?: CatalogEn
         )
       : undefined;
 
-  const errorId = "vin-error";
+  const loading = state.kind === "loading";
+  const form = (
+    <form className="vin-form no-print" onSubmit={onSubmit} noValidate aria-busy={loading}>
+      <label htmlFor={inputId} className="vin-label">
+        Vehicle Identification Number (VIN)
+      </label>
+      <div className="vin-row">
+        <input
+          id={inputId}
+          name="vin"
+          className="vin-input"
+          value={value}
+          onChange={(e) => {
+            setValue(e.target.value);
+            if (state.kind === "error") setState({ kind: "idle" });
+          }}
+          placeholder="17 characters"
+          autoComplete="off"
+          autoCapitalize="characters"
+          autoCorrect="off"
+          spellCheck={false}
+          maxLength={24}
+          aria-invalid={state.kind === "error"}
+          aria-describedby={`${inputId}-hint${state.kind === "error" ? ` ${inputId}-error` : ""}`}
+        />
+        <button type="submit" className="btn btn-primary" disabled={loading}>
+          {loading ? (
+            <>
+              <span className="btn-spinner" aria-hidden="true" />
+              Checking
+            </>
+          ) : (
+            "Get free report"
+          )}
+        </button>
+      </div>
+      <VinReadout value={value} />
+      <p id={`${inputId}-hint`} className="vin-hint small muted">
+        <span className={len === 17 ? "count-ok" : undefined}>{len}/17</span> · On the dashboard by the windshield, the
+        driver&rsquo;s door jamb, or the title. We don&rsquo;t store VINs.
+      </p>
+      {state.kind === "error" && (
+        <p id={`${inputId}-error`} className="notice notice-error" role="alert">
+          {state.message}
+        </p>
+      )}
+    </form>
+  );
+
   return (
     <div className={compact ? "vin-tool compact" : "vin-tool"}>
-      <form className="vin-form no-print" onSubmit={onSubmit} noValidate>
-        <label htmlFor={compact ? "vin-compact" : "vin"} className="vin-label">
-          Vehicle Identification Number (VIN)
-        </label>
-        <div className="vin-row">
-          <input
-            id={compact ? "vin-compact" : "vin"}
-            name="vin"
-            className="vin-input"
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-            placeholder="e.g. 1HGCM82633A004352"
-            autoComplete="off"
-            autoCapitalize="characters"
-            autoCorrect="off"
-            spellCheck={false}
-            maxLength={24}
-            aria-invalid={state.kind === "error"}
-            aria-describedby={`vin-hint ${state.kind === "error" ? errorId : ""}`}
-          />
-          <button type="submit" className="btn btn-primary" disabled={state.kind === "loading"}>
-            {state.kind === "loading" ? "Checking…" : "Get free report"}
-          </button>
+      {intro ? (
+        <div className="tool-top">
+          <div className="tool-intro">{intro}</div>
+          {form}
         </div>
-        <p id="vin-hint" className="vin-hint small muted">
-          <span className={len === 17 ? "ok" : undefined}>{len}/17 characters</span> · Find it at the base of the
-          windshield, on the driver&rsquo;s door jamb, or on the title. We don&rsquo;t store VINs.
-        </p>
-      </form>
+      ) : (
+        form
+      )}
 
-      <div aria-live="polite" className="vin-status">
-        {state.kind === "error" && (
-          <p id={errorId} className="notice notice-error" role="alert">
-            {state.message}
-          </p>
-        )}
-        {state.kind === "loading" && (
-          <p className="notice loading">
-            <span className="spinner" aria-hidden="true" />
-            {state.step}
-          </p>
-        )}
+      <div aria-live="polite" className="sr-only">
+        {loading ? state.step : state.kind === "done" ? "Report ready." : ""}
       </div>
+
+      {loading && (
+        <div className="report">
+          <p className="small muted loading-step">{state.step}</p>
+          <Skeleton />
+        </div>
+      )}
 
       {state.kind === "done" && (
         <div className="report">
           <header className="report-head">
-            <p className="eyebrow">Safety report</p>
             <h2 ref={resultRef} tabIndex={-1}>
               {state.vehicle.year} {state.vehicle.make} {state.vehicle.model}
               {state.vehicle.trim ? ` ${state.vehicle.trim}` : ""}
             </h2>
-            <p className="mono small muted">VIN {state.vin}</p>
+            <p className="vin-line">
+              <span className="muted small">VIN</span> <span className="mono">{state.vin}</span>
+            </p>
             {state.data && <p className="lede">{plainSummary(state.data)}</p>}
-            <div className="report-actions no-print">
+            <div className="actions no-print">
               <PrintButton />
               {staticLink && (
                 <a className="btn btn-secondary" href={vehiclePath(staticLink.make, staticLink.model, staticLink.year)}>
@@ -158,22 +211,29 @@ export function VinTool({ catalog = [], compact = false }: { catalog?: CatalogEn
             <p className="notice notice-warn">NHTSA decoder note: {state.vehicle.warning}</p>
           )}
 
-          <section className="card" aria-labelledby="specs-h">
-            <h3 id="specs-h">Vehicle specs</h3>
-            <SpecsCard v={state.vehicle} />
-          </section>
-
-          {state.data ? (
-            <VehicleReport data={state.data} headingLevel={3} />
-          ) : (
-            <p className="notice notice-error" role="alert">
-              {state.dataError} The specs above are still accurate. Try again shortly for recalls and ratings, or check{" "}
-              <a href="https://www.nhtsa.gov/recalls" rel="noopener" target="_blank">
-                nhtsa.gov/recalls
-              </a>
-              .
-            </p>
-          )}
+          <div className="report-layout">
+            <aside className="report-aside">
+              <section className="aside-panel" aria-labelledby="specs-h">
+                <h3 id="specs-h" className="panel-title">
+                  Vehicle specs
+                </h3>
+                <SpecsCard v={state.vehicle} />
+              </section>
+            </aside>
+            <div className="report-main">
+              {state.data ? (
+                <VehicleReport data={state.data} headingLevel={3} />
+              ) : (
+                <p className="notice notice-error" role="alert">
+                  {state.dataError} The specs are still accurate. Try again shortly for recalls and ratings, or check{" "}
+                  <a href="https://www.nhtsa.gov/recalls" rel="noopener" target="_blank">
+                    nhtsa.gov/recalls
+                  </a>
+                  .
+                </p>
+              )}
+            </div>
+          </div>
         </div>
       )}
     </div>
