@@ -5,7 +5,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { JsonLd } from "@/components/JsonLd";
 import { allModels, clientCatalog } from "@/lib/data";
 import { modelPath } from "@/lib/slug";
-import { abs, SITE_NAME } from "@/lib/site";
+import { abs, SITE_NAME, SITE_TAGLINE } from "@/lib/site";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -110,7 +110,13 @@ export default function Home() {
         data={{
           "@context": "https://schema.org",
           "@graph": [
-            { "@type": "WebSite", name: SITE_NAME, url: abs("/") },
+            {
+              "@type": "WebSite",
+              name: SITE_NAME,
+              alternateName: `${SITE_NAME}: ${SITE_TAGLINE}`,
+              url: abs("/"),
+              publisher: { "@type": "Organization", name: SITE_NAME, url: abs("/"), logo: abs("/brand/tipmonk-badge.svg") },
+            },
             {
               "@type": "FAQPage",
               mainEntity: FAQ.map((f) => ({

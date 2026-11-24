@@ -1,6 +1,8 @@
 # Generates the tipmonk brand SVGs (chipmunk monk "Tip"):
 #   public/brand/tipmonk-badge.svg  circular symbol (logo mark, favicon source)
 #   public/brand/tipmonk-logo.svg   badge + "tipmonk" wordmark + slogan
+#   public/brand/tipmonk-icon.svg   face close-up for favicons (copied to app/icon.svg)
+#   public/brand/tipmonk-wordmark.svg  the word alone (inlined in the site header)
 #
 #   pip install fonttools brotli
 #   python3 scripts/generate-brand.py public/brand node_modules/@fontsource/fredoka/files
@@ -141,6 +143,21 @@ def badge():
 </svg>
 """
 open(f"{OUT}/tipmonk-badge.svg", "w").write(badge())
+
+def icon():
+    """Favicon / app icon: the head only, large, so it still reads at 16-32px."""
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="t">
+  <title id="t">tipmonk</title>
+  <defs><clipPath id="c"><circle cx="256" cy="256" r="240"/></clipPath></defs>
+  <circle cx="256" cy="256" r="240" fill="{C["badge"]}"/>
+  <g clip-path="url(#c)"><g transform="translate(256 292) scale(2.05) translate(-316 -168)">
+    <path d="M214 248 C236 228 396 228 418 248 L440 340 L192 340 Z" fill="{C["robe"]}" {o}/>
+    {head()}
+  </g></g>
+  <circle cx="256" cy="256" r="240" fill="none" stroke="{C["line"]}" stroke-width="22"/>
+</svg>
+"""
+open(f"{OUT}/tipmonk-icon.svg", "w").write(icon())
 print("ok")
 
 # ---------- wordmark (text converted to paths, so it renders identically everywhere) ----------
@@ -149,6 +166,9 @@ from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
 
 FONT_DIR = sys.argv[2] if len(sys.argv) > 2 else "."
+
+def _num(v):
+    return ("%.1f" % v).rstrip("0").rstrip(".")
 
 def text_path(text, font_file, size, cx, baseline, tracking=0.0):
     """Centred text at (cx, baseline) as one SVG path; tracking in em."""
@@ -159,7 +179,7 @@ def text_path(text, font_file, size, cx, baseline, tracking=0.0):
     adv = [gs[n].width for n in names]
     total = sum(adv) + tracking * upm * (len(names) - 1)
     x = cx / scale - total / 2
-    pen = SVGPathPen(gs)
+    pen = SVGPathPen(gs, ntos=_num)
     for n, a in zip(names, adv):
         # font units are y-up: flip and move to the baseline
         gs[n].draw(TransformPen(pen, (scale, 0, 0, -scale, x * scale, baseline)))
@@ -180,3 +200,23 @@ def logo(slogan="FREE VIN SAFETY REPORTS"):
 </svg>
 '''
 open(f"{OUT}/tipmonk-logo.svg", "w").write(logo())
+
+from fontTools.pens.boundsPen import BoundsPen
+
+def wordmark(text="tipmonk", size=100):
+    """Just the word, tightly cropped. The site inlines its path with fill=currentColor."""
+    f = TTFont(f"{FONT_DIR}/fredoka-latin-700-normal.woff2")
+    gs = f.getGlyphSet(); cmap = f.getBestCmap(); sc = size / f["head"].unitsPerEm
+    pen, bp, x = SVGPathPen(gs, ntos=_num), BoundsPen(gs), 0.0
+    for ch in text:
+        g = gs[cmap[ord(ch)]]
+        t = (sc, 0, 0, -sc, x * sc, 0)
+        g.draw(TransformPen(pen, t)); g.draw(TransformPen(bp, t))
+        x += g.width + 0.01 * f["head"].unitsPerEm
+    x0, y0, x1, y1 = bp.bounds
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="{x0:.1f} {y0:.1f} {x1-x0:.1f} {y1-y0:.1f}" role="img" aria-labelledby="t">
+  <title id="t">tipmonk</title>
+  <path d="{pen.getCommands()}" fill="{C["line"]}"/>
+</svg>
+"""
+open(f"{OUT}/tipmonk-wordmark.svg", "w").write(wordmark())

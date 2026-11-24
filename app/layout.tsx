@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
+import { Logo } from "@/components/Logo";
 import { ThemeToggle, THEME_INIT_SCRIPT } from "@/components/ThemeToggle";
 import { openSans, plexMono } from "./fonts";
 import "./globals.css";
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: `Free VIN Check: Recalls, Complaints & Safety Ratings | ${SITE_NAME}`, template: `%s | ${SITE_NAME}` },
   description:
-    "Enter a VIN to get a free one-page safety report: specs, open recall campaigns, owner complaints, NHTSA crash-test ratings and questions to ask the seller.",
+    "tipmonk: free VIN safety reports. Enter a VIN to get a one-page safety report: specs, open recall campaigns, owner complaints, NHTSA crash-test ratings and questions to ask the seller.",
   applicationName: SITE_NAME,
   openGraph: { siteName: SITE_NAME, type: "website", locale: "en_US" },
   twitter: { card: "summary" },
@@ -39,12 +40,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <header className="site-header no-print">
           <div className="wrap header-inner">
-            <Link href="/" className="logo">
-              <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2.5 4.5 5.4v5.8c0 4.7 3.2 8.8 7.5 10.3 4.3-1.5 7.5-5.6 7.5-10.3V5.4z" />
-                <path d="m8.8 12 2.2 2.2 4.2-4.4" />
-              </svg>
-              <span>{SITE_NAME}</span>
+            <Link href="/" className="logo" aria-label={`${SITE_NAME}: ${SITE_TAGLINE}, home`}>
+              <Logo />
+              <span className="logo-tagline" aria-hidden="true">
+                {SITE_TAGLINE}
+              </span>
             </Link>
             <nav aria-label="Main" className="header-nav">
               <Link href="/recalls/">Recalls</Link>
