@@ -30,9 +30,11 @@ def chipmunk():
   <path d="M236 384 C154 394 104 334 112 262 C120 194 178 148 236 164 C282 176 288 234 250 250 C226 260 204 246 208 226 C188 236 180 266 188 296 C198 330 226 348 254 350 Z" fill="{C["fur"]}" {o}/>
   <path d="M150 330 C128 296 130 240 160 204 C182 180 214 176 236 186" fill="none" stroke="{C["creamShade"]}" stroke-width="9" stroke-linecap="round" opacity=".9"/>
   <path d="M232 204 C248 208 254 226 242 234" fill="none" stroke="{C["furShade"]}" stroke-width="6" stroke-linecap="round"/>
-  <!-- monk's cowl, lowered behind the head -->
+  <!-- monk's cowl, lowered behind the head (peeks out on the left) -->
+  <g transform="translate(-34 26)">
   <path d="M288 196 C258 180 220 190 212 220 C208 244 224 262 250 258 C272 254 286 236 290 216 Z" fill="{C["robe"]}" {o}/>
   <path d="M282 198 C258 188 230 194 222 214 C242 222 268 216 282 198 Z" fill="{C["robeDark"]}"/>
+  </g>
   <!-- long robe covering the body, hem spreading over the cushion -->
   <path d="M264 214 C216 240 198 300 204 352 C206 382 214 400 226 408 C270 416 340 414 384 404 C390 380 386 350 378 316 C370 280 354 248 330 232 Z" fill="{C["robe"]}" {o}/>
   <path d="M240 262 C226 306 226 356 240 402 M286 352 C286 372 290 390 296 410" fill="none" stroke="{C["robeDark"]}" stroke-width="6" stroke-linecap="round"/>
@@ -48,20 +50,6 @@ def chipmunk():
   <!-- hind foot peeking from under the hem -->
   <path d="M330 404 C332 392 352 388 370 392 C386 396 392 406 384 412 C370 418 340 418 330 412 Z" fill="{C["fur"]}" {o}/>
   <path d="M370 400 L370 410 M379 400 L379 410" stroke="{C["line"]}" stroke-width="3.5" stroke-linecap="round"/>
-  <!-- head -->
-  <path d="M268 178 C266 140 296 116 330 118 C362 120 384 142 394 166 C402 180 410 188 408 198 C406 210 394 214 380 216 C362 220 350 230 330 238 C298 248 270 222 268 178 Z" fill="{C["fur"]}" {o}/>
-  <!-- ear -->
-  <path d="M286 132 C280 108 300 96 318 104 C326 108 328 118 326 124" fill="{C["fur"]}" {o}/>
-  <path d="M294 126 C292 114 302 108 312 112" fill="none" stroke="{C["blush"]}" stroke-width="7" stroke-linecap="round"/>
-  <!-- face: cream cheek, eye stripes, closed serene eye -->
-  <path d="M314 196 C330 184 368 182 392 194 C402 200 404 208 396 212 C380 220 360 224 340 234 C322 236 308 214 314 196 Z" fill="{C["cream"]}"/>
-  <path d="M300 150 C326 136 362 138 388 160 C368 154 334 152 306 162 Z" fill="{C["cream"]}"/>
-  <path d="M298 166 C322 154 356 154 382 166 C358 163 330 164 302 174 Z" fill="{C["stripe"]}"/>
-  <path d="M332 184 Q345 172 358 184" fill="none" stroke="{C["line"]}" stroke-width="6" stroke-linecap="round"/>
-  <ellipse cx="348" cy="200" rx="13" ry="7" fill="{C["blush"]}" opacity=".9"/>
-  <ellipse cx="404" cy="188" rx="7" ry="6" fill="{C["line"]}"/>
-  <path d="M398 204 Q392 212 384 208" fill="none" stroke="{C["line"]}" stroke-width="4" stroke-linecap="round"/>
-  <path d="M396 196 L428 190 M396 200 L428 204" stroke="{C["line"]}" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
   <!-- wide sleeve -->
   <path d="M292 246 C318 258 338 286 356 318 L338 340 C316 326 294 302 278 280 C272 266 278 250 292 246 Z" fill="{C["robe"]}" {o}/>
   <path d="M338 340 L356 318" stroke="{C["robeDark"]}" stroke-width="8" stroke-linecap="round"/>
@@ -77,12 +65,60 @@ def chipmunk():
   <ellipse cx="398" cy="316" rx="13" ry="11" fill="{C["fur"]}" {thin}/>
   <!-- acorn prayer beads hanging from the paw -->
   {beads()}
+  <!-- head: big, round, turned toward the viewer -->
+  {head()}
   <!-- the tip: a lightbulb idea -->
-  <g transform="translate(352 86) scale(.82)">
+  <g transform="translate(222 70) scale(.78)">
     <path d="M-18 2 A20 20 0 1 1 18 2 C14 9 9 13 9 20 L-9 20 C-9 13 -14 9 -18 2 Z" fill="{C["bulb"]}" {thin}/>
     <path d="M-6 -8 A9 9 0 0 1 4 -12" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".8"/>
     <rect x="-10" y="20" width="20" height="12" rx="3" fill="{C["metal"]}" {thin}/>
     <path d="M-26 -24 L-33 -31 M26 -24 L33 -31 M-34 2 H-44 M34 2 H44" stroke="{C["bulbShade"]}" stroke-width="5" stroke-linecap="round"/>
+  </g>'''
+
+def head():
+    sil = [  # chubby silhouette: head, puffed cheeks, hair tuft
+        '<ellipse cx="316" cy="170" rx="94" ry="80"/>',
+        '<ellipse cx="262" cy="206" rx="50" ry="40"/>',
+        '<ellipse cx="370" cy="204" rx="46" ry="38"/>',
+        '<path d="M296 98 L300 70 L312 92 L318 64 L326 92 L338 74 L340 100 Z"/>',
+    ]
+    eye = lambda cx, cy, rx, ry: f'''
+    <ellipse cx="{cx}" cy="{cy}" rx="{rx+9}" ry="{ry+8}" fill="{C["cream"]}"/>
+    <ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="#2B1A10"/>
+    <ellipse cx="{cx}" cy="{cy+8}" rx="{rx-7}" ry="{ry-12}" fill="#8A4A1A"/>
+    <circle cx="{cx}" cy="{cy+1}" r="{rx*0.45:.1f}" fill="#120B07"/>
+    <circle cx="{cx+rx*0.38:.1f}" cy="{cy-ry*0.4:.1f}" r="{rx*0.36:.1f}" fill="#fff"/>
+    <circle cx="{cx-rx*0.35:.1f}" cy="{cy+ry*0.45:.1f}" r="{rx*0.16:.1f}" fill="#fff" opacity=".9"/>'''
+    return f'''<g>
+    <!-- ears sit behind the head -->
+    <circle cx="380" cy="100" r="24" fill="{C["fur"]}" {o}/>
+    <circle cx="380" cy="102" r="12" fill="{C["blush"]}"/>
+    <circle cx="254" cy="104" r="28" fill="{C["fur"]}" {o}/>
+    <circle cx="254" cy="106" r="15" fill="{C["blush"]}"/>
+    <!-- outline layer then fill layer: one outline around the whole chubby shape -->
+    <g fill="{C["line"]}" stroke="{C["line"]}" stroke-width="{SW*2}" stroke-linejoin="round">{"".join(sil)}</g>
+    <g fill="{C["fur"]}">{"".join(sil)}</g>
+    <!-- cream muzzle and cheeks -->
+    <path d="M232 200 C236 170 278 160 316 174 C354 160 398 166 404 198 C410 234 372 252 316 250 C260 252 228 234 232 200 Z" fill="{C["cream"]}"/>
+    <!-- forehead stripe and brows -->
+    <path d="M309 96 Q316 92 323 96 L320 138 Q316 143 312 138 Z" fill="{C["stripe"]}"/>
+    <path d="M254 130 Q282 110 312 124 Q284 120 258 138 Z" fill="{C["stripe"]}"/>
+    <path d="M328 122 Q356 106 384 120 Q356 116 332 130 Z" fill="{C["stripe"]}"/>
+    {eye(286, 160, 22, 25)}
+    {eye(354, 158, 20, 23)}
+    <!-- blush -->
+    <ellipse cx="258" cy="214" rx="17" ry="9" fill="{C["blush"]}" opacity=".9"/>
+    <ellipse cx="380" cy="210" rx="15" ry="8" fill="{C["blush"]}" opacity=".9"/>
+    <!-- nose -->
+    <path d="M308 186 Q320 179 332 186 Q328 198 320 200 Q312 198 308 186 Z" fill="#B0604C" {thin}/>
+    <ellipse cx="316" cy="186" rx="4" ry="2.5" fill="#fff" opacity=".6"/>
+    <!-- big open smile with buck teeth -->
+    <path d="M320 200 L320 208" stroke="{C["line"]}" stroke-width="3.5" stroke-linecap="round"/>
+    <clipPath id="mouth"><path d="M290 205 Q320 254 352 203 Q320 214 290 205 Z"/></clipPath>
+    <path d="M290 205 Q320 254 352 203 Q320 214 290 205 Z" fill="#5A2418"/>
+    <ellipse cx="322" cy="233" rx="15" ry="8" fill="#E8807A" clip-path="url(#mouth)"/>
+    <path d="M290 205 Q320 254 352 203 Q320 214 290 205 Z" fill="none" {thin}/>
+    <path d="M310 210 L310 221 Q312 223 320 223 L320 211 Z M320 211 L320 223 Q328 223 330 221 L330 209 Z" fill="#fff" stroke="{C["line"]}" stroke-width="3" stroke-linejoin="round"/>
   </g>'''
 
 def beads():
