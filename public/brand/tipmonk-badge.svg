@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="t">
+  <title id="t">tipmonk</title>
+  <defs><clipPath id="c"><circle cx="256" cy="256" r="232"/></clipPath></defs>
+  <circle cx="256" cy="256" r="232" fill="#FFF4E3"/>
+  <g clip-path="url(#c)"><g transform="translate(-24 0)">
+  <!-- cushion (zafu) -->
+  <path d="M164 404 C164 384 220 374 286 374 C352 374 408 384 408 404 L408 418 C408 440 352 450 286 450 C220 450 164 440 164 418 Z" fill="#2457C5" stroke="#4A2C1A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M164 404 C164 424 220 434 286 434 C352 434 408 424 408 404" fill="none" stroke="#1B4297" stroke-width="6"/>
+  <path d="M196 392 C230 384 330 382 372 390" fill="none" stroke="#3C70DC" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+  <!-- tail -->
+  <path d="M236 384 C154 394 104 334 112 262 C120 194 178 148 236 164 C282 176 288 234 250 250 C226 260 204 246 208 226 C188 236 180 266 188 296 C198 330 226 348 254 350 Z" fill="#DA7A3A" stroke="#4A2C1A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M150 330 C128 296 130 240 160 204 C182 180 214 176 236 186" fill="none" stroke="#F1D5B1" stroke-width="9" stroke-linecap="round" opacity=".9"/>
+  <path d="M232 204 C248 208 254 226 242 234" fill="none" stroke="#B95F27" stroke-width="6" stroke-linecap="round"/>
+  <!-- monk's cowl, lowered behind the head -->
+  <path d="M288 196 C258 180 220 190 212 220 C208 244 224 262 250 258 C272 254 286 236 290 216 Z" fill="#A23E2D" stroke="#4A2C1A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M282 198 C258 188 230 194 222 214 C242 222 268 216 282 198 Z" fill="#7C2C20"/>
+  <!-- long robe covering the body, hem spreading over the cushion -->
+  <path d="M264 214 C216 240 198 300 204 352 C206 382 214 400 226 408 C270 416 340 414 384 404 C390 380 386 350 378 316 C370 280 354 248 330 232 Z" fill="#A23E2D" stroke="#4A2C1A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M240 262 C226 306 226 356 240 402 M286 352 C286 372 290 390 296 410" fill="none" stroke="#7C2C20" stroke-width="6" stroke-linecap="round"/>
+  <path d="M252 246 C244 270 240 292 240 312" fill="none" stroke="#C0563F" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+  <!-- fur at the neckline -->
+  <path d="M316 236 C330 248 342 262 348 278 C334 272 322 258 312 244 Z" fill="#FCEBD3"/>
+  <!-- rope belt with a knot and hanging cords -->
+  <path d="M208 330 C256 346 332 348 378 332" fill="none" stroke="#4A2C1A" stroke-width="15" stroke-linecap="round"/>
+  <path d="M208 330 C256 346 332 348 378 332" fill="none" stroke="#FCEBD3" stroke-width="8" stroke-linecap="round"/>
+  <path d="M352 344 C350 358 352 370 346 384 M362 344 C364 358 364 370 370 382" fill="none" stroke="#4A2C1A" stroke-width="11" stroke-linecap="round"/>
+  <path d="M352 344 C350 358 352 370 346 384 M362 344 C364 358 364 370 370 382" fill="none" stroke="#FCEBD3" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="357" cy="340" r="9" fill="#FCEBD3" stroke="#4A2C1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- hind foot peeking from under the hem -->
+  <path d="M330 404 C332 392 352 388 370 392 C386 396 392 406 384 412 C370 418 340 418 330 412 Z" fill="#DA7A3A" stroke="#4A2C1A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M370 400 L370 410 M379 400 L379 410" stroke="#4A2C1A" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- head -->
+  <path d="M268 178 C266 140 296 116 330 118 C362 120 384 142 394 166 C402 180 410 188 408 198 C406 210 394 214 380 216 C362 220 350 230 330 238 C298 248 270 222 268 178 Z" fill="#DA7A3A" stroke="#4A2C1A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- ear -->
+  <path d="M286 132 C280 108 300 96 318 104 C326 108 328 118 326 124" fill="#DA7A3A" stroke="#4A2C1A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M294 126 C292 114 302 108 312 112" fill="none" stroke="#F29A86" stroke-width="7" stroke-linecap="round"/>
+  <!-- face: cream cheek, eye stripes, closed serene eye -->
+  <path d="M314 196 C330 184 368 182 392 194 C402 200 404 208 396 212 C380 220 360 224 340 234 C322 236 308 214 314 196 Z" fill="#FCEBD3"/>
+  <path d="M300 150 C326 136 362 138 388 160 C368 154 334 152 306 162 Z" fill="#FCEBD3"/>
+  <path d="M298 166 C322 154 356 154 382 166 C358 163 330 164 302 174 Z" fill="#5A3520"/>
+  <path d="M332 184 Q345 172 358 184" fill="none" stroke="#4A2C1A" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="348" cy="200" rx="13" ry="7" fill="#F29A86" opacity=".9"/>
+  <ellipse cx="404" cy="188" rx="7" ry="6" fill="#4A2C1A"/>
+  <path d="M398 204 Q392 212 384 208" fill="none" stroke="#4A2C1A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M396 196 L428 190 M396 200 L428 204" stroke="#4A2C1A" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
+  <!-- wide sleeve -->
+  <path d="M292 246 C318 258 338 286 356 318 L338 340 C316 326 294 302 278 280 C272 266 278 250 292 246 Z" fill="#A23E2D" stroke="#4A2C1A" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M338 340 L356 318" stroke="#7C2C20" stroke-width="8" stroke-linecap="round"/>
+  <!-- paws holding a scroll of tips -->
+  <g transform="rotate(-14 372 292)">
+    <rect x="336" y="262" width="62" height="58" rx="4" fill="#FFF8EA" stroke="#4A2C1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M346 278 l4 4 l8 -9 M346 292 l4 4 l8 -9 M346 306 l4 4 l8 -9" fill="none" stroke="#1F7A47" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M364 279 H388 M364 293 H384 M364 307 H388" stroke="#C7AE87" stroke-width="3.5" stroke-linecap="round"/>
+    <rect x="330" y="254" width="74" height="13" rx="6.5" fill="#F1D5B1" stroke="#4A2C1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="330" y="316" width="74" height="13" rx="6.5" fill="#F1D5B1" stroke="#4A2C1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  <ellipse cx="346" cy="328" rx="14" ry="11" fill="#DA7A3A" stroke="#4A2C1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <ellipse cx="398" cy="316" rx="13" ry="11" fill="#DA7A3A" stroke="#4A2C1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- acorn prayer beads hanging from the paw -->
+  <circle cx="390.8" cy="337.2" r="5.5" fill="#7A4B27" stroke="#4A2C1A" stroke-width="2.5"/>
+  <circle cx="390.5" cy="345.5" r="5.5" fill="#7A4B27" stroke="#4A2C1A" stroke-width="2.5"/>
+  <circle cx="391.3" cy="352.7" r="5.5" fill="#7A4B27" stroke="#4A2C1A" stroke-width="2.5"/>
+  <circle cx="393.0" cy="359.0" r="5.5" fill="#7A4B27" stroke="#4A2C1A" stroke-width="2.5"/>
+  <circle cx="395.7" cy="364.3" r="5.5" fill="#7A4B27" stroke="#4A2C1A" stroke-width="2.5"/>
+  <circle cx="399.3" cy="368.7" r="5.5" fill="#7A4B27" stroke="#4A2C1A" stroke-width="2.5"/>
+  <circle cx="411.3" cy="333.8" r="5.5" fill="#7A4B27" stroke="#4A2C1A" stroke-width="2.5"/>
+  <circle cx="413.4" cy="342.6" r="5.5" fill="#7A4B27" stroke="#4A2C1A" stroke-width="2.5"/>
+  <circle cx="414.1" cy="350.4" r="5.5" fill="#7A4B27" stroke="#4A2C1A" stroke-width="2.5"/>
+  <circle cx="413.6" cy="357.3" r="5.5" fill="#7A4B27" stroke="#4A2C1A" stroke-width="2.5"/>
+  <circle cx="411.7" cy="363.2" r="5.5" fill="#7A4B27" stroke="#4A2C1A" stroke-width="2.5"/>
+  <circle cx="408.5" cy="368.1" r="5.5" fill="#7A4B27" stroke="#4A2C1A" stroke-width="2.5"/>
+  <ellipse cx="404" cy="390" rx="10" ry="12" fill="#B9773A" stroke="#4A2C1A" stroke-width="3"/>
+  <path d="M392 383 Q392 372 404 372 Q416 372 416 383 Z" fill="#5A3A22" stroke="#4A2C1A" stroke-width="3" stroke-linejoin="round"/>
+  <!-- the tip: a lightbulb idea -->
+  <g transform="translate(352 86) scale(.82)">
+    <path d="M-18 2 A20 20 0 1 1 18 2 C14 9 9 13 9 20 L-9 20 C-9 13 -14 9 -18 2 Z" fill="#FFCB3D" stroke="#4A2C1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M-6 -8 A9 9 0 0 1 4 -12" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+    <rect x="-10" y="20" width="20" height="12" rx="3" fill="#9AA3AF" stroke="#4A2C1A" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M-26 -24 L-33 -31 M26 -24 L33 -31 M-34 2 H-44 M34 2 H44" stroke="#F2A62A" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  </g></g>
+  <circle cx="256" cy="256" r="232" fill="none" stroke="#4A2C1A" stroke-width="14"/>
+</svg>
