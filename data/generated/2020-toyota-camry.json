@@ -1,0 +1,119 @@
+{
+ "make": "Toyota",
+ "model": "Camry",
+ "year": 2020,
+ "nhtsaModel": "Camry",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "23V865000",
+    "date": "2023-12-20",
+    "component": "AIR BAGS:SENSOR:OCCUPANT CLASSIFICATION",
+    "summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2020-2021 Avalon, Avalon Hybrid, Corolla, Highlander, Highlander Hybrid, RAV4, RAV4 Hybrid, Lexus ES350, Lexus RX350, Lexus RX450H, 2021 Sienna Hybrid, Lexus ES250, 2020-2022 Camry, Camry Hybrid, and ES300H vehicles. A short circuit may develop in the Occupant Classification System (OCS) sensor, preventing the front passenger air bag from deploying.",
+    "consequence": "An air bag that does not deploy during a crash increases the risk of injury.",
+    "remedy": "Dealers will inspect and replace the sensor as necessary, free of charge. Interim letters notifying owners of the safety risk were mailed in February 2024. Some final remedy owner letters were mailed October 31, 2024. Letters will continue to be mailed in phases through January 2026. Owners may contact Toyota customer service at 1-800-331-4331. Toyota's number for this recall is 23TB15/23TA15 Lexus 23LB03/23LA03.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V682000",
+    "date": "2020-11-04",
+    "component": "FUEL SYSTEM, GASOLINE:DELIVERY:FUEL PUMP",
+    "summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2018-2019 4Runner, 2019-2020 Avalon, 2019 Corolla Hatchback, 2017-2019 Highlander, 2018-2020 Camry, 2020 Corolla, 2018-2019 Land Cruiser, 2017-2020 Tacoma, 2019-2020 RAV4, 2019-2020 Sequoia, 2017-2020 Sienna, 2019-2020 Tundra, 2018-2020 Lexus ES350, 2017 Lexus GS200t, 2017-2019 Lexus GS350, 2019 Lexus GS300, 2018-2020 Lexus LC500h, 2019-2020 Lexus LS500, 2018-2019 Lexus GX460, 2017 Lexus IS200t, 2019 Lexus IS300, 2019 Lexus IS350, 2018-2020 Lexus LC500, 2018 Lexus LS500, 2019 Lexus LS500h, 2018-2019 Lexus LX570, 2017 Lexus RC200t, 2019 Lexus RC300, RC350, 2017 and 2019-2020 Lexus RX350, 2018-2020 RX350L, 2019 Lexus UX200, 2018-2019 Lexus NX300 vehicles. The low-pressure fuel pump inside the fuel tank may fail.",
+    "consequence": "If the fuel pump fails, the engine can stall while driving, increasing the risk of a crash.",
+    "remedy": "Toyota will notify owners, and dealers will replace the fuel pump assembly with an improved one, free of charge. Owners of specific models were notified that remedy parts were available starting January 21, 2021. Owners of other models will be notified as remedy parts become available. Remedy parts should be available for all affected vehicles by late March 2021. Owners may contact Toyota customer service at 1-888-270-9371 or Lexus customer service at 1-800-255-3987. Note: This recall is an expansion of recall 20V-012. Toyota's number for this recall is 20TA02. Lexus' number for this recall is 20LA01.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V064000",
+    "date": "2020-02-06",
+    "component": "ENGINE AND ENGINE COOLING",
+    "summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2020 Toyota Avalon Hybrid, Camry, Camry Hybrid and Lexus ES300h and 2019-2020 RAV4 and RAV4 Hybrid vehicles equipped with 2.5L 4-Cylinder engines. Porosity in the engine castings may result in cracks than can allow coolant to leak internally and/or externally.",
+    "consequence": "A coolant leak can cause the engine to overheat and cause a vehicle stall in conventional gasoline vehicles, increasing the risk of a crash. Additionally, for all involved vehicles, the engine may get damaged mechanically, possibly resulting in an engine oil leak, increasing the risk of a fire.",
+    "remedy": "Toyota will notify owners, and dealers will inspect and replace the engine including the engine block, as necessary, free of charge. The recall began April 3, 2020. Owners may contact Toyota customer service at 1-888-270-9371 or Lexus at 1-800-255-3987. Toyota's number for this recall is 20TA04. Lexus' number for this recall is 20LA02.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 278,
+  "crashes": 15,
+  "fires": 2,
+  "injuries": 23,
+  "deaths": 0,
+  "latestFiled": "2026-11-14",
+  "top": [
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 69,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "ENGINE",
+    "count": 60,
+    "crashes": 0,
+    "fires": 1,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "AIR BAGS",
+    "count": 49,
+    "crashes": 9,
+    "fires": 0,
+    "injuries": 18,
+    "deaths": 0
+   },
+   {
+    "component": "FUEL/PROPULSION SYSTEM",
+    "count": 37,
+    "crashes": 0,
+    "fires": 1,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "POWER TRAIN",
+    "count": 33,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 1,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 14855,
+    "description": "2020 Toyota CAMRY 4 DR AWD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 5,
+    "rolloverRiskPct": 9.9
+   },
+   {
+    "vehicleId": 14720,
+    "description": "2020 Toyota CAMRY 4 DR FWD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 5,
+    "rolloverRiskPct": 9.9
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:55:15.282Z"
+}

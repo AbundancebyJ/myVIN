@@ -1,0 +1,143 @@
+{
+ "make": "Toyota",
+ "model": "Camry",
+ "year": 2019,
+ "nhtsaModel": "Camry",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "21V890000",
+    "date": "2021-11-17",
+    "component": "SERVICE BRAKES, HYDRAULIC:POWER ASSIST:VACUUM",
+    "summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2018-2019 Camry vehicles. The vane cap inside the vacuum pump may break, causing the pump to fail, which could result in a sudden loss of braking assist.",
+    "consequence": "A sudden loss of braking assist can increase the risk of a crash.",
+    "remedy": "Dealers will repair or replace the vacuum pump, as necessary, free of charge. Owner notification letters were mailed May 16, 2022. Owners may contact Toyota customer service at 1-800-331-4331.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V682000",
+    "date": "2020-11-04",
+    "component": "FUEL SYSTEM, GASOLINE:DELIVERY:FUEL PUMP",
+    "summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2018-2019 4Runner, 2019-2020 Avalon, 2019 Corolla Hatchback, 2017-2019 Highlander, 2018-2020 Camry, 2020 Corolla, 2018-2019 Land Cruiser, 2017-2020 Tacoma, 2019-2020 RAV4, 2019-2020 Sequoia, 2017-2020 Sienna, 2019-2020 Tundra, 2018-2020 Lexus ES350, 2017 Lexus GS200t, 2017-2019 Lexus GS350, 2019 Lexus GS300, 2018-2020 Lexus LC500h, 2019-2020 Lexus LS500, 2018-2019 Lexus GX460, 2017 Lexus IS200t, 2019 Lexus IS300, 2019 Lexus IS350, 2018-2020 Lexus LC500, 2018 Lexus LS500, 2019 Lexus LS500h, 2018-2019 Lexus LX570, 2017 Lexus RC200t, 2019 Lexus RC300, RC350, 2017 and 2019-2020 Lexus RX350, 2018-2020 RX350L, 2019 Lexus UX200, 2018-2019 Lexus NX300 vehicles. The low-pressure fuel pump inside the fuel tank may fail.",
+    "consequence": "If the fuel pump fails, the engine can stall while driving, increasing the risk of a crash.",
+    "remedy": "Toyota will notify owners, and dealers will replace the fuel pump assembly with an improved one, free of charge. Owners of specific models were notified that remedy parts were available starting January 21, 2021. Owners of other models will be notified as remedy parts become available. Remedy parts should be available for all affected vehicles by late March 2021. Owners may contact Toyota customer service at 1-888-270-9371 or Lexus customer service at 1-800-255-3987. Note: This recall is an expansion of recall 20V-012. Toyota's number for this recall is 20TA02. Lexus' number for this recall is 20LA01.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V012000",
+    "date": "2020-01-13",
+    "component": "FUEL SYSTEM, GASOLINE:DELIVERY:FUEL PUMP",
+    "summary": "Toyota Motor Engineering & Manufacturing (Toyota) recalled certain 2018-2019 4Runner, Highlander, Camry, Land Cruiser, Sequoia, Sienna, Tacoma and Tundra, and Lexus RC 300, RC 350, GS 350, GX 460, IS 300, LC 500, LS 500, LX 570, RX 350L, and 2019 Toyota Avalon and Corolla, and certain Lexus NX 300, and ES 350 vehicles on January 13, 2020. On March 4, 2020, Toyota expanded the recall to include certain 2014-2015 Toyota 4Runner and Land Cruiser, 2018 Avalon, Corolla, 2014 FJ Cruiser, 2017 Sienna and Lexus 2018 ES 350, 2018-2019 GS 300, 2013-2014 GS350, 2014-2015 GX 460, IS 350 and LX 570, 2014 IS F, 2018-2019 IS 350, LC 500H and LS 500H, 2013-2015 LS 460, 2015 NX 200T and RC350, 2017 RC 200T and RX 350. Toyota also removed the 2018-2019 Toyota 4Runner and Land Cruiser and 2018-2019 Lexus GX 460 and LX 570 and 2019 NX300 from inclusion in this recall. On March 19, 2020, Toyota expanded the recall to include 2015 Lexus GS350 vehicles. The low-pressure fuel pump inside the fuel tank may fail.",
+    "consequence": "If the fuel pump fails, the engine can stall while driving, increasing the risk of a crash.",
+    "remedy": "Toyota will notify owners, and dealers will replace the fuel pump, free of charge. The recall began May 4, 2020. Owners may contact Toyota customer service at 1-888-270-9371 or Lexus customer service at 1-800-255-3987. Toyota's numbers for this recall are 20TB02 and 20TA02 for Toyota vehicles and 20LB01 and 20LA01 for Lexus vehicles.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V567000",
+    "date": "2019-08-01",
+    "component": "AIR BAGS:SENSOR:OCCUPANT CLASSIFICATION",
+    "summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2019 Camry vehicles. The Occupant Classification System (OCS) may have been improperly calibrated, which may prevent the proper deployment of the front passenger air bag and knee air bag, in the event of a crash. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 208, \"Occupant Crash Protection.\"",
+    "consequence": "In the event of a crash, if the air bags do not deploy as designed, the front seat passenger has an increased risk of an injury.",
+    "remedy": "Toyota will notify owners, and dealers will recalibrate the OCS, free of charge. The recall began August 27, 2019. Owners may contact Toyota customer service at 1-888-270-9371. Toyota's number for this recall is K0M.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V503000",
+    "date": "2019-06-28",
+    "component": "EQUIPMENT:OTHER:LABELS",
+    "summary": "Southeast Toyota Distributors, LLC (SET) is recalling certain 2017-2019 Toyota Camry, Corolla, Rav4, Sienna, and Yaris iA vehicles equipped with factory-installed floor mats. The load carrying capacity modification label may be incorrect. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 110, \"Tire Selection and Rims.\"",
+    "consequence": "An incorrect label may lead to unintentionally overloading the vehicle, increasing the risk of a crash.",
+    "remedy": "SET will notify owners and provide a corrected label for placement over the inaccurate label, free of charge. The recall began August 23, 2019. Owners may contact Toyota customer service at 1-888-270-9371. SET's number for this recall is SET19A.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V244000",
+    "date": "2019-03-27",
+    "component": "EQUIPMENT:OTHER:LABELS",
+    "summary": "Gulf States Toyota (GST) is recalling certain 2019 C-HR, 4Runner, Avalon, Avalon Hybrid, Camry, Camry Hybrid, Highlander, Land Cruiser, Prius, RAV4, Sequoia, Tacoma, Sienna, Tundra and Yaris vehicles. The text on the load capacity label may become illegible. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 110, \"Tire Selection and Rims.\"",
+    "consequence": "If the driver cannot read the label, they may unknowingly overload the vehicle, increasing the risk of a crash.",
+    "remedy": "GST will notify owners, and dealers will provide corrected load carrying capacity modification labels, free of charge. The recall began May 24, 2019. Owners may contact GST customer service at 1-800-444-1074. GST's number for this recall is 19R1.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 409,
+  "crashes": 22,
+  "fires": 1,
+  "injuries": 18,
+  "deaths": 0,
+  "latestFiled": "2026-11-18",
+  "top": [
+   {
+    "component": "POWER TRAIN",
+    "count": 120,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "ENGINE",
+    "count": 81,
+    "crashes": 3,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "FUEL/PROPULSION SYSTEM",
+    "count": 65,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 1,
+    "deaths": 0
+   },
+   {
+    "component": "SERVICE BRAKES",
+    "count": 35,
+    "crashes": 5,
+    "fires": 0,
+    "injuries": 4,
+    "deaths": 0
+   },
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 27,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 1,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 13200,
+    "description": "2019 Toyota Camry 4 DR FWD",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 5,
+    "rolloverRiskPct": 9.9
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:55:14.372Z"
+}

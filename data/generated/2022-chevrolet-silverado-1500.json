@@ -1,0 +1,188 @@
+{
+ "make": "Chevrolet",
+ "model": "Silverado 1500",
+ "year": 2022,
+ "nhtsaModel": "Silverado 1500",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "26V083000",
+    "date": "2026-02-13",
+    "component": "POWER TRAIN:AUTOMATIC TRANSMISSION:CONTROL MODULE:SOFTWARE",
+    "summary": "General Motors, LLC is recalling certain 2020 Chevrolet Silverado 2500, 3500, GMC Sierra 2500, 3500, and 2020-2022 Chevrolet Silverado 1500 and GMC Sierra 1500 vehicles that may have been repaired incorrectly under recall 24V797. The transmission control valve may fail and cause the rear wheels to lock up.",
+    "consequence": "Rear wheel lock up increases the risk of a crash.",
+    "remedy": "Dealers will inspect the vehicles and update the transmission control software, free of charge. Owner notification letters were mailed March 6, 2026. Owners may contact GMC customer service at 1-800-462-8782 or Chevrolet customer service at 1-800-222-1020. GM's number for this recall is N252516560. Vehicle Identification Numbers (VINs) involved in this recall became searchable on NHTSA.gov on February 12, 2026.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "25V274000",
+    "date": "2025-04-24",
+    "component": "ENGINE AND ENGINE COOLING:ENGINE:HARD PARTS INTERNAL/MECHANICAL",
+    "summary": "General Motors LLC (GM) is recalling certain 2021-2024 Cadillac Escalade and Escalade ESV, Chevrolet Silverado 1500, Suburban, and Tahoe, GMC Sierra 1500, Yukon, and Yukon XL vehicles equipped with a 6.2L V8 gas engine. The connecting rod and/or crankshaft engine components may have manufacturing defects that can lead to engine damage and engine failure.",
+    "consequence": "Engine failure increases the risk of a crash.",
+    "remedy": "Dealers will inspect the engine, and as necessary, repair or replace the engine. For vehicles that pass inspection, dealers will add higher viscosity oil, install 6 oil fill cap, replace the oil filter, and update the owner's manual. Repairs will be performed free of charge. Owner notification letters were mailed June 18, 2025. Owners may contact Cadillac customer service at 1-800-333-4223, Chevrolet customer service at 1-800-222-1020, or GMC customer service at 1-800-462-8782. GM's number for this recall is N252494000.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "24V797000",
+    "date": "2024-10-24",
+    "component": "POWER TRAIN:AUTOMATIC TRANSMISSION:CONTROL MODULE:SOFTWARE",
+    "summary": "General Motors, LLC (GM) is recalling certain 2020-2022 Chevrolet Silverado 1500, 2500, 3500, GMC Sierra 1500, 2500, 3500, 2021 Cadillac Escalade, Escalade ESV, Chevrolet Tahoe, Suburban, GMC Yukon, and Yukon XL vehicles equipped with diesel engines. The transmission control valve may fail and cause the rear wheels to lock-up.",
+    "consequence": "Rear wheel lock-up can increase the risk of a crash.",
+    "remedy": "Dealers will install new transmission control module software, free of charge. GM will provide a special coverage program to cover the repair of transmissions that are identified by the remedy software as containing a defective control valve. Owner notification letters were mailed December 12, 2024. Owners may contact GM customer service at 1-888-988-7267, Cadillac customer service at 1-800-458-8006, GMC customer service at GMC 1-800-462-8782 or Chevrolet customer service at 1-800-222-1020. GM's number for this recall is N242454440.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "22V903000",
+    "date": "2022-12-08",
+    "component": "EXTERIOR LIGHTING:LIGHTING CONTROL MODULE:SOFTWARE",
+    "summary": "General Motors, LLC (GM) is recalling certain 2020-2023 Cadillac CT4 and CT5; 2021-2023 Buick Envision; and 2022-2023 Cadillac Escalade and Escalade ESV, Chevrolet Silverado 1500, Suburban, Tahoe, GMC Sierra 1500, Yukon, and Yukon XL vehicles. The daytime running lights (DRLs) may not deactivate when the headlights are on. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 108, \"Lamps, Reflective Devices, and Associated Equipment.\"",
+    "consequence": "DRLs that do not deactivate as intended may result in a glare, reducing visibility, and increasing the risk of a crash.",
+    "remedy": "The body control module software will be updated by a dealer, or through an over-the-air (OTA) update, free of charge. Owner notification letters were mailed January 23, 2023. Owners may contact GMC customer service at 1-888-988-7267, Chevrolet customer service at 1-800-222-1020, or Cadillac customer service at 1-800-458-8006. GM's number for this recall is N222386380. This recall expands previous recall number 22V-827.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": true
+   },
+   {
+    "campaign": "22V873000",
+    "date": "2022-11-23",
+    "component": "AIR BAGS: AIR BAG/RESTRAINT CONTROL MODULE",
+    "summary": "General Motors, LLC (GM) is recalling certain 2022 Chevrolet Silverado 1500 vehicles. The sensing diagnostic module (SDM) was left in manufacturing mode and not activated at the assembly plant prior to shipment. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 208, \"Occupant Crash Protection.\"",
+    "consequence": "An SDM in manufacturing mode will not deploy the vehicle's air bags in a crash, increasing the risk of occupant injury.",
+    "remedy": "Dealers returned the vehicles to the GM assembly plant and the sensing diagnostic modules were activated. The vehicles had not been sold from dealer inventory and therefore no owner letters will be mailed. Owners may contact Chevrolet customer service at 1-800-222-1020. GM's number for this recall is N222387870.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "22V463000",
+    "date": "2022-06-30",
+    "component": "EXTERIOR LIGHTING:BRAKE LIGHTS",
+    "summary": "General Motors (GM) has decided that certain 2022 model year Chevrolet Silverado, and GMC Sierra vehicles equipped with an accessory sport bar. The accessory sport bar contains a high-mounted brake light that may not function. In addition, it may block the vehicle's existing high-mounted brake light. As such, these vehicles may fail to conform to Federal Motor Vehicle Safety Standard (FMVSS) number 108, \"lamps, reflective devices, and associated equipment.\"",
+    "consequence": "An inoperative high-mounted brake light can reduce visibility to other drivers and increase the risk of a crash.",
+    "remedy": "Dealers will inspect the installation of the accessory bar and provide the correct vehicle wiring, if necessary, free of charge. Interim owner notification letters advising owners of the safety risk were mailed on August 10, 2022. Owner notification letters were mailed on January 27, 2023. Owners may contact GM's customer service on 1-888-988-7267 or Chevrolet customer service at 1-800-222-1020.. GM's recall number for this recall is N222368110.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 672,
+  "crashes": 11,
+  "fires": 6,
+  "injuries": 18,
+  "deaths": 0,
+  "latestFiled": "2026-11-18",
+  "top": [
+   {
+    "component": "ENGINE",
+    "count": 263,
+    "crashes": 1,
+    "fires": 4,
+    "injuries": 4,
+    "deaths": 0
+   },
+   {
+    "component": "POWER TRAIN",
+    "count": 195,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 143,
+    "crashes": 2,
+    "fires": 1,
+    "injuries": 2,
+    "deaths": 0
+   },
+   {
+    "component": "SERVICE BRAKES",
+    "count": 56,
+    "crashes": 2,
+    "fires": 0,
+    "injuries": 1,
+    "deaths": 0
+   },
+   {
+    "component": "FUEL/PROPULSION SYSTEM",
+    "count": 46,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 16860,
+    "description": "2022 Chevrolet Silverado 1500 PU/CC 4WD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.8
+   },
+   {
+    "vehicleId": 16856,
+    "description": "2022 Chevrolet Silverado 1500 PU/EC 4WD",
+    "overall": null,
+    "frontal": null,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.8
+   },
+   {
+    "vehicleId": 16852,
+    "description": "2022 Chevrolet Silverado 1500 PU/RC 4WD",
+    "overall": null,
+    "frontal": null,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.8
+   },
+   {
+    "vehicleId": 16848,
+    "description": "2022 Chevrolet Silverado 1500 PU/CC 2WD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 16844,
+    "description": "2022 Chevrolet Silverado 1500 PU/EC 2WD",
+    "overall": null,
+    "frontal": null,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 16840,
+    "description": "2022 Chevrolet Silverado 1500 PU/RC 2WD",
+    "overall": null,
+    "frontal": null,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:55:13.526Z"
+}

@@ -1,0 +1,119 @@
+{
+ "make": "Jeep",
+ "model": "Grand Cherokee",
+ "year": 2020,
+ "nhtsaModel": "Grand Cherokee",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "23V411000",
+    "date": "2023-06-08",
+    "component": "ENGINE AND ENGINE COOLING",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2014-2019 Ram 1500 and 2014-2020 Jeep Grand Cherokee vehicles equipped with 3.0L Diesel engines. The crankshaft position sensor tone wheel may delaminate, causing the engine to lose its ability to synchronize the fuel injector pulses and cam shaft timing, possibly resulting in an engine stall.",
+    "consequence": "An engine stall can increase the risk of a crash.",
+    "remedy": "Dealers will update the powertrain control module software to maintain vehicle propulsion, free of charge. Interim notification letters, notifying owners of the safety risk, were mailed August 3, 2023. Some owner notification letters were mailed October 31, 2023. The remaining owner notification letters will be mailed at a future date, anticipated July 2024. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLC's number for this recall is 66A. This recall is an expansion of recall 20V-475.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "22V406000",
+    "date": "2022-06-09",
+    "component": "FUEL SYSTEM, DIESEL:DELIVERY:FUEL PUMP",
+    "summary": "Chrysler (FCA US, LLC) is recalling certain 2014-2020 Jeep Grand Cherokee, and 2014-2019 Ram 1500 vehicles equipped with 3.0L diesel engines. A high pressure fuel pump (HPFP) failure may introduce internal debris into the fuel system, potentially resulting in fuel starvation.",
+    "consequence": "Fuel starvation may result in an unexpected loss of drive power, increasing the risk of a crash.",
+    "remedy": "Dealers will replace the HPFP, and inspect and replace, if necessary, additional fuel system components, free of charge. Interim notification letters informing owners of the safety risk were mailed July 21, 2022. Owner notification letters for were mailed for Jeep Grand Cherokee owners starting January 11, 2024. Owner notification letters for Ram 1500 owners were mailed March 7, 2024. Owners may contact FCA US, LLC customer service at 1-800-853-1403. FCA US, LLS's number for this recall is Z46.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V191000",
+    "date": "2020-09-10",
+    "component": "BACK OVER PREVENTION: SENSING SYSTEM: CAMERA",
+    "summary": "Chrysler (FCA US LLC) is recalling certain 2020 Jeep Gladiator and Jeep Cherokee, 2019-2020 Ram 1500 Pickup, Ram 2500 Pickup, Ram 3500 Pickup, Chrysler Pacifica, Dodge Durango, Jeep Grand Cherokee, Jeep Wrangler, and Jeep Renegade and 2019 Dodge Challenger vehicles equipped with 8.4\" or 12\" radio displays. A software error can cause the rearview camera image to remain displayed after the vehicle has been shifted out of reverse. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 111, \"Rearview Mirrors.\"",
+    "consequence": "The lingering rearview image can distract the driver, increasing the risk of a crash.",
+    "remedy": "Chrysler has notified owners, and dealers will update the radio display software, free of charge. Optionally, owners can choose to remotely update their software via an Over-The-Air (OTA) update available as of May 1, 2020. The recall began April 27, 2020. Owners may contact Chrysler customer service at 1-800-853-1403. Chrysler's number for this recall is W30-W37.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": true
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 241,
+  "crashes": 24,
+  "fires": 5,
+  "injuries": 13,
+  "deaths": 0,
+  "latestFiled": "2026-10-16",
+  "top": [
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 74,
+    "crashes": 3,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "ENGINE",
+    "count": 50,
+    "crashes": 0,
+    "fires": 3,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "POWER TRAIN",
+    "count": 39,
+    "crashes": 2,
+    "fires": 2,
+    "injuries": 1,
+    "deaths": 0
+   },
+   {
+    "component": "AIR BAGS",
+    "count": 17,
+    "crashes": 12,
+    "fires": 0,
+    "injuries": 12,
+    "deaths": 0
+   },
+   {
+    "component": "FUEL/PROPULSION SYSTEM",
+    "count": 17,
+    "crashes": 1,
+    "fires": 1,
+    "injuries": 0,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 14275,
+    "description": "2020 Jeep Grand Cherokee SUV 4WD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 16.9
+   },
+   {
+    "vehicleId": 14245,
+    "description": "2020 Jeep Grand Cherokee SUV 2WD",
+    "overall": 4,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 3,
+    "rolloverRiskPct": 20.4
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:55:29.575Z"
+}

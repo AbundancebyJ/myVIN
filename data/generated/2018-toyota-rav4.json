@@ -1,0 +1,119 @@
+{
+ "make": "Toyota",
+ "model": "RAV4",
+ "year": 2018,
+ "nhtsaModel": "RAV4",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "23V734000",
+    "date": "2023-11-01",
+    "component": "ELECTRICAL SYSTEM:12V/24V/48V BATTERY",
+    "summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2013-2018 RAV4 vehicles. Certain replacement 12-volt batteries may not fit properly in the battery tray, allowing the battery to move and contact the hold-down bracket, possibly causing a short circuit.",
+    "consequence": "A battery short circuit increases the risk of a fire.",
+    "remedy": "Dealers will replace the battery clamp sub-assembly, battery tray, and positive terminal cover, free of charge. Owner letters were mailed December 27, 2024, to 2013-2014 RAV4 owners. Additional owner notification letters will be mailed in phases, phase 2 will begin on May 14, 2025, and phase 3 in late July 2025. Owners may contact Toyota's customer service at 1-800-331-4331. Toyota's numbers for this recall are 23TB13 and 23TA13.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V503000",
+    "date": "2019-06-28",
+    "component": "EQUIPMENT:OTHER:LABELS",
+    "summary": "Southeast Toyota Distributors, LLC (SET) is recalling certain 2017-2019 Toyota Camry, Corolla, Rav4, Sienna, and Yaris iA vehicles equipped with factory-installed floor mats. The load carrying capacity modification label may be incorrect. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 110, \"Tire Selection and Rims.\"",
+    "consequence": "An incorrect label may lead to unintentionally overloading the vehicle, increasing the risk of a crash.",
+    "remedy": "SET will notify owners and provide a corrected label for placement over the inaccurate label, free of charge. The recall began August 23, 2019. Owners may contact Toyota customer service at 1-888-270-9371. SET's number for this recall is SET19A.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "17V831000",
+    "date": "2017-12-20",
+    "component": "EQUIPMENT:OTHER:LABELS",
+    "summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2017-2018 Toyota 4Runner and Tundra, 2018 Toyota Highlander, RAV4 and Lexus GX460 and 2017 Toyota Sienna and Tacoma vehicles. These vehicles may have incorrect load carrying capacity modification labels. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 110, \"Tire Selection and Rims.\"",
+    "consequence": "An incorrect load information label can result in the operator overloading the vehicle and increasing the risk of a crash.",
+    "remedy": "Toyota will notify owners and provide them with corrected labels, free of charge. The recall began on January 23, 2018. Owners may contact Toyota customer service at 1-800-331-4331. Toyota's numbers for this recall are H0Z for Toyota vehicles, and HLF for Lexus vehicles.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 333,
+  "crashes": 31,
+  "fires": 33,
+  "injuries": 18,
+  "deaths": 0,
+  "latestFiled": "2026-10-15",
+  "top": [
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 130,
+    "crashes": 5,
+    "fires": 23,
+    "injuries": 3,
+    "deaths": 0
+   },
+   {
+    "component": "ENGINE",
+    "count": 33,
+    "crashes": 3,
+    "fires": 11,
+    "injuries": 1,
+    "deaths": 0
+   },
+   {
+    "component": "SERVICE BRAKES",
+    "count": 28,
+    "crashes": 10,
+    "fires": 2,
+    "injuries": 2,
+    "deaths": 0
+   },
+   {
+    "component": "POWER TRAIN",
+    "count": 26,
+    "crashes": 2,
+    "fires": 0,
+    "injuries": 2,
+    "deaths": 0
+   },
+   {
+    "component": "EXTERIOR LIGHTING",
+    "count": 23,
+    "crashes": 1,
+    "fires": 1,
+    "injuries": 0,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 12335,
+    "description": "2018 Toyota Rav4 SUV FWD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 17.4
+   },
+   {
+    "vehicleId": 12334,
+    "description": "2018 Toyota Rav4 SUV AWD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 16.9
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:54:55.987Z"
+}

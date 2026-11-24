@@ -44,7 +44,7 @@ npm run typecheck
 4. Environment variables:
    - `NEXT_PUBLIC_SITE_URL`: your domain, e.g. `https://example.com`. It drives canonical URLs, the sitemap and robots.txt. **Set it before submitting to Search Console.**
    - `NEXT_PUBLIC_CONTACT_EMAIL`: the address shown on Contact, Privacy and Terms (default: `hello@<domain>`).
-5. To keep the static pages fresh, add a Cloudflare deploy hook and call it weekly (cron, GitHub Action, etc.).
+5. Weekly data refresh: `.github/workflows/weekly-refresh.yml` calls a Cloudflare deploy hook every Monday. Create the hook (Settings > Builds > Deploy hooks, branch `main`) and save its URL as the GitHub Actions secret `CF_DEPLOY_HOOK`. The workflow file has the exact steps.
 
 ## Adding vehicles
 
@@ -54,7 +54,7 @@ Add entries to `data/vehicles.json`:
 { "year": 2020, "make": "Honda", "model": "CR-V" }
 ```
 
-Use NHTSA's recall name in `model`. If vPIC spells it differently, add `"vpicModel"`, as the Silverado entry does. Then run `npm run data` and commit `data/generated/`. Adjacent-year links and hub pages appear automatically.
+The seed list covers 2017–2022 for 10 models (60 pages). Use NHTSA's recall name in `model`. If vPIC spells it differently, add `"vpicModel"`, as the Silverado entry does. Then run `npm run data` and commit `data/generated/`. Adjacent-year links and hub pages appear automatically.
 
 ### SEO rules
 
@@ -66,7 +66,7 @@ Use NHTSA's recall name in `model`. If vPIC spells it differently, add `"vpicMod
 
 - **Themes:** all colors are tokens at the top of `app/globals.css`. Light lives on `:root` and dark on `:root[data-theme="dark"]`; a copy under `prefers-color-scheme` covers visitors without JS. When you add a color, define it in both blocks.
 - **Theme toggle:** `components/ThemeToggle.tsx`. An inline script in `<head>` sets `data-theme` before first paint, so the page never flashes the wrong theme. The site follows the OS until the visitor picks a theme; picking the one that matches the OS clears the saved choice.
-- **Fonts:** IBM Plex Sans for all UI text and Plex Mono for data only (VINs, campaign numbers). Both are self-hosted from npm packages via `app/fonts.ts`, so there are no third-party font requests.
+- **Fonts:** Open Sans (Google Fonts, weights 300–800 plus italic) for all text, and IBM Plex Mono for data only (VINs, campaign numbers). Both are self-hosted from npm packages via `app/fonts.ts`, so visitors make no request to Google.
 - **Breakpoints:** mobile-first at 640 / 768 / 1024px. At 1024px and up, report pages switch to a sticky sidebar beside the main column.
 - **VIN readout:** `components/VinReadout.tsx` shows the VIN as 17 cells grouped into maker / vehicle / check digit / year-plant-serial, and flags bad characters and a failed check digit while the visitor types.
 - **Print:** `@media print` in `globals.css` hides navigation and ads, expands every "Risk & fix" section, and switches to black and white.

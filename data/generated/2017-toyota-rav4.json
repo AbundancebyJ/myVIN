@@ -1,0 +1,119 @@
+{
+ "make": "Toyota",
+ "model": "RAV4",
+ "year": 2017,
+ "nhtsaModel": "RAV4",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "23V734000",
+    "date": "2023-11-01",
+    "component": "ELECTRICAL SYSTEM:12V/24V/48V BATTERY",
+    "summary": "Toyota Motor Engineering & Manufacturing (Toyota) is recalling certain 2013-2018 RAV4 vehicles. Certain replacement 12-volt batteries may not fit properly in the battery tray, allowing the battery to move and contact the hold-down bracket, possibly causing a short circuit.",
+    "consequence": "A battery short circuit increases the risk of a fire.",
+    "remedy": "Dealers will replace the battery clamp sub-assembly, battery tray, and positive terminal cover, free of charge. Owner letters were mailed December 27, 2024, to 2013-2014 RAV4 owners. Additional owner notification letters will be mailed in phases, phase 2 will begin on May 14, 2025, and phase 3 in late July 2025. Owners may contact Toyota's customer service at 1-800-331-4331. Toyota's numbers for this recall are 23TB13 and 23TA13.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V503000",
+    "date": "2019-06-28",
+    "component": "EQUIPMENT:OTHER:LABELS",
+    "summary": "Southeast Toyota Distributors, LLC (SET) is recalling certain 2017-2019 Toyota Camry, Corolla, Rav4, Sienna, and Yaris iA vehicles equipped with factory-installed floor mats. The load carrying capacity modification label may be incorrect. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 110, \"Tire Selection and Rims.\"",
+    "consequence": "An incorrect label may lead to unintentionally overloading the vehicle, increasing the risk of a crash.",
+    "remedy": "SET will notify owners and provide a corrected label for placement over the inaccurate label, free of charge. The recall began August 23, 2019. Owners may contact Toyota customer service at 1-888-270-9371. SET's number for this recall is SET19A.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "17V295000",
+    "date": "2017-05-02",
+    "component": "TIRES:TEMPORARY/EMERGENCY SPARE TIRE",
+    "summary": "Gulf States Toyota, Inc. (Gulf States) is recalling certain 2017 4Runner , 86, Avalon, Camry, Camry Hybrid, Corolla, Corolla iM, Highlander, Highlander Hybrid, Prius, Prius C, RAV4, RAV4 Hybrid, Sienna and Yaris vehicles. The spare tire air pressure was not adjusted to the proper pressure as stated on the Tire Pressure Label.",
+    "consequence": "A spare tire that is not inflated to the proper value may not perform as intended, increasing the risk of a crash.",
+    "remedy": "Gulf States will notify owners, and dealers will inspect the spare tires, adjusting their pressure as necessary, free of charge. The recall began June 15, 2017. Owners may contact Gulf States customer service at 1-800-444-1074. Toyota's number for this recall is 17R2.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 310,
+  "crashes": 33,
+  "fires": 25,
+  "injuries": 28,
+  "deaths": 2,
+  "latestFiled": "2026-11-17",
+  "top": [
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 108,
+    "crashes": 4,
+    "fires": 15,
+    "injuries": 3,
+    "deaths": 1
+   },
+   {
+    "component": "SERVICE BRAKES",
+    "count": 38,
+    "crashes": 8,
+    "fires": 0,
+    "injuries": 3,
+    "deaths": 0
+   },
+   {
+    "component": "EXTERIOR LIGHTING",
+    "count": 33,
+    "crashes": 0,
+    "fires": 1,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "ENGINE",
+    "count": 31,
+    "crashes": 1,
+    "fires": 13,
+    "injuries": 1,
+    "deaths": 0
+   },
+   {
+    "component": "AIR BAGS",
+    "count": 20,
+    "crashes": 13,
+    "fires": 0,
+    "injuries": 12,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 11148,
+    "description": "2017 Toyota Rav4 SUV FWD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 17.4
+   },
+   {
+    "vehicleId": 11147,
+    "description": "2017 Toyota Rav4 SUV AWD",
+    "overall": 5,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 16.9
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:54:54.526Z"
+}

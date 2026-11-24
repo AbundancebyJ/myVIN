@@ -3,10 +3,9 @@ import Link from "next/link";
 import { VinTool } from "@/components/VinTool";
 import { AdSlot } from "@/components/AdSlot";
 import { JsonLd } from "@/components/JsonLd";
-import { clientCatalog, getIndex } from "@/lib/data";
-import { vehiclePath } from "@/lib/slug";
+import { allModels, clientCatalog } from "@/lib/data";
+import { modelPath } from "@/lib/slug";
 import { abs, SITE_NAME } from "@/lib/site";
-import { fmt } from "@/lib/report";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -36,7 +35,7 @@ const FAQ = [
 ];
 
 export default function Home() {
-  const popular = getIndex().filter((e) => e.indexable);
+  const models = allModels();
   return (
     <>
       <VinTool
@@ -71,22 +70,26 @@ export default function Home() {
         </ul>
       </section>
 
-      {popular.length > 0 && (
+      {models.length > 0 && (
         <section className="page-section related">
-          <h2>Recall reports for popular used cars</h2>
+          <h2>Recalls and problems by model year</h2>
+          <p className="muted">Compare recall campaigns and owner complaints across model years of popular used cars.</p>
           <ul className="link-grid">
-            {popular.map((e) => (
-              <li key={e.file}>
-                <Link href={vehiclePath(e.make, e.model, e.year)}>
-                  <strong>
-                    {e.year} {e.make} {e.model}
-                  </strong>
-                  <span>
-                    {fmt(e.recalls)} recalls · {fmt(e.complaints)} complaints
-                  </span>
-                </Link>
-              </li>
-            ))}
+            {models.map((m) => {
+              const ys = m.years.map((y) => y.year);
+              return (
+                <li key={`${m.make}-${m.slug}`}>
+                  <Link href={modelPath(m.make, m.name)}>
+                    <strong>
+                      {m.make} {m.name}
+                    </strong>
+                    <span>
+                      {Math.min(...ys)}–{Math.max(...ys)} · {ys.length} model years
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </section>
       )}

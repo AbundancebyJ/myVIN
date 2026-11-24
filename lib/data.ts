@@ -4,16 +4,13 @@ import path from "node:path";
 import type { VehicleData } from "./nhtsa";
 import { slugify } from "./slug";
 
-export interface IndexEntry {
+import type { YearStats } from "./report";
+
+export interface IndexEntry extends YearStats {
   year: number;
   make: string;
   model: string;
   file: string;
-  recalls: number;
-  complaints: number;
-  overall: number | null;
-  indexable: boolean;
-  fetchedAt: string;
 }
 
 const DIR = path.join(process.cwd(), "data", "generated");
@@ -67,3 +64,10 @@ export function clientCatalog() {
 
 /** A hub that links to a single child adds nothing for searchers: keep it out of the index until it has two. */
 export const hubIndexable = (children: number) => children >= 2;
+
+/** Every model across makes, newest years first, for index-style link lists. */
+export function allModels(index = getIndex()) {
+  return makesIn(index)
+    .flatMap((mk) => modelsIn(mk.slug, index))
+    .sort((a, b) => `${a.make} ${a.name}`.localeCompare(`${b.make} ${b.name}`));
+}

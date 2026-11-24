@@ -1,0 +1,221 @@
+{
+ "make": "Ford",
+ "model": "F-150",
+ "year": 2019,
+ "nhtsaModel": "F-150",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "26V373000",
+    "date": "2026-06-09",
+    "component": "EXTERIOR LIGHTING:HEADLIGHTS",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2018-2020 F-150 vehicles previously repaired incorrectly under recall number 20V097. When the headlight switch is turned from \"Autolamps\" to \"Headlamps On,\" the Daytime Running Lamps (DRLs) may remain fully bright instead of dimming to parking lamps as intended. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 108, \"Lamps, Reflective Devices and Associated Equipment.\"",
+    "consequence": "Daytime Running Lamps that do not dim may reduce the visibility of other drivers, increasing the risk of a crash.",
+    "remedy": "Dealers will reprogram the body control module software, free of charge. Owner notification letters were mailed July 17, 2026. Owners may contact customer service at 1-866-436-7332. Ford's number for this recall is 26C28. Vehicle Identification Numbers (VINs) involved in this recall will become searchable on NHTSA.gov on July 6, 2026.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "25V442000",
+    "date": "2025-06-27",
+    "component": "BACK OVER PREVENTION:SOFTWARE",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2018-2022 Transit Connect, 2019-2020 MKZ, MKX, Edge, Continental, F-150, Nautilus, Fusion, 2019-2023 Ranger, Mustang, 2020-2021 EcoSport, Expedition, Navigator, 2020-2022 Escape, F-250 SD, Corsair, 2020-2023 Aviator, Transit, 2020-2024 Explorer, 2021-2024 Bronco Sport, and 2022-2024 Maverick vehicles. A software error may cause the rearview camera to display a blank image, or the image may remain on the display after the backing event has ended.",
+    "consequence": "A rearview camera that displays a blank image can reduce the driver's view behind the vehicle. A rearview image that continues to be displayed after the vehicle is shifted out of reverse may distract the driver. Both of these situations can increase the risk of a crash.",
+    "remedy": "Dealers will update the rearview camera software, free of charge. Owner notification letters were mailed September 4, 2025. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 25S72.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "24V852000",
+    "date": "2024-11-08",
+    "component": "EQUIPMENT:OTHER:LABELS",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2020-2025 Explorer, Lincoln Aviator, 2020-2024 Escape, Lincoln Corsair, 2018-2024 F-150, Expedition and Lincoln Navigator vehicles. The air bag warning label may be missing from the dashboard. As such, these vehicles fail to comply with the requirement Federal Motor Vehicle Safety Standard number 208, \"Occupant Crash Protection.\"",
+    "consequence": "Without a label that shows the proper restraint usage guidelines, the occupants may have an increased risk of injury in the event of a crash.",
+    "remedy": "Ford will mail owners the warning labels, free of charge. Owner notification letters were mailed December 19, 2024. Owners may call Ford customer service at 1-866-436-7332. Ford's number for this recall is 24C39.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "22V252000",
+    "date": "2022-04-14",
+    "component": "BACK OVER PREVENTION: SENSING SYSTEM: CAMERA",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2019 F-150, Super Duty F-250, F-350, F-450, and F-550 vehicles. Due to a poor electrical connection, the rearview camera may intermittently display a blank or distorted image. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 111, \"Rear Visibility.\"",
+    "consequence": "A rearview camera that displays a blank or distorted image can reduce the drivers view of what is behind the vehicle, increasing the risk of a crash.",
+    "remedy": "Dealers will replace the rearview camera, free of charge. Owner notification letters were mailed June 2, 2022. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 20C19.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V097000",
+    "date": "2020-02-21",
+    "component": "EXTERIOR LIGHTING:HEADLIGHTS",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2018-2020 F-150 trucks equipped with high series LED headlamps with Autolamp (On/Off) functionality. The Daytime Running Lamps (DRL) may remain activated instead of dimming to parking lamps when the Master Lighting Switch (MLS) is manually rotated from the \"Autolamps\" switch position to \"Headlamps On.\" As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 108, \"Lamps, Reflective Devices and Associated Equipment.\"",
+    "consequence": "DRL that cannot dim may reduce the visibility of other drivers, increasing the risk of a crash.",
+    "remedy": "Ford will notify owners, and dealers will reprogram the body control module, free of charge. The recall began March 10, 2020. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 20C03.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V805000",
+    "date": "2019-11-12",
+    "component": "ELECTRICAL SYSTEM:12V/24V/48V BATTERY:CABLES",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2019-2020 F-150 vehicles. The fastener securing the Power Distribution Box (PDB) 12V cable and Battery Monitoring System (BMS) eyelets to the positive battery terminal may loosen and affect the vehicle's systems such as instrument panel displays and braking or steering assist. The engine could also stall.",
+    "consequence": "Inoperative vehicle systems or an engine stall can increase the risk of a crash. Reduced braking and steering efforts increases the risk of a crash. This condition could also create a resistive short, increasing the risk of a fire.",
+    "remedy": "Ford will notify owners, and dealers will inspect the positive battery cable/BMS/PDB joint for excess sealant adhesive and remove any excessive adhesive, reassemble the joint, and retorque the fastener, as necessary, free of charge. The recall began November 25, 2019. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 19S40.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V633000",
+    "date": "2019-08-28",
+    "component": "SEATS:FRONT ASSEMBLY:RECLINER",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2018-2020 F-150 and 2019-2020 F-250, F-350, F-450, and F-550 Super Duty pickup trucks, and 2018-2019 Ford Explorer, 2019-2020 Expedition, and 2020 Escape vehicles equipped with driver and/or passenger's manual front seat back recliner mechanisms. Also included are certain 2020 Ford Explorer and Lincoln Aviator vehicles equipped with rear outboard seats and manual seat back recliner mechanisms. The recliner mechanisms may be missing the third pawl required for seat back strength, resulting in a loose seat back. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) numbers 202, \"Head Restraints\" and 207, \"Seating Systems.\"",
+    "consequence": "A seat back with an improperly assembled recliner mechanism may have reduced strength and may not adequately restrain an occupant in a crash, increasing the risk of injury.",
+    "remedy": "Ford will notify owners, and Ford and Lincoln dealers will inspect the seat structure and replace them, as necessary, free of charge. The recall began October 21, 2019. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 19C07.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V278000",
+    "date": "2019-04-08",
+    "component": "ENGINE",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2015-2019 Ford F-150 and 2017-2019 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty, and F-550 Super Duty pick-up trucks equipped with an engine block heater and previously remedied under recall 18V894. During the previous repair, the block heater cable's splice connector may have been damaged.",
+    "consequence": "A damaged cable could cause a resistive short, increasing the risk of overheated or melted wiring, increasing the risk of a fire.",
+    "remedy": "Ford will notify owners, and dealers will disable the engine block heater from being used. When replacement cables become available, a second notice will be mailed and dealers will replace the engine block heater cord, free of charge. The recall began May 31, 2019. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 19S11.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "18V894000",
+    "date": "2018-12-18",
+    "component": "ENGINE",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2015-2019 Ford F-150 and 2017-2019 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty, and F-550 Super Duty pick-up trucks equipped with an engine block heater. Water and contaminants may get into the block heater cable's splice connector causing corrosion and damage.",
+    "consequence": "When the heater is plugged in, prolonged corrosion could cause a resistive short, increasing the risk of overheated or melted wiring which can increase the risk of a fire.",
+    "remedy": "Ford will notify owners, and dealers will disable the block heater cable, free of charge. Once parts are available, Dealers will replace the engine block heater cable, free of charge. The recall began June 3, 2019. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 18S45.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 78,
+  "crashes": 0,
+  "fires": 0,
+  "injuries": 0,
+  "deaths": 0,
+  "latestFiled": "2026-11-19",
+  "top": [
+   {
+    "component": "POWER TRAIN",
+    "count": 59,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "ENGINE",
+    "count": 14,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "FORWARD COLLISION AVOIDANCE",
+    "count": 5,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 4,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "BACK OVER PREVENTION",
+    "count": 3,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 13276,
+    "description": "2019 Ford F-150 Regular Cab PU/RC 4x4",
+    "overall": 4,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 13275,
+    "description": "2019 Ford F-150 Regular Cab PU/RC 4x2",
+    "overall": 4,
+    "frontal": 4,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 13278,
+    "description": "2019 Ford F-150 Super Crew PU/CC 4x2",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 13277,
+    "description": "2019 Ford F-150 Super Crew PU/CC 4x4",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 13282,
+    "description": "2019 Ford F-150 Super Crew Diesel PU/CC 4x2",
+    "overall": null,
+    "frontal": null,
+    "side": null,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 13281,
+    "description": "2019 Ford F-150 Super Crew Diesel PU/CC 4x4",
+    "overall": null,
+    "frontal": null,
+    "side": null,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:55:03.065Z"
+}

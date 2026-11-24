@@ -1,0 +1,320 @@
+{
+ "make": "Ford",
+ "model": "F-150",
+ "year": 2017,
+ "nhtsaModel": "F-150",
+ "recalls": {
+  "status": "ok",
+  "items": [
+   {
+    "campaign": "26V370000",
+    "date": "2026-06-09",
+    "component": "ELECTRICAL SYSTEM: INSTRUMENT CLUSTER/PANEL",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2017 F-150 vehicles previously repaired incorrectly under recall number 17V053. The instrument cluster may lose power after initial vehicle start-up in cold ambient temperatures. Several gauges, including the transmission gear position indicator, may not illuminate. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 102, \"Transmission Shift Lever Sequence, Starter Interlock, and Transmission Braking Effect.\"",
+    "consequence": "An instrument cluster that fails to display critical safety information, such as gear position or warning lights, increases the risk of a crash or injury.",
+    "remedy": "Dealers will update the Instrument Panel Cluster Assembly (IPC) software, free of charge. Owner notification letters were mailed July 17, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 26C26. Vehicle Identification Numbers (VINs) involved in this recall will become searchable on NHTSA.gov on July 6, 2026.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "26V237000",
+    "date": "2026-04-14",
+    "component": "POWER TRAIN:AUTOMATIC TRANSMISSION",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2015-2017 F-150 vehicles. A loss of signal between the transmission range sensor and the powertrain control module can cause the transmission to unexpectedly downshift into second gear.",
+    "consequence": "Unexpectedly downshifting into second gear may result in a loss of vehicle control, increasing the risk of a crash.",
+    "remedy": "Dealers will update the powertrain control module software, free of charge. Owner notification letters were mailed July 24, 2026. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 26S28. Vehicle Identification Numbers (VINs) involved in this recall became searchable on NHTSA.gov on April 15, 2026.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "25V236000",
+    "date": "2025-04-11",
+    "component": "SERVICE BRAKES, HYDRAULIC:FOUNDATION COMPONENTS:MASTER CYLINDER",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2017-2018 F-150, Expedition, and Lincoln Navigator vehicles. The brake master cylinder may allow brake fluid to leak from the front wheel circuit into the brake booster.",
+    "consequence": "A brake fluid leak can cause reduced brake function and extend the distance required to stop, increasing the risk of a crash.",
+    "remedy": "Dealers will replace the brake master cylinder. If the master cylinder is leaking, the brake booster will also be replaced. Repairs will be performed free of charge. Owner notification letters were mailed September 25, 2025. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 25S37. This recall is an expansion of NHTSA recall number 22V-150.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "22V150000",
+    "date": "2022-03-11",
+    "component": "SERVICE BRAKES, HYDRAULIC:POWER ASSIST",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2016-2017 Ford Expedition, Lincoln Navigator, and 2016-2018 F-150 vehicles equipped with 3.5L Ecoboost engines. The brake master cylinder may allow brake fluid to leak from the front wheel circuit into the brake booster.",
+    "consequence": "A loss of brake fluid may result in a change in brake pedal travel, increased pedal effort and reduced front brake function, requiring greater effort and distance to stop the vehicle. These conditions can increase the risk of a crash.",
+    "remedy": "Dealers will replace the brake master cylinder. If the master cylinder is leaking, the brake booster will also be replaced. Repairs will be performed free of charge. An interim owner notification letter notifying customers of the safety defect were mailed on April 29, 2022. Owner notification letters were mailed April 29, 2022. This recall is an expansion of NHTSA recall number 20V-332. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 22S11.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "21E027000",
+    "date": "2021-04-12",
+    "component": "SUSPENSION:FRONT:CONTROL ARM:UPPER BALL JOINT",
+    "summary": "Tenneco Automotive (DRiV) is recalling certain MOOG K500359 ball joints, for aftermarket installation on 2015-2018 Ford F-150 trucks. The ball joint may have a misaligned dust boot and may be missing alignment hole and installation warning tag, which may lead to improper alignment of the ball joint.",
+    "consequence": "An incorrectly installed ball joint may cause the ball joint stud to break, which can compromise front wheel control, increasing the risk of a crash.",
+    "remedy": "DRiV will notify owners, and dealers will inspect, and if necessary replace the ball joint, free of charge. Owner letters were mailed May 5, 2021. Owners may contact Tenneco Automotive customer service at 1-877-489-6659.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "20V332000",
+    "date": "2020-06-08",
+    "component": "SERVICE BRAKES, HYDRAULIC:FOUNDATION COMPONENTS:MASTER CYLINDER",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2014-2017 F-150 pickup trucks equipped with 3.5L Ecoboost engines. The brake master cylinder may leak brake fluid into the brake booster.",
+    "consequence": "A loss of brake fluid may result in a change in brake pedal travel and feel, increased pedal effort and reduced front brake function, possibly requiring greater effort and distance to stop the vehicle. These conditions can increase the risk of a crash.",
+    "remedy": "Ford will notify owners, and dealers will replace the brake master cylinder and inspect the brake booster, replacing it as necessary, free of charge. Ford issued owners an interim notification on June 30, 2020. The recall began on October 28, 2020. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 20S31.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "19V278000",
+    "date": "2019-04-08",
+    "component": "ENGINE",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2015-2019 Ford F-150 and 2017-2019 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty, and F-550 Super Duty pick-up trucks equipped with an engine block heater and previously remedied under recall 18V894. During the previous repair, the block heater cable's splice connector may have been damaged.",
+    "consequence": "A damaged cable could cause a resistive short, increasing the risk of overheated or melted wiring, increasing the risk of a fire.",
+    "remedy": "Ford will notify owners, and dealers will disable the engine block heater from being used. When replacement cables become available, a second notice will be mailed and dealers will replace the engine block heater cord, free of charge. The recall began May 31, 2019. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 19S11.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "18V894000",
+    "date": "2018-12-18",
+    "component": "ENGINE",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2015-2019 Ford F-150 and 2017-2019 Ford F-250 Super Duty, F-350 Super Duty, F-450 Super Duty, and F-550 Super Duty pick-up trucks equipped with an engine block heater. Water and contaminants may get into the block heater cable's splice connector causing corrosion and damage.",
+    "consequence": "When the heater is plugged in, prolonged corrosion could cause a resistive short, increasing the risk of overheated or melted wiring which can increase the risk of a fire.",
+    "remedy": "Ford will notify owners, and dealers will disable the block heater cable, free of charge. Once parts are available, Dealers will replace the engine block heater cable, free of charge. The recall began June 3, 2019. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 18S45.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "18V568000",
+    "date": "2018-08-31",
+    "component": "SEAT BELTS:PRETENSIONER",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2015-2018 Ford F-150 Regular Cab and SuperCrew Cab vehicles. If a front seat belt pretensioner deploys as the result of a crash, the sparks may ignite materials such as carpeting or insulation within the B-pillar area.",
+    "consequence": "A vehicle fire could result if materials ignite inside the vehicle.",
+    "remedy": "Ford will notify owners, and dealers will remove the B-pillar insulation material and wiring harness tape, and install heat resistant tape, free of charge. The recall began September 28, 2018. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 18S27.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "18V213000",
+    "date": "2018-04-04",
+    "component": "POWER TRAIN:AUTOMATIC TRANSMISSION",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2017-2018 Ford F-150 and 2018 Ford Expedition and Mustang and Lincoln Navigator vehicles equipped with 10-speed automatic transmissions. A roll pin may not have been installed in the transmission, potentially causing a loss of the \"Park\" function.",
+    "consequence": "Despite the transmission shift lever being placed in 'Park' and the instrument panel display indicating 'Park,' the vehicle may roll away after it has been exited if the parking brake has not been applied, increasing the risk of injury or a crash.",
+    "remedy": "Ford will notify owners, and dealers will inspect the transmission to make sure it has the roll pin, installing one if it is missing, free of charge. The recall began on April 13, 2018. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 18S09.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "17V671000",
+    "date": "2017-10-24",
+    "component": "POWER TRAIN:AUTOMATIC TRANSMISSION:LEVER AND LINKAGE:COLUMN SHIFT",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2017 F-150 vehicles equipped with ten-speed transmissions. The pin that attaches the transmission shift linkage to the transmission may come out, preventing the transmission from responding to movement of the shift lever.",
+    "consequence": "The disconnected linkage may cause the vehicle to not move forward or backward as selected by the driver with the shift lever. Additionally, despite selecting 'Park', if the parking brake is not applied, the vehicle may roll. Either scenario increases the risk of a crash.",
+    "remedy": "Ford will notify owners, and dealers will replace the roll pin with an updated part, free of charge. The recall is expected to begin December 2017. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 17S36.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "17V652000",
+    "date": "2017-10-16",
+    "component": "LATCHES/LOCKS/LINKAGES:DOORS:LATCH",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2015-2017 Ford F-150, and 2017 F-250, F-350, F-450, and F-550 Super Duty trucks. The doors on these vehicles may have a bent or kinked actuation cable or the door latches may freeze after water gets into the latch. Either condition can result in the doors opening while driving although they appear to be closed.",
+    "consequence": "A door that opens while driving can increase the risk of injury.",
+    "remedy": "Ford will notify owners, and dealers will inspect the door latch actuation cables and repair if necessary, and install water shields over the door latches, free of charge. The recall began October 12, 2018. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 17S33.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "17V599000",
+    "date": "2017-09-25",
+    "component": "SEATS",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2017 Ford F-150, F-250, F-350, F-450, and F-550 trucks with manually-adjusted front passenger seats. The seat belt anchor may not be adequately welded to the seat cushion frame. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 210, \"Seat Belt Assembly Anchorages,\" and 207, \"Seating Systems.\"",
+    "consequence": "The seat belt buckle weld may fail, preventing the occupants from being properly restrained in the event of a crash, increasing the risk of injury.",
+    "remedy": "Ford will notify owners, and dealers will replace the front passenger manual seat track, free of charge. The recall is expected to begin November 6, 2017. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 17C17.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "17V529000",
+    "date": "2017-08-28",
+    "component": "AIR BAGS:FRONTAL:PASSENGER SIDE:INFLATOR MODULE",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2017 F-150 and Mustang vehicles. The air bag inflator within the passenger frontal air bag module may rupture in the event of a crash.",
+    "consequence": "An inflator rupture may result in metal fragments striking the vehicle occupants resulting in serious injury or death.",
+    "remedy": "Ford will notify owners, and dealers will replace the passenger frontal air bag module, free of charge. The recall began October 11, 2017. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 17S26.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "17V526000",
+    "date": "2017-08-28",
+    "component": "SEAT BELTS:REAR/OTHER",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2015-2017 F-150, and 2017 F-250 and F-350 trucks equipped with a crew cab. The left rear inflatable seat belt buckle assembly may be inadequately attached to its mounting bracket. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 210, \"Seat Belt Assembly Anchorages.\"",
+    "consequence": "If the left rear inflatable seat belt buckle separates from it's mounting bracket, the seat occupant may not be adequately restrained, increasing their risk of injury.",
+    "remedy": "Ford will notify owners, and dealers will inspect the seat belt assembly, replacing the attaching rivet as necessary, free of charge. Interim notices informing owners of the safety risk were mailed October 18, 2017. Owners will receive a second notice when the remedy becomes available. Owners may contact Ford Customer Service at 1-866-436-7332. Ford's number for this recall is 17C12.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "17V331000",
+    "date": "2017-05-22",
+    "component": "LATCHES/LOCKS/LINKAGES:DOORS:LATCH",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2015-2017 F-150, and 2017 F-250, F-350, F-450, and F-550 vehicles originally produced with black or body colored exterior door handles that may have been subsequently equipped with a chrome exterior door handle cover accessory kit purchased from a Ford dealer. These accessory door handle covers may cause the doors to unlatch in a side impact collision. As such, these vehicles may fail to comply with the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 206, \"Door Locks and Door Retention Components.\"",
+    "consequence": "If the doors unlatch and open in a side impact collision, the occupants have an increased risk of injury.",
+    "remedy": "Ford will notify owners, and dealers will remove the accessory covers and refund the purchase price. The recall began July 13, 2017. Owners may contact Ford at 1-866-436-7332. Ford's number for the recall is 17C09.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "17V332000",
+    "date": "2017-05-22",
+    "component": "SEATS:FRONT ASSEMBLY:RECLINER",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2017 Ford Explorer, F-150, F-250, F-350, F-450 and F-550 vehicles equipped with a manual driver's seat back recliner mechanism. In the event of a crash, the seat back frame may not restrain the occupant due to having inadequate welds. As such, these vehicles may not meet the requirements of Federal Motor Vehicle Safety Standard (FMVSS) numbers 202a, \"Head Restraints\" and 207, \"Seating Systems.\"",
+    "consequence": "If the occupant is not adequately restrained in the event of a crash, they have an increased risk of injury.",
+    "remedy": "Ford will notify owners, and dealers will inspect and, if necessary, replace the seat back frame, free of charge. The recall began on June 7, 2017. Owners may contact Ford at 1-866-436-7332. Ford's number for this recall is 17C08.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   },
+   {
+    "campaign": "17V053000",
+    "date": "2017-01-25",
+    "component": "POWER TRAIN:AUTOMATIC TRANSMISSION:GEAR POSITION INDICATION (PRNDL)",
+    "summary": "Ford Motor Company (Ford) is recalling certain 2017 F-150 trucks equipped with an eight-inch productivity screen. In these vehicles, the instrument cluster may lose power after the initial vehicle start-up in cold ambient temperatures. Several gauges, including the transmission gear position indicator, may not illuminate. As such, these vehicles fail to comply with the requirements of Federal Motor Vehicles Safety Standard (FMVSS) number 102, \"Transmission shift position sequence, starter interlock, and transmission braking effect.\"",
+    "consequence": "If the transmission gear position indicator fails to illuminate, the driver may be unable to tell the transmission shift position, increasing the risk of a crash or injury from unintended vehicle movement.",
+    "remedy": "Ford will notify owners, and dealers will reprogram the instrument cluster, free of charge. The recall began February 20, 2017. Owners may contact Ford customer service at 1-866-436-7332. Ford's number for this recall is 17C01.",
+    "parkIt": false,
+    "parkOutside": false,
+    "overTheAir": false
+   }
+  ]
+ },
+ "complaints": {
+  "status": "ok",
+  "total": 96,
+  "crashes": 2,
+  "fires": 0,
+  "injuries": 1,
+  "deaths": 0,
+  "latestFiled": "2026-11-19",
+  "top": [
+   {
+    "component": "POWER TRAIN",
+    "count": 66,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "VEHICLE SPEED CONTROL",
+    "count": 15,
+    "crashes": 1,
+    "fires": 0,
+    "injuries": 1,
+    "deaths": 0
+   },
+   {
+    "component": "ELECTRICAL SYSTEM",
+    "count": 14,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "ENGINE",
+    "count": 12,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   },
+   {
+    "component": "SERVICE BRAKES, HYDRAULIC",
+    "count": 5,
+    "crashes": 0,
+    "fires": 0,
+    "injuries": 0,
+    "deaths": 0
+   }
+  ]
+ },
+ "ratings": {
+  "status": "ok",
+  "variants": [
+   {
+    "vehicleId": 11232,
+    "description": "2017 Ford F-150 Crew Cab PU/CC 4x4",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 11231,
+    "description": "2017 Ford F-150 Crew Cab PU/CC 4x2",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 11228,
+    "description": "2017 Ford F-150 Regular Cab PU/RC 4x2",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 11227,
+    "description": "2017 Ford F-150 Regular Cab PU/RC 4x4",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 11230,
+    "description": "2017 Ford F-150 Supercab PU/EC 4x4",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   },
+   {
+    "vehicleId": 11229,
+    "description": "2017 Ford F-150 Supercab PU/EC 4x2",
+    "overall": 5,
+    "frontal": 5,
+    "side": 5,
+    "rollover": 4,
+    "rolloverRiskPct": 19.1
+   }
+  ]
+ },
+ "fetchedAt": "2026-11-24T00:55:01.808Z"
+}

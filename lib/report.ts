@@ -69,7 +69,11 @@ export function plainSummary(d: VehicleData): string {
         (c.crashes ? `, and ${plural(c.crashes, "complaint")} mention a crash.` : "."),
     );
   } else if (c.status === "ok") {
-    s.push("NHTSA has no owner complaints on file for it.");
+    s.push(
+      recalls.length
+        ? "NHTSA's complaint search returns no owner complaints under this model name, which more likely reflects how complaints were filed than a trouble-free record."
+        : "NHTSA has no owner complaints on file for it.",
+    );
   }
   s.push(overallRatingText(d));
   return s.join(" ");
@@ -185,4 +189,42 @@ export function vehicleFaq(d: VehicleData): Faq[] {
     a: `Recalls apply to every ${name} in the affected range, but this list can't show whether a particular vehicle was repaired. Enter its 17-character VIN at nhtsa.gov/recalls or ask a ${d.make} dealer for the repair history. Recall repairs are free.`,
   });
   return faqs;
+}
+
+// ---------- per-year stats (index.json) ----------
+
+export interface YearStats {
+  recalls: number;
+  /** "Do not drive" / "park outside" campaigns. */
+  urgentRecalls: number;
+  latestRecall: string | null;
+  complaints: number;
+  crashes: number;
+  fires: number;
+  injuries: number;
+  deaths: number;
+  topComponent: string | null;
+  overall: number | null;
+  recallStatus: "ok" | "nodata";
+  indexable: boolean;
+  fetchedAt: string;
+}
+
+export function indexStats(d: VehicleData): YearStats {
+  const items = d.recalls.items;
+  return {
+    recalls: items.length,
+    urgentRecalls: items.filter((r) => r.parkIt || r.parkOutside).length,
+    latestRecall: items.find((r) => r.date)?.date ?? null,
+    complaints: d.complaints.total,
+    crashes: d.complaints.crashes,
+    fires: d.complaints.fires,
+    injuries: d.complaints.injuries,
+    deaths: d.complaints.deaths,
+    topComponent: d.complaints.top[0]?.component ?? null,
+    overall: bestOverallRating(d),
+    recallStatus: d.recalls.status,
+    indexable: isIndexable(d),
+    fetchedAt: d.fetchedAt,
+  };
 }
