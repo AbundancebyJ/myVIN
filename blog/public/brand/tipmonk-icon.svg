@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="t">
+  <title id="t">tipmonk</title>
+  <defs><clipPath id="c"><circle cx="256" cy="256" r="240"/></clipPath></defs>
+  <circle cx="256" cy="256" r="240" fill="#FFF7EE"/>
+  <g clip-path="url(#c)"><g transform="translate(256 292) scale(2.05) translate(-316 -168)">
+    <path d="M214 248 C236 228 396 228 418 248 L440 340 L192 340 Z" fill="#C996A3" stroke="#5E4838" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+    <g>
+    <!-- ears behind the head: near ear forward, far ear tucked behind -->
+    <circle cx="352" cy="94" r="21" fill="#F4B78E" stroke="#5E4838" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="352" cy="96" r="10" fill="#F6A9A0"/>
+    <circle cx="262" cy="102" r="27" fill="#F4B78E" stroke="#5E4838" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="262" cy="104" r="14" fill="#F6A9A0"/>
+    <g fill="#5E4838" stroke="#5E4838" stroke-width="14" stroke-linejoin="round"><ellipse cx="312" cy="168" rx="92" ry="80"/><ellipse cx="370" cy="198" rx="46" ry="36"/><ellipse cx="264" cy="206" rx="46" ry="38"/><path d="M290 98 L292 70 L304 90 L308 62 L318 90 L330 74 L334 100 Z"/></g>
+    <g fill="#F4B78E"><ellipse cx="312" cy="168" rx="92" ry="80"/><ellipse cx="370" cy="198" rx="46" ry="36"/><ellipse cx="264" cy="206" rx="46" ry="38"/><path d="M290 98 L292 70 L304 90 L308 62 L318 90 L330 74 L334 100 Z"/></g>
+    <!-- cream muzzle and near cheek -->
+    <path d="M236 206 C238 178 268 168 300 178 C326 168 372 166 402 182 C420 194 418 224 390 234 C360 248 300 252 270 244 C246 236 234 224 236 206 Z" fill="#FFF2E2"/>
+    <!-- forehead stripe (follows the turn) -->
+    <path d="M318 96 Q326 92 334 96 L331 118 Q327 123 323 118 Z" fill="#B98463"/>
+    
+    <clipPath id="e306"><ellipse cx="306" cy="164" rx="22" ry="22"/></clipPath>
+    <ellipse cx="306" cy="164" rx="22" ry="22" fill="#fff"/>
+    <g clip-path="url(#e306)">
+      <circle cx="296.8" cy="167" r="13.6" fill="#6B4A36"/>
+      <circle cx="295.9" cy="167" r="7.0" fill="#2E2019"/>
+      <circle cx="301.2" cy="163" r="3.5" fill="#fff"/>
+      <rect x="282" y="140" width="48" height="9.9" fill="#F4B78E"/>
+    </g>
+    <path d="M281 149.9 Q306 144.9 331 149.9" fill="none" stroke="#5E4838" stroke-width="5" stroke-linecap="round"/>
+    
+    <clipPath id="e374"><ellipse cx="374" cy="162" rx="15" ry="21"/></clipPath>
+    <ellipse cx="374" cy="162" rx="15" ry="21" fill="#fff"/>
+    <g clip-path="url(#e374)">
+      <circle cx="367.7" cy="165" r="13.0" fill="#6B4A36"/>
+      <circle cx="367.1" cy="165" r="6.7" fill="#2E2019"/>
+      <circle cx="370.7" cy="161" r="3.4" fill="#fff"/>
+      <rect x="357" y="139" width="34" height="9.6" fill="#F4B78E"/>
+    </g>
+    <path d="M356 148.6 Q374 143.6 392 148.6" fill="none" stroke="#5E4838" stroke-width="5" stroke-linecap="round"/>
+    <!-- brows: near one level, far one raised (clever) -->
+    <path d="M280 134 Q304 126 328 134" fill="none" stroke="#B98463" stroke-width="8" stroke-linecap="round"/>
+    <path d="M358 124 Q374 112 392 122" fill="none" stroke="#B98463" stroke-width="7" stroke-linecap="round"/>
+    <!-- blush -->
+    <ellipse cx="262" cy="214" rx="16" ry="8" fill="#F6A9A0" opacity=".85"/>
+    <ellipse cx="398" cy="206" rx="10" ry="6" fill="#F6A9A0" opacity=".85"/>
+    <!-- nose -->
+    <path d="M396 186 Q406 182 414 188 Q410 198 402 199 Q396 196 396 186 Z" fill="#C98376" stroke="#5E4838" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- smirk with a peek of buck teeth -->
+    <path d="M402 199 L400 208" stroke="#5E4838" stroke-width="3" stroke-linecap="round"/>
+    <path d="M380 212 L382 220 L392 220 L392 211 Z" fill="#fff" stroke="#5E4838" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M362 210 Q382 216 400 208 Q406 204 408 198" fill="none" stroke="#5E4838" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  </g></g>
+  <circle cx="256" cy="256" r="240" fill="none" stroke="#5E4838" stroke-width="22"/>
+</svg>

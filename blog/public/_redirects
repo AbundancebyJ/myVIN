@@ -1,0 +1,3 @@
+# The VIN safety report moved to its own subdomain.
+/recalls/*  https://vin.tipmonk.net/recalls/:splat  301
+/recalls    https://vin.tipmonk.net/recalls/        301

@@ -1,4 +1,10 @@
-# tipmonk: Free VIN Safety Reports
+# tipmonk
+
+This repository holds two sites:
+
+- **`blog/`**: the tipmonk blog at **tipmonk.net**, strategic-investment study notes in Korean and English. See [`blog/README.md`](blog/README.md).
+- **Repository root**: the free VIN safety report tool at **vin.tipmonk.net** (described below).
+
 
 A free, mobile-first site for US used-car buyers. Enter a VIN and get one page with specs, recalls, top owner complaints, NHTSA crash-test ratings and a printable "questions to ask the seller" checklist. It's a Next.js static export with two Cloudflare Pages Functions, and every piece of data comes from NHTSA's free public APIs.
 
